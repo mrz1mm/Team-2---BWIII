@@ -24,7 +24,7 @@ export class HeaderComponent {
     { name: 'Favourites', url: '/profile/favourites' },
     { name: 'MyLightNovels', url: '/profile/myLightNovels' },
     { name: 'Viewed', url: '/profile/viewed' },
-    { name: 'Users', url: '/users' },
+    { name: 'Users', url: '/profile/users' },
   ];
 
   isLoggedIn$ = this.authSvc.isLoggedIn$;
