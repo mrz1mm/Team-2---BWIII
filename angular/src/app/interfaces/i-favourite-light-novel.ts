@@ -1,5 +1,5 @@
 export interface iFavouriteLightNovel {
   id: number;
-  filmId: number;
+  lightNovelId: number;
   userId: number;
 }
