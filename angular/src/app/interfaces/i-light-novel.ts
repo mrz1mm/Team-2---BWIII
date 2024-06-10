@@ -5,7 +5,7 @@ export interface iLightNovel {
   title: string;
   plot: string;
   description: string;
-  genre: string;
+  genre: string[];
   author: string;
   image_url: string;
   created_at: string;
