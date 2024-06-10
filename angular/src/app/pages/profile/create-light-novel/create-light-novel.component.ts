@@ -7,5 +7,5 @@ import { FormGroup } from '@angular/forms';
   styleUrl: './create-light-novel.component.scss'
 })
 export class CreateLightNovelComponent {
-  createLightNovelForm!: FormGroup;
+
 }

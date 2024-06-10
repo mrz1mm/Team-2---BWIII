@@ -8,6 +8,7 @@ import { MyLightNovelComponent } from './my-light-novel/my-light-novel.component
 import { FavouritesComponent } from './favourites/favourites.component';
 import { ViewedComponent } from './viewed/viewed.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../../shared-components/shared.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ProfileRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class ProfileModule { }
