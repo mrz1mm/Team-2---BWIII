@@ -2,7 +2,7 @@
   "users": [
     {
       "email": "untente1@gmail.com",
-      "password": "$2a$10$M/na7pqu8dMJJ3tSkl4FceQc.uzHKP6ci2hZC4G4cyyOJ9C7APqOW",
+      "password": "$2a$10$7JAOR0dzT.YRhQ7GmktS0uDCtzeQ9O4elz..ZLer2qczb8WEXDueq",
       "name": "utente ",
       "surname": "numero 1",
       "gender": "other",
@@ -16,7 +16,7 @@
     },
     {
       "email": "qegeh@mailinator.com",
-      "password": "$2a$10$QV8xn8yNPRDhZncYyrKCKeRr8JE4H1jpuR7BxWmz5nGcNO1MD0.T6",
+      "password": "$2a$10$X9H44erX.lNtC6/3SIjYbeex33mCnhNLkRV0wxNsY/EXTOVo2aBX2",
       "name": "admin2",
       "surname": "Dolorum voluptate se",
       "gender": "female",
@@ -30,7 +30,7 @@
     },
     {
       "email": "zamulubiho@mailinator.com",
-      "password": "$2a$10$hQ.4vry8J4oADaIboL3LIuJOkYM8wR0orv0rOLJ6M6s8x2zBtykae",
+      "password": "$2a$10$ZRb.06x4h3sxWq3FIxKIYOUX4hHf1qOjEBvY1O0P43MHip/hcZrIK",
       "name": "AccountProva",
       "surname": "Velit sequi corporis",
       "gender": "other",
@@ -43,32 +43,6 @@
       "id": 4
     }
   ],
-  "lightNovels": [
-    {
-      "id": 1,
-      "userId": 1e24,
-      "slug": "enchanted_forest",
-      "title": "Il Segreto della Foresta Incantata",
-      "plot": "Una foresta incantata nasconde segreti magici e pericolosi.",
-      "description": "Esplora la foresta incantata e scopri i suoi misteri in questa avventura interattiva.",
-      "genre": "Fantasy",
-      "author": "AUTORE",
-      "image_url": "https://placedog.net/640/480?id=2",
-      "created_at": "2024-06-11",
-      "story": {
-        "part1": "Ti trovi ai margini della foresta incantata, con il vento che sussurra tra gli alberi e creature misteriose che si celano tra le ombre. Decidi di avventurarti all'interno per scoprire cosa si nasconde tra gli alberi antichi.",
-        "part2": {
-          "part2a": "Ti addentri nella foresta e senti subito una magia palpabile nell'aria. Decidi di seguire il sentiero principale.",
-          "part2b": "Decidi di deviare dal sentiero battuto e avventurarti nei recessi più profondi della foresta."
-        },
-        "part3": {
-          "part3a": "Seguendo il sentiero principale, incontri una fata gentile che ti concede un desiderio. Con saggezza, chiedi di conoscere il vero scopo della foresta. La fata ti rivela il segreto nascosto della foresta e ti guida al suo cuore, dove trovi la risposta alle tue domande più profonde.",
-          "part3b": "Perdendoti nei recessi della foresta, incontri una creatura magica che ti sfida a una prova di coraggio. Superando la prova, guadagni il rispetto della creatura e diventi un amico della foresta, aprendo la porta a un mondo di avventure e magia senza fine.",
-          "part3c": "Incontri una creatura oscura che tenta di ingannarti con promesse di ricchezza e potere. Rifiuti le sue lusinghe e, con determinazione, trovi il tuo cammino attraverso la foresta, uscendo dalla sua oscurità con la tua integrità intatta e il tuo cuore saldo.",
-          "part3d": "Esplorando ancora più in profondità, scopri una radura magica dove le creature della foresta si riuniscono per festeggiare. Ti unisci alla loro festa, ballando sotto la luna piena e vivendo un momento di gioia e meraviglia in un mondo incantato."
-        }
-      }
-    }
-  ],
-  "favouriteLightNovels": []
+  "lightnovel": [],
+  "favouriteLightNovel": []
 }
