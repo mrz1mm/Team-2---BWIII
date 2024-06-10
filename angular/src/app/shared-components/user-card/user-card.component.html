@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3" *ngFor="let user of users">
+        <div class="row g-0">
+          <div class="col-8">
+            <img
+              [src]="'http://place-hold.it/300'"
+              class="img-fluid rounded-start"
+              alt="..."
+              style="width: 100px; height: 100px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ user.username }}</h5>
+              <small class="card-text">{{ user.role }}</small>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card-body">
+              <button
+                class="btn btn-danger mx-1"
+                (click)="deleteUser(user.id)"
+                ngbTooltip="Delete User"
+                placement="top"
+              >
+                <i class="bi bi-trash"></i>
+              </button>
+              <button
+                class="btn btn-info"
+                (click)="updateUser(user.id, user)"
+                ngbTooltip="Edit User"
+                placement="top"
+              >
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button
+                class="btn btn-success mx-1"
+                *ngIf="user.role === 'auth'"
+                (click)="upgradeUser(user.id)"
+                ngbTooltip="Upgrade User"
+                placement="top"
+              >
+                <i class="bi bi-arrow-up"></i>
+              </button>
+              <button
+                class="btn btn-warning mx-1"
+                *ngIf="user.role === 'sub-admin'"
+                (click)="downgradeUser(user.id)"
+                ngbTooltip="Downgrade User"
+                placement="top"
+              >
+                <i class="bi bi-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
