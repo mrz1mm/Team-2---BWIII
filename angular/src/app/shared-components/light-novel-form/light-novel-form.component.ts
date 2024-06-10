@@ -9,6 +9,38 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LightNovelFormComponent {
   createLightNovelForm!: FormGroup;
 
+  genreArr: string[] = [
+  "Fantasy",
+  "Sci-Fi",
+  "Horror",
+  "Mystery",
+  "Adventure",
+  "Romance",
+  "Thriller",
+  "Comedy",
+  "Drama",
+  "Historical Fiction",
+  "Supernatural",
+  "Dystopian",
+  "Post-Apocalyptic",
+  "Steampunk",
+  "Cyberpunk",
+  "Detective",
+  "Crime",
+  "Action",
+  "Western",
+  "Mythology",
+  "Urban Fantasy",
+  "Dark Fantasy",
+  "Fairy Tale",
+  "Epic",
+  "Survival",
+  "Espionage",
+  "Military",
+  "Political",
+  "Psychological",
+  "Noir"
+]
   constructor(private fb: FormBuilder) { }
   ngOnit() {
     this.fb.group({
