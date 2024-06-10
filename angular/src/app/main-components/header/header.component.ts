@@ -18,7 +18,14 @@ export class HeaderComponent {
     private lightNovelSvc: LightnovelService
   ) {}
 
-  links = [{ name: 'Home', url: '/' }];
+  links = [
+    { name: 'Home', url: '/' },
+    { name: 'CreateLightNovel', url: '/createLightNovel' },
+    { name: 'Favourites', url: '/favourites' },
+    { name: 'MyLightNovels', url: '/myLightNovels' },
+    { name: 'Viewed', url: '/viewed' },
+    { name: 'Users', url: '/users' },
+  ];
 
   isLoggedIn$ = this.authSvc.isLoggedIn$;
   user: iUser | null = this.authSvc.getCurrentUser();
