@@ -4,26 +4,26 @@ import { UsersService } from '../../services/users.service';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss']
+  styleUrls: ['./users.component.scss'],
 })
 export class UsersComponent implements OnInit {
   users: any[] = [];
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService) {}
 
   ngOnInit(): void {
     this.getUsers();
   }
 
   getUsers(): void {
-    this.usersService.getUsers().subscribe(users => {
+    this.usersService.getUsers().subscribe((users) => {
       this.users = users;
     });
   }
-  updateUser(id: number, user: any):void{
-      this.usersService.updateUser(id, user).subscribe(()=>{
-          this.getUsers();
-      });
+  updateUser(id: number, user: any): void {
+    this.usersService.updateUser(id, user).subscribe(() => {
+      this.getUsers();
+    });
   }
 
   deleteUser(id: number): void {

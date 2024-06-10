@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../auth/auth.service';
 import { Router } from '@angular/router';
-import { LightnovelService } from '../../services/lightnovel.service';
+import { LightNovelService } from '../../services/light-novel.service';
 import { SearchService } from '../../services/search.service';
 import { iUser } from '../../auth/interfaces/i-user';
 
@@ -15,7 +15,7 @@ export class HeaderComponent {
     private routerSvc: Router,
     private authSvc: AuthService,
     private searchSvc: SearchService,
-    private lightNovelSvc: LightnovelService
+    private lightNovelSvc: LightNovelService
   ) {}
 
   links = [
