@@ -1,21 +1,9 @@
-import { Injectable, inject } from '@angular/core';
-import { FilmService } from './film.service';
-import { BehaviorSubject } from 'rxjs';
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class SearchService {
-  private filmSvc = inject(FilmService);
 
-  private searchTermSubject = new BehaviorSubject<string>('');
-
-  getSearchTerm() {
-    return this.searchTermSubject.asObservable();
-  }
-
-  setSearchTerm(term: string) {
-    this.searchTermSubject.next(term);
-    this.filmSvc.setSearchTerm(term);
-  }
+  constructor() { }
 }
