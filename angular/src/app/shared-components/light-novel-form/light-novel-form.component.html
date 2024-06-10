@@ -27,6 +27,7 @@
             class="form-control"
             id="description"
           ></textarea>
+
           <div *ngFor="let genre of genreArr">
             <label for="{{ genre }}">{{ genre }}</label>
             <input
@@ -36,6 +37,7 @@
               id="{{ genre }}"
             />
           </div>
+
           <label for="file">Inserisce la copertina della Light-novel</label>
           <input
             type="file"
@@ -43,74 +45,80 @@
             class="form-control"
             id="file"
           />
-          <label for="part1"> Inserisci la prima sezione interattiva</label>
-          <input
-            type="text"
-            formControlName="part1"
-            class="form-control"
-            placeholder="Write the section interactive..."
-            id="part1"
-          />
-          <label for="part2a">
-            Inserisci la seconda sezione (2A) interattiva</label
-          >
-          <input
-            type="text"
-            formControlName="part2a"
-            class="form-control"
-            placeholder="Write the section interactive..."
-            id="part2a"
-          />
-          <label for="part2b">
-            Inserisci la seconda sezione (2B) interattiva</label
-          >
-          <input
-            type="text"
-            formControlName="part2b"
-            class="form-control"
-            placeholder="Write the section interactive..."
-            id="part2b"
-          />
-          <label for="part3a"
-            >Inserisci la terza sezione (3A) interattiva</label
-          >
-          <input
-            type="text"
-            formControlName="part3a"
-            class="form-control"
-            placeholder="Write the section interactive..."
-            id="part3a"
-          />
-          <label for="part3b"
-            >Inserisci la terza sezione (3B) interattiva</label
-          >
-          <input
-            type="text"
-            formControlName="part3b"
-            class="form-control"
-            placeholder="Write the section interactive..."
-            id="part3b"
-          />
-          <label for="part3c"
-            >Inserisci la terza sezione (3C) interattiva</label
-          >
-          <input
-            type="text"
-            formControlName="part3c"
-            class="form-control"
-            placeholder="Write the section interactive..."
-            id="part3c"
-          />
-          <label for="part3d"
-            >Inserisci la terza sezione (3B) interattiva</label
-          >
-          <input
-            type="text"
-            formControlName="part3d"
-            class="form-control"
-            placeholder="Write the section interactive..."
-            id="part3d"
-          />
+          <div formGroupName="story">
+            <label for="part1"> Inserisci la prima sezione interattiva</label>
+            <input
+              type="text"
+              formControlName="part1"
+              class="form-control"
+              placeholder="Write the section interactive..."
+              id="part1"
+            />
+            <div formGroupName="part2">
+              <label for="part2a">
+                Inserisci la seconda sezione (2A) interattiva</label
+              >
+              <input
+                type="text"
+                formControlName="part2a"
+                class="form-control"
+                placeholder="Write the section interactive..."
+                id="part2a"
+              />
+              <label for="part2b">
+                Inserisci la seconda sezione (2B) interattiva</label
+              >
+              <input
+                type="text"
+                formControlName="part2b"
+                class="form-control"
+                placeholder="Write the section interactive..."
+                id="part2b"
+              />
+            </div>
+            <div formGroupName="part3">
+              <label for="part3a"
+                >Inserisci la terza sezione (3A) interattiva</label
+              >
+              <input
+                type="text"
+                formControlName="part3a"
+                class="form-control"
+                placeholder="Write the section interactive..."
+                id="part3a"
+              />
+              <label for="part3b"
+                >Inserisci la terza sezione (3B) interattiva</label
+              >
+              <input
+                type="text"
+                formControlName="part3b"
+                class="form-control"
+                placeholder="Write the section interactive..."
+                id="part3b"
+              />
+              <label for="part3c"
+                >Inserisci la terza sezione (3C) interattiva</label
+              >
+              <input
+                type="text"
+                formControlName="part3c"
+                class="form-control"
+                placeholder="Write the section interactive..."
+                id="part3c"
+              />
+              <label for="part3d"
+                >Inserisci la terza sezione (3B) interattiva</label
+              >
+              <input
+                type="text"
+                formControlName="part3d"
+                class="form-control"
+                placeholder="Write the section interactive..."
+                id="part3d"
+              />
+            </div>
+          </div>
           <button class="btn btn-primary">Crea</button>
         </form>
       </section>

@@ -9,6 +9,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     LightNovelFormComponent
   ],
   imports: [CommonModule, RouterModule, ReactiveFormsModule],
-  exports: [],
+  exports: [LightNovelFormComponent],
 })
 export class SharedModule {}

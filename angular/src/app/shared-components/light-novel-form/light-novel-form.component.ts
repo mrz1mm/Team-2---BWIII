@@ -39,11 +39,10 @@ export class LightNovelFormComponent {
   "Military",
   "Political",
   "Psychological",
-  "Noir"
-]
+  "Noir"]
   constructor(private fb: FormBuilder) { }
   ngOnit() {
-    this.fb.group({
+   this. createLightNovelForm = this.fb.group({
       title: this.fb.control(null, [Validators.required]),
       plot: this.fb.control(null, [Validators.required]),
       description: this.fb.control(null, [Validators.required]),
