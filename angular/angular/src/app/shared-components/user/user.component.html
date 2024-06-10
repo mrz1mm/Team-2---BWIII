@@ -1,0 +1,18 @@
+<div class="d-flex justify-content-center align-items-center" *ngIf="userCard">
+  <div>
+    <img
+      src="{{ userCard.userImage }}"
+      class="img-fluid me-2"
+      alt="avatar img"
+    />
+  </div>
+
+  <div class="card-body ps-0">
+    <h5 class="card-title">
+      {{ userCard.username }}
+    </h5>
+    <p class="card-text">
+      <small class="text-body-secondary">{{ userCard.name }}</small>
+    </p>
+  </div>
+</div>
