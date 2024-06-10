@@ -8,6 +8,6 @@ import { CardHomeComponent } from './card-home/card-home.component';
 @NgModule({
   declarations: [LightNovelFormComponent, CardHomeComponent],
   imports: [CommonModule, RouterModule, ReactiveFormsModule],
-  exports: [CardHomeComponent],
+  exports: [CardHomeComponent, LightNovelFormComponent],
 })
 export class SharedModule {}
