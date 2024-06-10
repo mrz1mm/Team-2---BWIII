@@ -18,7 +18,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-export class LightnovelService {
+export class LightNovelService {
   constructor(
     private httpSvc: HttpClient,
     private searchSvc: SearchService,
@@ -42,9 +42,8 @@ export class LightnovelService {
   searchTermSubject = new BehaviorSubject<string>('');
   searchTerm$ = this.searchTermSubject.asObservable();
 
-  lightNovelsUrl: string = '${environment.apiUrl}/lightnovels';
-  favouriteLightNovelsUrl: string =
-    '${environment.apiUrl}/favourite-lightnovels';
+  lightNovelsUrl: string = `${environment.apiUrl}/lightnovels`;
+  favouriteLightNovelsUrl: string = `${environment.apiUrl}/favourite-lightNovels`;
 
   // metodo per ottenere tutti le lightnovel
   getAllLightNovels(): void {

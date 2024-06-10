@@ -1,17 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { UserCardComponent } from './user-card/user-card.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { LightNovelFormComponent } from './light-novel-form/light-novel-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CardHomeComponent } from './card-home/card-home.component';
 
 @NgModule({
-  declarations: [
-    UserCardComponent
-  ],
-  imports: [CommonModule, RouterModule,NgbModule,FormsModule],
-  exports: [
-    UserCardComponent
-  ],
+  declarations: [LightNovelFormComponent, CardHomeComponent],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule],
+  exports: [CardHomeComponent, LightNovelFormComponent],
 })
 export class SharedModule {}
