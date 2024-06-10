@@ -29,11 +29,11 @@
       "id": 2
     }
   ],
-  "lightnovel": [
+  "lightNovels": [
     {
       "story": {
         "id": 1,
-        "userId": 1e+30,
+        "userId": 1e30,
         "slug": "mystery_manor",
         "title": "Il Mistero della Villa Abbandonata",
         "plot": "Una villa abbandonata nasconde oscuri segreti che attendono di essere svelati.",
@@ -59,7 +59,7 @@
     },
     {
       "id": 2,
-      "userId": 1e+24,
+      "userId": 1e24,
       "slug": "enchanted_forest",
       "title": "Il Segreto della Foresta Incantata",
       "plot": "Una foresta incantata nasconde segreti magici e pericolosi.",
@@ -83,5 +83,5 @@
       }
     }
   ],
-  "favouriteLightNovel": []
+  "favouriteLightNovels": []
 }

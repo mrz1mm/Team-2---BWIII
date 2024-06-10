@@ -5,9 +5,7 @@ import { LightNovelFormComponent } from './light-novel-form/light-novel-form.com
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    LightNovelFormComponent
-  ],
+  declarations: [LightNovelFormComponent],
   imports: [CommonModule, RouterModule, ReactiveFormsModule],
   exports: [],
 })
