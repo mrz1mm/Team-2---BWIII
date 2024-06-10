@@ -20,10 +20,10 @@ export class HeaderComponent {
 
   links = [
     { name: 'Home', url: '/' },
-    { name: 'CreateLightNovel', url: '/createLightNovel' },
-    { name: 'Favourites', url: '/favourites' },
-    { name: 'MyLightNovels', url: '/myLightNovels' },
-    { name: 'Viewed', url: '/viewed' },
+    { name: 'CreateLightNovel', url: '/profile/createLightNovel' },
+    { name: 'Favourites', url: '/profile/favourites' },
+    { name: 'MyLightNovels', url: '/profile/myLightNovels' },
+    { name: 'Viewed', url: '/profile/viewed' },
     { name: 'Users', url: '/users' },
   ];
 
