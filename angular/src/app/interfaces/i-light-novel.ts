@@ -1,4 +1,4 @@
-export interface ILightNovel {
+export interface iLightNovel {
   id: number;
   userId: number;
   slug: string;

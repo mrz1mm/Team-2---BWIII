@@ -1,2 +1,5 @@
-export interface IFavouriteLightNovel {
+export interface iFavouriteLightNovel {
+  id: number;
+  filmId: number;
+  userId: number;
 }
