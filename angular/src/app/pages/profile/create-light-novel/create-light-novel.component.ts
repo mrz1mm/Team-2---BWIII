@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-create-light-novel',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './create-light-novel.component.scss'
 })
 export class CreateLightNovelComponent {
-
+  createLightNovelForm!: FormGroup;
 }
