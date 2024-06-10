@@ -19,7 +19,7 @@ export class HomeComponent {
 
   lightNovelsArray: iLightNovel[] = [];
 
-  NgOnInit() {
+  ngOnInit() {
     this.lightNovelSvc.lightNovels$.subscribe((lightNovels) => {
       this.lightNovelsArray = lightNovels;
       console.log('lightNovelsArray:', this.lightNovelsArray);

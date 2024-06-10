@@ -9,6 +9,8 @@
     <div class="col-12">
       <h2>LIGHT NOVEL DI STO CA..</h2>
     </div>
-    <div class="col" *ngFor="let lightNovel of lightNovelsArray"></div>
+    <div class="col" *ngFor="let lightNovel of lightNovelsArray">
+      <app-card-home [lightNovelCard]="lightNovel"></app-card-home>
+    </div>
   </div>
 </div>
