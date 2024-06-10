@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../auth/auth.service';
+import { Router } from '@angular/router';
+import { LightnovelService } from '../../services/lightnovel.service';
+import { SearchService } from '../../services/search.service';
+import { iUser } from '../../auth/interfaces/i-user';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +11,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  constructor() {}
+  constructor(
+    private routerSvc: Router,
+    private authSvc: AuthService,
+    private searchSvc: SearchService,
+    private lightNovelSvc: LightnovelService
+  ) {}
 
-  links = {
-    home: 'home',
-    sdrogo: 'bla',
-  };
+  links = [{ name: 'Home', url: '/' }];
+
+  isLoggedIn$ = this.authSvc.isLoggedIn$;
+  user: iUser | null = this.authSvc.getCurrentUser();
+
+  // effettua il logout
+  logout() {
+    this.authSvc.logout();
+  }
+
+  // effettua la ricerca di una lightnovel
+  onSearch(event: Event) {}
+
+  // effettua la ricerca di una lightnovel
+  searchLightNovel(searchTerm: string) {}
 }
