@@ -36,7 +36,7 @@ export class LightnovelService {
   favouriteLightNovelsUrl: string =
     '${environment.apiUrl}/favourite-lightnovels';
 
-  getAllLightNovels() {}
+  getAllLightNovels(): void {}
   getLightNovelById() {}
   addLightNovel() {}
   updateLightNovel() {}
