@@ -14,7 +14,7 @@ const routes: Routes = [
       import('./pages/home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: 'lightNovelDetails',
+    path: 'lightNovelDetails/:id',
     loadChildren: () =>
       import('./pages/light-novel-details/light-novel-details.module').then(
         (m) => m.LightNovelDetailsModule
@@ -32,7 +32,8 @@ const routes: Routes = [
   {
     path: 'users',
     loadChildren: () =>
-      import('./pages/users/users.module').then((m) => m.UsersModule),canActivate: [AdminGuard]
+      import('./pages/users/users.module').then((m) => m.UsersModule),
+    canActivate: [AdminGuard],
   },
   {
     path: 'page401',
