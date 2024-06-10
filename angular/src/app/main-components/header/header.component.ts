@@ -10,5 +10,6 @@ export class HeaderComponent {
 
   links = {
     home: 'home',
+    sdrogo: 'bla',
   };
 }
