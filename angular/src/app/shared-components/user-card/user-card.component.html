@@ -27,11 +27,12 @@
               </button>
               <button
                 class="btn btn-info"
-                (click)="updateUser(user.id, user)"
+                (click)="open(content, user)"
                 ngbTooltip="Edit User"
                 placement="top"
               >
                 <i class="bi bi-pencil-fill"></i>
+                <!-- Questo è il tag di chiusura mancante -->
               </button>
               <button
                 class="btn btn-success mx-1"
@@ -57,4 +58,56 @@
       </div>
     </div>
   </div>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Modifica utente</h4>
+      <button
+        type="button"
+        class="close"
+        aria-label="Close"
+        (click)="modal.dismiss('Cross click')"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form #userForm="ngForm" (ngSubmit)="updateUser()">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            [(ngModel)]="selectedUser.name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            [(ngModel)]="selectedUser.email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="role">Ruolo</label>
+          <input
+            type="text"
+            class="form-control"
+            id="role"
+            [(ngModel)]="selectedUser.role"
+            name="role"
+            required
+          />
+        </div>
+        <!-- Aggiungi qui altri campi del form se necessario -->
+      </form>
+    </div>
+    <button (click)="updateUser()">Save</button>
+  </ng-template>
 </div>
