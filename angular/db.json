@@ -1,1 +1,54 @@
-{ "users": [], "lightnovel": [], "favouriteLightNovel": [] }
+{ "users": [], "lightnovel": [
+  {
+  "story": {
+    "id": 1,
+    "userId": 999999999999999999999999999999,
+    "slug": "mystery_manor",
+    "title": "Il Mistero della Villa Abbandonata",
+    "plot": "Una villa abbandonata nasconde oscuri segreti che attendono di essere svelati.",
+    "description": "Esplora la villa abbandonata e scopri i suoi misteri in questa avventura interattiva.",
+    "genre": "Mystery",
+    "author": "AUTORE",
+    "image_url": "https://example.com/mystery_manor.jpg",
+    "created_at": "2024-06-10",
+    "story": {
+      "part1": "Ti trovi di fronte alla vecchia villa, con le sue finestre spalancate e il tetto parzialmente crollato. Decidi di avventurarti all'interno per scoprire cosa si nasconde dietro le sue mura.",
+      "part2": {
+        "part2a": "Entri nella villa e senti subito un senso di oppressione. Decidi di esplorare il piano terra.",
+        "part2b": "Decidi di iniziare l'esplorazione salendo direttamente al piano superiore."
+      },
+      "part3": {
+        "part3a": "Mentre sfogli il diario polveroso, i racconti prendono vita davanti ai tuoi occhi. Ti rendi conto che la villa era il palcoscenico di tragedie familiari e inganni, e finalmente capisci il motivo del suo abbandono. Con la verità rivelata, lasci la villa con una sensazione di solenne rispetto per il passato.",
+        "part3b": "Dopo una ricerca faticosa, finalmente trovi la chiave nascosta. Quando apri la stanza chiusa, ti trovi di fronte a file di documenti compromettenti e registri illegali. L'atmosfera pesante della stanza ti lascia senza fiato mentre realizzi l'oscura verità nascosta dietro la facciata innocente della villa.",
+        "part3c": "La stanza si apre su un banchetto impeccabile, con candelabri accesi e voci sommessamente sussurrate. Prima che tu possa capire cosa sta succedendo, sei circondato da figure misteriose che ti catturano e ti trascinano in un destino ignoto. La porta si chiude dietro di te, lasciandoti intrappolato nel buio della villa abbandonata.",
+        "part3d": "Seguendo il tunnel buio e umido, emergi finalmente alla luce del giorno. Respiri l'aria fresca della libertà mentre ti allontani dalla villa abbandonata, consapevole di aver superato una prova che ha messo alla prova il tuo coraggio e la tua determinazione."
+      }
+    }
+  }
+  },
+  {
+    "id": 2,
+    "userId": 999999999999999999999999,
+    "slug": "enchanted_forest",
+    "title": "Il Segreto della Foresta Incantata",
+    "plot": "Una foresta incantata nasconde segreti magici e pericolosi.",
+    "description": "Esplora la foresta incantata e scopri i suoi misteri in questa avventura interattiva.",
+    "genre": "Fantasy",
+    "author": "AUTORE",
+    "image_url": "https://example.com/enchanted_forest.jpg",
+    "created_at": "2024-06-11",
+    "story": {
+      "part1": "Ti trovi ai margini della foresta incantata, con il vento che sussurra tra gli alberi e creature misteriose che si celano tra le ombre. Decidi di avventurarti all'interno per scoprire cosa si nasconde tra gli alberi antichi.",
+      "part2": {
+        "part2a": "Ti addentri nella foresta e senti subito una magia palpabile nell'aria. Decidi di seguire il sentiero principale.",
+        "part2b": "Decidi di deviare dal sentiero battuto e avventurarti nei recessi più profondi della foresta."
+      },
+      "part3": {
+        "part3a": "Seguendo il sentiero principale, incontri una fata gentile che ti concede un desiderio. Con saggezza, chiedi di conoscere il vero scopo della foresta. La fata ti rivela il segreto nascosto della foresta e ti guida al suo cuore, dove trovi la risposta alle tue domande più profonde.",
+        "part3b": "Perdendoti nei recessi della foresta, incontri una creatura magica che ti sfida a una prova di coraggio. Superando la prova, guadagni il rispetto della creatura e diventi un amico della foresta, aprendo la porta a un mondo di avventure e magia senza fine.",
+        "part3c": "Incontri una creatura oscura che tenta di ingannarti con promesse di ricchezza e potere. Rifiuti le sue lusinghe e, con determinazione, trovi il tuo cammino attraverso la foresta, uscendo dalla sua oscurità con la tua integrità intatta e il tuo cuore saldo.",
+        "part3d": "Esplorando ancora più in profondità, scopri una radura magica dove le creature della foresta si riuniscono per festeggiare. Ti unisci alla loro festa, ballando sotto la luna piena e vivendo un momento di gioia e meraviglia in un mondo incantato."
+      }
+    }
+  }
+], "favouriteLightNovel": [] }
