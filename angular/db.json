@@ -1,1 +1,34 @@
-{ "users": [], "lightnovel": [], "favouriteLightNovel": [] }
+{
+  "users": [
+    {
+      "email": "admin123@admin.it",
+      "password": "$2a$10$6Q4.rlDndpBLnZkOzHwGAOIYne8jStPGOf/VeI/xjnBM1akniEXda",
+      "name": "amministratore",
+      "surname": "amministratore",
+      "gender": "other",
+      "dateBirth": "275760-06-05",
+      "biography": "admin",
+      "userImage": "admin",
+      "username": "admin",
+      "confirmPassword": "Admin123!",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "untente1@gmail.com",
+      "password": "$2a$10$M/na7pqu8dMJJ3tSkl4FceQc.uzHKP6ci2hZC4G4cyyOJ9C7APqOW",
+      "name": "utente ",
+      "surname": "numero 1",
+      "gender": "other",
+      "dateBirth": "275760-04-05",
+      "biography": "dddd",
+      "userImage": "ddddd",
+      "username": "utente1",
+      "confirmPassword": "password123P!",
+      "role": "auth",
+      "id": 2
+    }
+  ],
+  "lightnovel": [],
+  "favouriteLightNovel": []
+}

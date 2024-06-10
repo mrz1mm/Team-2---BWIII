@@ -26,6 +26,7 @@ export class AuthService {
 
   // metodo per registrare un nuovo utente
   register(newUser: Partial<iUser>): Observable<iAuthResponse> {
+    newUser.role = 'auth';
     return this.http.post<iAuthResponse>(this.registerUrl, newUser);
   }
 
