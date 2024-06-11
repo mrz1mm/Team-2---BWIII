@@ -26,10 +26,25 @@
 
     <div class="col"></div>
   </div>
+  <section class="row mt-4">
+    <div class="col d-flex align-items-center">
+      <div class="me-2">
+        <h6>FILTER BY:</h6>
+      </div>
+      <div>
+        <button
+          class="btn btn-secondary btn-sm me-2 buttonTags"
+          *ngFor="let genre of genres"
+          (click)="selectedGenre(genre)"
+        >
+          {{ genre }}
+        </button>
+      </div>
+    </div>
+  </section>
   <div class="row">
     <div class="col-12">
       <div>
-        <i class="bi bi-list-ul"></i>
         <div ngbDropdown class="d-inline-block">
           <button
             type="button"
@@ -37,12 +52,17 @@
             id="dropdownBasic1"
             ngbDropdownToggle
           >
+            <i class="bi bi-list-ul"></i>
             Generi
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
+            <button
+              ngbDropdownItem
+              (click)="selectedGenre(genre)"
+              *ngFor="let genre of genres"
+            >
+              {{ genre }}
+            </button>
           </div>
         </div>
       </div>
