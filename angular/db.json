@@ -96,7 +96,6 @@
         "Fantasy"
       ],
       "author": "Federica Martini",
-      "userId": 1,
       "image_url": null,
       "created_at": "11/06/2024",
       "story": {
@@ -135,7 +134,6 @@
         "Fantasy"
       ],
       "author": "Giovanni Bianchi",
-      "userId": 1,
       "image_url": null,
       "created_at": "11/06/2024",
       "story": {
@@ -166,10 +164,6 @@
     },
     {
     "title": "La Città degli Antichi",
-<<<<<<< HEAD
-=======
-    "userId": 1,
->>>>>>> parent of 33477201 (Merge branch 'main' of https://github.com/mrz1mm/Team-2---BWIII)
     "plot": "In un mondo futuristico, un esploratore si immerge nelle rovine di una città sconosciuta, scoprendo segreti sepolti da millenni.",
     "description": "Un'avventura fantascientifica ricca di enigmi e scoperte sorprendenti.",
     "genre": ["Sci-Fi", "Adventure", "Mystery"],
@@ -203,11 +197,7 @@
       "id": 3
     },
     {
-<<<<<<< HEAD
        "title": "Il Quadro dell'Amore Perduto",
-=======
-       "title": "L'Enigma della Pittura Perduta",
->>>>>>> parent of 33477201 (Merge branch 'main' of https://github.com/mrz1mm/Team-2---BWIII)
     "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
     "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
     "genre": ["Drama", "Historical Fiction", "Mystery"],
@@ -249,7 +239,6 @@
       "image_url": null,
       "created_at": "2024-06-12",
       "story": {
-<<<<<<< HEAD
           "part1": "Ti ritrovi davanti al maestoso Castello delle Ombre, con le sue torri che si ergono minacciose verso il cielo. Cosa farai?",
           "firstChoice": {
               "choice1": "Decidi di esplorare le tenebrose stanze del castello, attirato dal suo mistero.",
@@ -274,32 +263,6 @@
       },
       "slug": "il-castello-delle-ombre",
       "id": 5
-=======
-          "part1": "Sei Luca Rossi, un giovane studioso d'arte appassionato di storia. Durante una visita a una galleria d'arte locale, scopri un dipinto antico e misterioso che sembra nascondere un segreto. Determinato a scoprire la verità dietro la pittura perduta, inizi un viaggio che ti porterà attraverso secoli di storia e mistero. Cosa farai?",
-          "firstChoice": {
-              "choice1": "Inizia la tua ricerca nella città storica, cercando indizi sul dipinto e sul suo creatore",
-              "choice2": "Indaga su antichi manoscritti e documenti per trovare tracce della pittura perduta."
-          },
-          "part2": {
-              "part2A": "Decidi di iniziare la tua ricerca nella città storica, dove scopri che il dipinto è stato creato da un artista misterioso del Rinascimento. Attraverso interviste, ricerche negli archivi e osservazioni sul campo, riesci a rintracciare la storia del dipinto e del suo creatore. Alla fine, scopri un segreto sorprendente che cambierà la tua comprensione dell'arte e della storia.",
-              "part2B": "Mentre cerchi indizi nella città storica, scopri che non sei l'unico interessato alla pittura perduta. Inizi a essere seguito da individui oscuri e minacciosi che vogliono tenere il segreto nascosto. Intrappolato in una rete di intrighi e pericoli, il tuo viaggio diventa una lotta per la sopravvivenza e la verità."
-          },
-          "secondChoice": {
-              "choice1": "Continua la tua ricerca nella città storica.",
-              "choice2": "Rifletti sulle scoperte fatte finora e pianifica la tua prossima mossa per proseguire le indagini.",
-              "choice3": "Intraprendi un'operazione di sorveglianza per identificare gli individui oscuri e minacciosi che ti seguono.",
-              "choice4": "Intensifica la tua ricerca nei manoscritti e documenti per scoprire ulteriori dettagli sulla pittura perduta."
-          },
-          "part3": {
-              "part3A": "Continui la tua ricerca nella città storica, approfondendo ulteriormente la storia del dipinto e del suo creatore. Scopri nuove informazioni che ti portano alla svelatura del mistero.",
-              "part3C": "Decidi di proseguire le tue indagini sui manoscritti e documenti, approfondendo la tua comprensione dell'enigma della pittura perduta. Scopri nuove tracce che ti avvicinano alla soluzione.",
-              "part3B": "Decidi di indagare sugli individui oscuri e minacciosi che ti seguono, cercando di scoprire le loro intenzioni e il legame con la pittura perduta. Questa scelta può portare a ulteriori rischi e pericoli.",
-              "part3D": "Dopo aver riflettuto sulle scoperte fatte finora, decidi di valutare attentamente il prosieguo delle tue ricerche. Questa scelta può portare a un cambiamento di strategia o a una pausa nella tua indagine."
-          }
-      },
-      "slug": "l'enigma-della-pittura-perduta",
-      "Id": 5
->>>>>>> parent of 33477201 (Merge branch 'main' of https://github.com/mrz1mm/Team-2---BWIII)
     },
     {
         "title": "Il Mistero del Vecchio Manicomio",
@@ -535,7 +498,6 @@
               "part3C": "Avvicinandovi alla luce, scoprite un diario che narra i terribili eventi accaduti nella villa. Riuscite a far luce sull'oscurità?",
               "part3D": "Chiamando le autorità, vi rendete conto che la villa è stata abbandonata per anni. Ma cosa nasconde veramente? Gli eventi si precipitano mentre attendete l'arrivo degli agenti."
           }
-<<<<<<< HEAD
       },
       "slug": "il-segreto-della-villa-abbandonata",
       "id": 12
@@ -573,11 +535,6 @@
       },
       "slug": "il-labirinto-oscuro",
       "id": 13
-=======
-      },
-      "slug": "il-segreto-della-villa-abbandonata",
-      "id": 12
->>>>>>> parent of 33477201 (Merge branch 'main' of https://github.com/mrz1mm/Team-2---BWIII)
     }
   ]
 }
