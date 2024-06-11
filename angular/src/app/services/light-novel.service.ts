@@ -71,7 +71,7 @@ export class LightNovelService {
     );
   }
   getNovelsByUserId(userId: number): Observable<iLightNovel[]> {
-  const url = `${this.lightNovelsUrl}?userId=${userId}`;
+  const url = `${this.lightNovelsUrl}?update_by=${userId}`;
   return this.httpSvc.get<iLightNovel[]>(url).pipe(
     catchError((error) => {
       console.error('Error fetching light novels by user id:', error.message);
