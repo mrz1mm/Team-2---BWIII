@@ -88,27 +88,33 @@
   "lightNovels": [
     {
       "title": "Il Segreto del Libro Antico",
-      "plot": "In un mondo pieno di misteri e magia, la scoperta di un antico enigma porta a un'avventura epica alla ricerca del segreto di un libro leggendario. ",
+      "plot": "In un mondo pieno di misteri e magia, la scoperta di un antico enigma porta a un'avventura epica alla ricerca del segreto di un libro leggendario.",
       "description": "Un'avventura interattiva in cui le tue scelte plasmano il destino di Alessio, un giovane bibliotecario desideroso di scoprire la verità.",
-      "genre": [
-        "Mystery",
-        "Adventure",
-        "Fantasy"
-      ],
+      "genre": ["Mystery", "Adventure", "Fantasy"],
       "author": "Federica Martini",
       "image_url": null,
       "created_at": "11/06/2024",
       "story": {
-        "part1": "Ti trovi nella tranquilla cittadina di Villarossa, circondata da una fitta foresta. Sei un giovane bibliotecario di nome Alessio, appartenente a una famiglia di custodi di antichi tomi. Un giorno, mentre stai ordinando i libri nella biblioteca della tua famiglia, scopri un antico pergamena nascosto tra le pagine di un libro polveroso. La pergamena rivela un enigma criptico che sembra riferirsi al leggendario libro antico e al suo nascondiglio segreto. Cosa farai?",
+        "part1": "Ti trovi nella tranquilla cittadina di Villarossa, circondata da una fitta foresta. Sei un giovane bibliotecario di nome Alessio, appartenente a una famiglia di custodi di antichi tomi. Un giorno, mentre stai ordinando i libri nella biblioteca della tua famiglia, scopri un'antica pergamena nascosta tra le pagine di un libro polveroso. La pergamena rivela un enigma criptico che sembra riferirsi al leggendario libro antico e al suo nascondiglio segreto. Cosa farai?",
+        "firstChoice": {
+          "choice1": "Risolvi l'enigma e cerchi il libro antico.",
+          "choice2": "Ignori la pergamena e continui con i tuoi compiti di bibliotecario."
+        },
         "part2": {
-          "part2a": "Risolvi l'enigma e cerchi il libro antico.",
-          "part2b": "ignori la pergamena e continuare con i tuoi compiti di bibliotecario."
+          "part2A": "Decidi di seguire l'enigma e inizi una ricerca per trovare il nascondiglio del libro antico. Il percorso è pieno di ostacoli e insidie, ma alla fine, dopo molte avventure, riesci a trovare il libro antico nascosto in una caverna oscura nel cuore della foresta. Con il libro tra le mani, ti trovi di fronte a un'altra decisione cruciale.",
+          "part2B": "Decidi di ignorare l'enigma e continuare con la tua vita quotidiana. La pergamena rimane un mistero non risolto, ma la tua vita continua senza intoppi."
+        },
+        "secondChoice": {
+          "choice1": "Apri il libro e scopri il suo contenuto.",
+          "choice2": "Chiedi consiglio a un vecchio stregone della foresta.",
+          "choice3": "Coinvolgi un gruppo di avventurieri per aiutarti nella ricerca.",
+          "choice4": "Non apri il libro e lo nascondi di nuovo."
         },
         "part3": {
-          "part3a": "Decidi di seguire l'enigma e inizi una ricerca per trovare il nascondiglio del libro antico. Il percorso è pieno di ostacoli e insidie, ma alla fine, dopo molte avventure, riesci a trovare il libro antico nascosto in una caverna oscura nel cuore della foresta. Dopo averlo recuperato, decidi di aprirlo e scoprire il suo contenuto. Dentro, trovi incantamenti e incantesimi dimenticati da secoli, ma anche avvertimenti su come usare il potere contenuto con saggezza. Decidi di condividere la tua scoperta con gli abitanti di Villarossa, portando prosperità e pace alla tua città natale.",
-          "part3b": "Decidi di ignorare l'enigma e continuare con la tua vita quotidiana. La pergamena rimane un mistero non risolto, ma la tua vita continua senza intoppi. ",
-          "part3c": "Decidi di chiedere consiglio a un vecchio stregone della foresta. Il saggio stregone ti rivela che l'enigma porta al pericolo e ti avverte di lasciar perdere la ricerca. Decidi di seguire il suo consiglio e di dimenticare il libro antico, ma la curiosità ti consuma giorno dopo giorno, fino a quando non decidi di tornare indietro e risolvere l'enigma da solo. Purtroppo, quando torni alla caverna, trovi solo un mucchio di rovine e non riesci mai a scoprire il segreto del libro antico",
-          "part3d": "Decidi di coinvolgere un gruppo di avventurieri per aiutarti nella ricerca del libro antico. Insieme, affrontate pericoli e ostacoli, ma alla fine riuscite a trovare il libro e a svelarne il segreto. Dentro, scoprite un incantesimo per aprire un portale verso un mondo magico sconosciuto. Decidete di attraversare il portale insieme e iniziate una nuova avventura nel mondo magico, lasciando dietro di voi la vita ordinaria di Villarossa."
+          "part3A": "Dentro il libro, trovi incantamenti e incantesimi dimenticati da secoli, ma anche avvertimenti su come usare il potere contenuto con saggezza. Decidi di condividere la tua scoperta con gli abitanti di Villarossa, portando prosperità e pace alla tua città natale.",
+          "part3B": "Il saggio stregone ti rivela che l'enigma porta al pericolo e ti avverte di lasciar perdere la ricerca. Decidi di seguire il suo consiglio e di dimenticare il libro antico, ma la curiosità ti consuma giorno dopo giorno, fino a quando non decidi di tornare indietro e risolvere l'enigma da solo. Purtroppo, quando torni alla caverna, trovi solo un mucchio di rovine e non riesci mai a scoprire il segreto del libro antico.",
+          "part3C": "Insieme agli avventurieri, affrontate pericoli e ostacoli, ma alla fine riuscite a trovare il libro e a svelarne il segreto. Dentro, scoprite un incantesimo per aprire un portale verso un mondo magico sconosciuto. Decidete di attraversare il portale insieme e iniziate una nuova avventura nel mondo magico, lasciando dietro di voi la vita ordinaria di Villarossa.",
+          "part3D": "Continui la tua vita da bibliotecario, ma con la consapevolezza che un grande segreto è in tuo possesso. Tuttavia, non resisti alla tentazione e anni dopo, decidi di aprire il libro. Trovi che il tempo ha alterato il suo contenuto e molti dei suoi segreti sono ormai perduti."
         }
       },
       "slug": "il-segreto-del-libro-antico",
@@ -118,11 +124,7 @@
       "title": "L'Ultimo Viaggio della Spada Perduta",
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
-      "genre": [
-        "Post-Apocalyptic",
-        "Adventure",
-        "Fantasy"
-      ],
+      "genre": ["Post-Apocalyptic", "Adventure", "Fantasy"],
       "author": "Giovanni Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -146,11 +148,7 @@
       "title": "La Città degli Antichi",
       "plot": "In un mondo futuristico, un esploratore si immerge nelle rovine di una città sconosciuta, scoprendo segreti sepolti da millenni",
       "description": "Un'avventura fantascientifica ricca di enigmi e scoperte sorprendenti.",
-      "genre": [
-        "Sci-Fi",
-        "Adventure",
-        "Mystery"
-      ],
+      "genre": ["Sci-Fi", "Adventure", "Mystery"],
       "author": "Luca Ferrari",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -174,11 +172,7 @@
       "title": "L'Ultimo Viaggio della Spada Perduta",
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
-      "genre": [
-        "Post-Apocalyptic",
-        "Adventure",
-        "Fantasy"
-      ],
+      "genre": ["Post-Apocalyptic", "Adventure", "Fantasy"],
       "author": "Giovanni Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -202,10 +196,7 @@
       "title": "Il Quadro dell'Amore Perduto",
       "plot": "In una tranquilla cittadina, un giovane artista scopre un quadro che racconta una storia d'amore antica e struggente.",
       "description": "Un racconto romantico e commovente che attraversa il tempo e lo spazio",
-      "genre": [
-        "Drama",
-        "Romance"
-      ],
+      "genre": ["Drama", "Romance"],
       "author": "Laura Colombo",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -229,11 +220,7 @@
       "title": "L'Enigma della Pittura Perduta",
       "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
       "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
-      "genre": [
-        "Drama",
-        "Historical Fiction",
-        "Mystery"
-      ],
+      "genre": ["Drama", "Historical Fiction", "Mystery"],
       "author": "Marco Russo",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -241,7 +228,7 @@
         "part1": "Sei Luca Rossi, un giovane studioso d'arte appassionato di storia. Durante una visita a una galleria d'arte locale, scopri un dipinto antico e misterioso che sembra nascondere un segreto. Determinato a scoprire la verità dietro la pittura perduta, inizi un viaggio che ti porterà attraverso secoli di storia e mistero.Cosa farai?",
         "part2": {
           "part2a": "Inizia la tua ricerca nella città storica, cercando indizi sul dipinto e sul suo creatore",
-          "part2b":"Indaga su antichi manoscritti e documenti per trovare tracce della pittura perduta."
+          "part2b": "Indaga su antichi manoscritti e documenti per trovare tracce della pittura perduta."
         },
         "part3": {
           "part3a": "Decidi di iniziare la tua ricerca nella città storica, dove scopri che il dipinto è stato creato da un artista misterioso del Rinascimento. Attraverso interviste, ricerche negli archivi e osservazioni sul campo, riesci a rintracciare la storia del dipinto e del suo creatore. Alla fine, scopri un segreto sorprendente che cambierà la tua comprensione dell'arte e della storia.",
@@ -257,11 +244,7 @@
       "title": "Il Mistero del Vecchio Manicomio",
       "plot": "In una cittadina sonnolenta, un detective affronta un caso oscuro legato a un vecchio manicomio abbandonato, dove i confini tra realtà e sovrannaturale si sfumano",
       "description": "Un thriller psicologico avvincente con elementi sovrannaturali e misteri irrisolti.",
-      "genre": [
-        "Crime",
-        "Supernatural",
-        "Psychological"
-      ],
+      "genre": ["Crime", "Supernatural", "Psychological"],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -269,7 +252,7 @@
         "part1": "Sei John Smith, un detective che ha visto di tutto. Ma nulla ti ha preparato al caso del Vecchio Manicomio. Nella sonnolenta cittadina di Blackwood, una serie di omicidi insoliti portano l'attenzione su un vecchio manicomio abbandonato ai margini della città. Il manicomio è stato chiuso da decenni, ma ci sono voci di attività sinistre e presenze spettrali all'interno. Sarai tu a investigare su questa oscura vicenda?",
         "part2": {
           "part2a": "Esplora il vecchio manicomio e cerca indizi sulle strane attività che vi hanno luogo",
-          "part2b":"Interroga i residenti locali e studia la storia del manicomio per scoprire eventi passati che potrebbero essere collegati agli omicidi."
+          "part2b": "Interroga i residenti locali e studia la storia del manicomio per scoprire eventi passati che potrebbero essere collegati agli omicidi."
         },
         "part3": {
           "part3a": "Decidi di esplorare il vecchio manicomio, armato solo della tua determinazione e della tua torcia. Le ombre sembrano muoversi e i suoni echeggiano tra i corridoi vuoti. Mentre cerchi indizi, ti imbatti in eventi che sfidano la tua comprensione della realtà. Alla fine, affronti la verità terrificante che si cela dietro le mura del manicomio e risolvi il caso, anche se a un prezzo molto alto.",
@@ -285,11 +268,7 @@
       "title": "Le Terre Desolate",
       "plot": "In un mondo devastato dalle guerre e dalle catastrofi, un gruppo di sopravvissuti cerca di creare un futuro migliore nelle terre desolate",
       "description": "Un'avventura epica di sopravvivenza e speranza in un mondo post-apocalittico.",
-      "genre": [
-        "Survival",
-        "Post-Apocalyptic",
-        "Dystopian"
-      ],
+      "genre": ["Survival", "Post-Apocalyptic", "Dystopian"],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -297,7 +276,7 @@
         "part1": "Dopo la fine del mondo come lo conoscevamo, la civiltà è collassata e il mondo è diventato un luogo desolato e ostile. Tu sei uno dei pochi sopravvissuti, determinato a non arrenderti alla disperazione. Reunisci un gruppo di altri sopravvissuti e insieme vi mettete in viaggio attraverso le terre desolate, cercando un luogo sicuro dove poter iniziare una nuova vita. Qual è la tua mossa?",
         "part2": {
           "part2a": "Esplora le città in rovina alla ricerca di risorse e alleati.",
-          "part2b":"Dirigiti verso le regioni rurali in cerca di un rifugio naturale lontano dal caos urbano."
+          "part2b": "Dirigiti verso le regioni rurali in cerca di un rifugio naturale lontano dal caos urbano."
         },
         "part3": {
           "part3a": "Decidi di esplorare le città in rovina, nonostante i pericoli e le minacce che vi si nascondono. Durante la tua ricerca, incontri sia risorse preziose che nuovi alleati disposti a unirsi alla tua causa. Ma il percorso è pericoloso e non tutti riescono a sopravvivere alle minacce del mondo post-apocalittico. Alla fine, riesci a trovare un rifugio sicuro e a iniziare la tua nuova vita.",
@@ -313,11 +292,7 @@
       "title": "Il Mistero della Foresta Incantata",
       "plot": "In una foresta incantata, un viaggiatore si imbatte in un antico segreto che cambierà per sempre il suo destino.",
       "description": "Un'avventura magica e misteriosa che ti porterà in luoghi incredibili e ti farà scoprire segreti nascosti",
-      "genre": [
-        "Adventure",
-        "Fantasy",
-        "Horror"
-      ],
+      "genre": ["Adventure", "Fantasy", "Horror"],
       "author": "Matteo Ricci",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -325,7 +300,7 @@
         "part1": "Sei un viaggiatore solitario che si avventura nella misteriosa Foresta Incantata, una terra piena di magia e creature straordinarie. Durante il tuo viaggio, incontri un bivio: un sentiero oscuro che si inoltra nella foresta e un sentiero illuminato che porta al villaggio più vicino. Cosa farai?",
         "part2": {
           "part2a": "Segui il sentiero oscuro e avventurati più a fondo nella foresta.",
-          "part2b":"Prendi il sentiero illuminato e raggiungi il villaggio."
+          "part2b": "Prendi il sentiero illuminato e raggiungi il villaggio."
         },
         "part3": {
           "part3a": "Decidi di seguire il sentiero oscuro e inizi una lunga e avventurosa esplorazione della foresta. Lungo il cammino, incontri creature magiche e superi prove difficili. Alla fine, raggiungi una radura segreta al centro della foresta, dove trovi un antico tempio nascosto. Dentro il tempio, scopri un artefatto magico che ti conferisce poteri incredibili e diventi una leggenda vivente della Foresta Incantata.",
@@ -341,11 +316,7 @@
       "title": "La Torre dell'Archimago",
       "plot": "Un giovane apprendista mago si imbarca in un'avventura per svelare i segreti di una misteriosa torre magica.",
       "description": "Un'avventura interattiva ricca di magia, pericoli e scoperte sorprendenti.",
-      "genre": [
-        "Adventure",
-        "Fantasy",
-        "Mystery"
-      ],
+      "genre": ["Adventure", "Fantasy", "Mystery"],
       "author": "Maria Rossi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -353,7 +324,7 @@
         "part1": "Sei Arlen, un giovane apprendista mago desideroso di dimostrare il tuo valore. Un giorno, mentre esplori una foresta vicina, scopri una torre misteriosa emergere improvvisamente dal suolo. Decidi di esplorare la torre per svelare i suoi segreti. Cosa farai?",
         "part2": {
           "part2a": "Entra nella torre e inizia la tua avventura.",
-          "part2b":"Rimani fuori e osserva la torre da lontano."
+          "part2b": "Rimani fuori e osserva la torre da lontano."
         },
         "part3": {
           "part3a": "Decidi di entrare nella torre, ma una volta all'interno, ti ritrovi intrappolato in un labirinto magico senza via d'uscita. Dopo giorni di vagare nel labirinto, ti rendi conto di essere stato ingannato da un incantesimo oscuro. Rimani intrappolato nella torre per sempre.",
