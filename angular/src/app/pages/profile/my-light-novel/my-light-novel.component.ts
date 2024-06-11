@@ -31,5 +31,7 @@ constructor(private lightNovelService:LightNovelService,private authSvc:AuthServ
  }
 
  toggleFavourite(event: Event) {}
+
+
 }
 
