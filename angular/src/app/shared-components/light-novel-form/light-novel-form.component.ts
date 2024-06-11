@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
 import { LightNovelService } from '../../services/light-novel.service';
 import { Router } from '@angular/router';
-import { AuthService } from '../../auth/auth.service';
-import { iUser } from '../../auth/interfaces/i-user';
 
 @Component({
   selector: 'app-light-novel-form',
@@ -13,8 +11,6 @@ import { iUser } from '../../auth/interfaces/i-user';
 export class LightNovelFormComponent implements OnInit {
   [x: string]: any;
   createLightNovelForm!: FormGroup;
-
-  user:iUser | null = this.autSVC.getCurrentUser()
 
   alertMessage: string | null = null;
   alertTimeout: any;
@@ -54,8 +50,7 @@ export class LightNovelFormComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private lightNovelSvc: LightNovelService,
-    private router: Router,
-    private autSVC: AuthService
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -66,6 +61,7 @@ export class LightNovelFormComponent implements OnInit {
       genre: this.fb.array(this.genreArr.map(() => this.fb.control(false))),
       author: this.fb.control(null, [Validators.required]),
       image_url: this.fb.control(null, [Validators.required]),
+      created_at: this.fb.control(null, [Validators.required]),
       story: this.fb.group({
         part1: this.fb.control(null, [Validators.required]),
         firstChoice: this.fb.group({
@@ -76,7 +72,7 @@ export class LightNovelFormComponent implements OnInit {
           part2a: this.fb.control(null, [Validators.required]),
           part2b: this.fb.control(null, [Validators.required]),
         }),
-        secondChoice: this.fb.group({
+        secondChoice:this.fb.group({
           secondChoice1: this.fb.control(null, [Validators.required]),
           secondChoice2: this.fb.control(null, [Validators.required]),
           secondChoice3: this.fb.control(null, [Validators.required]),
@@ -89,14 +85,6 @@ export class LightNovelFormComponent implements OnInit {
           part3d: this.fb.control(null, [Validators.required]),
         }),
       }),
-    });
-
-    this.autSVC.user$.subscribe((user) => {
-      if (user) {
-        this.user = user;
-        console.log(this.user)
-      }
-
     });
   }
 
@@ -135,16 +123,16 @@ export class LightNovelFormComponent implements OnInit {
       genre: selectedGenres,
       created_at: this.getTodaysDate(),
       slug: this.slugify(formValue.title),
-      update_by:this.user?.id
+
     };
 
     this.lightNovelSvc.addLightNovel(newLightNovel).subscribe((data) => {
       console.log(data);
     });
     alert('Light Novel creata');
-    this.cleanForum();
     this.redirectToHome();
-    }
+    this.cleanForum();
+  }
 
   cleanForum() {
     this.createLightNovelForm = this.fb.group({
@@ -165,7 +153,7 @@ export class LightNovelFormComponent implements OnInit {
           part2a: [''],
           part2b: [''],
         }),
-        secondChoice: this.fb.group({
+        secondChoice:this.fb.group({
           secondChoice1: [''],
           secondChoice2: [''],
           secondChoice3: [''],
@@ -184,4 +172,30 @@ export class LightNovelFormComponent implements OnInit {
   redirectToHome(): void {
     this.router.navigate(['/home']);
   }
+
+  // showAlert(message: string): void {
+  //   this.alertMessage = message;
+
+  //   // Redirect to home after 10 seconds
+  //   this.alertTimeout = setTimeout(() => {
+  //     this.redirectToHome();
+  //   }, 10000);
+  // }
+
+  // closeAlert(): void {
+  //   this.alertMessage = null;
+
+  //   // Clear the timeout if the alert is closed manually
+  //   if (this.alertTimeout) {
+  //     clearTimeout(this.alertTimeout);
+  //   }
+
+  //   // Redirect to home immediately
+  //   this.redirectToHome();
+  // }
+
+  // isTouchedInvalid(controlName: string): boolean | undefined {
+  //   const control = this.createLightNovelForm.get(controlName);
+  //   return control?.touched && control?.invalid;
+  // }
 }

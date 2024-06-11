@@ -19,12 +19,11 @@ export class HomeComponent {
   ) {}
 
   lightNovelsArray: iLightNovel[] = [];
-  genres: string[] = [];
 
   ngOnInit() {
     this.lightNovelSvc.lightNovels$.subscribe((lightNovels) => {
       this.lightNovelsArray = lightNovels;
-      this.genres = this.lightNovelSvc.getAllGenres();
+      console.log('lightNovelsArray:', this.lightNovelsArray);
     });
   }
 
@@ -44,9 +43,5 @@ export class HomeComponent {
   // Metodo per sostituire gli spazi con trattini
   replaceSpacesWithDashes(input: string): string {
     return input.replace(/ /g, '-');
-  }
-
-  selectedGenre(genre: string) {
-    this.lightNovelsArray = this.lightNovelSvc.getLightNovelsByGenre(genre);
   }
 }
