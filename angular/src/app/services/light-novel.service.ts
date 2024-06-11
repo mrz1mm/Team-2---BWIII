@@ -209,20 +209,6 @@ export class LightNovelService {
       );
   }
 
-  getAllGenres(): string[] {
-    const genres = this.lightNovelsArray.map((lightNovel) => lightNovel.genre);
-    const genresArray = genres.flat();
-    const uniqueGenres = [...new Set(genresArray)];
-    return uniqueGenres.sort();
-  }
-
-  // metodo per ottenere le lightnovel preferite di un utente
-  getLightNovelsByGenre(genre: string): iLightNovel[] {
-    return this.lightNovelsArray.filter((lightNovel) =>
-      lightNovel.genre.includes(genre)
-    );
-  }
-
   // metodo per ottenere il termine di ricerca
   getSearchTerm() {}
 
