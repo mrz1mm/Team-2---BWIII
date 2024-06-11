@@ -44,6 +44,284 @@
     }
   ],
   "lightNovels": [
-
+    {
+      "title": "Il Segreto del Libro Antico",
+      "plot": "In un mondo pieno di misteri e magia, la scoperta di un antico enigma porta a un'avventura epica alla ricerca del segreto di un libro leggendario. ",
+      "description": "Un'avventura interattiva in cui le tue scelte plasmano il destino di Alessio, un giovane bibliotecario desideroso di scoprire la verità.",
+      "genre": [
+        "Mystery",
+        "Adventure",
+        "Fantasy"
+      ],
+      "author": "Federica Martini",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Ti trovi nella tranquilla cittadina di Villarossa, circondata da una fitta foresta. Sei un giovane bibliotecario di nome Alessio, appartenente a una famiglia di custodi di antichi tomi. Un giorno, mentre stai ordinando i libri nella biblioteca della tua famiglia, scopri un antico pergamena nascosto tra le pagine di un libro polveroso. La pergamena rivela un enigma criptico che sembra riferirsi al leggendario libro antico e al suo nascondiglio segreto. Cosa farai?",
+        "part2": {
+          "part2a": "Risolvi l'enigma e cerchi il libro antico.",
+          "part2b": "ignori la pergamena e continuare con i tuoi compiti di bibliotecario."
+        },
+        "part3": {
+          "part3a": "Decidi di seguire l'enigma e inizi una ricerca per trovare il nascondiglio del libro antico. Il percorso è pieno di ostacoli e insidie, ma alla fine, dopo molte avventure, riesci a trovare il libro antico nascosto in una caverna oscura nel cuore della foresta. Dopo averlo recuperato, decidi di aprirlo e scoprire il suo contenuto. Dentro, trovi incantamenti e incantesimi dimenticati da secoli, ma anche avvertimenti su come usare il potere contenuto con saggezza. Decidi di condividere la tua scoperta con gli abitanti di Villarossa, portando prosperità e pace alla tua città natale.",
+          "part3b": "Decidi di ignorare l'enigma e continuare con la tua vita quotidiana. La pergamena rimane un mistero non risolto, ma la tua vita continua senza intoppi. ",
+          "part3c": "Decidi di chiedere consiglio a un vecchio stregone della foresta. Il saggio stregone ti rivela che l'enigma porta al pericolo e ti avverte di lasciar perdere la ricerca. Decidi di seguire il suo consiglio e di dimenticare il libro antico, ma la curiosità ti consuma giorno dopo giorno, fino a quando non decidi di tornare indietro e risolvere l'enigma da solo. Purtroppo, quando torni alla caverna, trovi solo un mucchio di rovine e non riesci mai a scoprire il segreto del libro antico",
+          "part3d": "Decidi di coinvolgere un gruppo di avventurieri per aiutarti nella ricerca del libro antico. Insieme, affrontate pericoli e ostacoli, ma alla fine riuscite a trovare il libro e a svelarne il segreto. Dentro, scoprite un incantesimo per aprire un portale verso un mondo magico sconosciuto. Decidete di attraversare il portale insieme e iniziate una nuova avventura nel mondo magico, lasciando dietro di voi la vita ordinaria di Villarossa."
+        }
+      },
+      "slug": "il-segreto-del-libro-antico",
+      "id": 1
+    },
+    {
+      "title": "L'Ultimo Viaggio della Spada Perduta",
+      "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
+      "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
+      "genre": [
+        "Post-Apocalyptic",
+        "Adventure",
+        "Fantasy"
+      ],
+      "author": "Giovanni Bianchi",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Nel mondo devastato da cataclismi e guerre, sei un eroe solitario con una missione epica: trovare l'antica Spada Perduta, leggendaria arma di potere, e usarla per fermare la distruzione e portare la speranza alla tua gente. Il tuo viaggio inizia in una città in rovina, dove sei determinato a trovare indizi sulla posizione della spada. Cosa farai?",
+        "part2": {
+          "part2a": "Esplora le rovine della città alla ricerca di indizi.",
+          "part2b": "Cerca informazioni da mercanti e viaggiatori sulle terre selvagge al di fuori della città."
+        },
+        "part3": {
+          "part3a": "Decidi di esplorare le rovine della città, dove incontri pericoli e sorprese. Tra le macerie, trovi una mappa antica che indica la posizione della Spada Perduta in una caverna nascosta nelle montagne. Il tuo viaggio diventa sempre più pericoloso, ma alla fine, dopo molte prove, raggiungi la caverna e trovi la spada. Con essa, affronti le forze del male che minacciano il tuo mondo e diventi un eroe leggendario.",
+          "part3b": "Mentre esplori le rovine della città, sei catturato da una banda di predoni che ti tengono prigioniero per mesi. Durante la prigionia, perdi ogni speranza di trovare la Spada Perduta e il tuo destino si consuma nell'oscurità ",
+          "part3c": "Decidi di avventurarti nelle terre selvagge al di fuori della città, dove incontri tribù nomadi, creature selvagge e antichi guardiani della conoscenza. Attraverso i tuoi incontri, scopri che la Spada Perduta si trova nelle terre desolate del deserto. Dopo un lungo viaggio attraverso il deserto, raggiungi la tomba dei Re Antichi, dove trovi la spada tra le rovine. Con la spada in mano, torni nella tua terra natale e conduci la tua gente verso una nuova era di prosperità e pace",
+          "part3d": "Nelle terre selvagge al di fuori della città, incontri un potente stregone che ti offre il potere e la gloria in cambio della tua lealtà. Accetti l'offerta, ma presto scopri che il potere del stregone è corrotto e porta solo distruzione. Diventi uno strumento nelle mani del male e il tuo nome diventa sinonimo di terrore e morte."
+        }
+      },
+      "slug": "l-ultimo-viaggio-della-spada-perduta",
+      "id": 2
+    },
+    {
+      "title": "La Città degli Antichi",
+      "plot": "In un mondo futuristico, un esploratore si immerge nelle rovine di una città sconosciuta, scoprendo segreti sepolti da millenni",
+      "description": "Un'avventura fantascientifica ricca di enigmi e scoperte sorprendenti.",
+      "genre": [
+        "Sci-Fi",
+        "Adventure",
+        "Mystery"
+      ],
+      "author": "Luca Ferrari",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "In un futuro lontano, sei un audace esploratore che si avventura nelle terre inesplorate del pianeta. Durante una delle tue esplorazioni, scopri le rovine di una città antica e avanzata, sepolta sotto il terreno da millenni. Attratto dalla promessa di scoperte straordinarie, decidi di esplorare la città degli antichi. Cosa farai?",
+        "part2": {
+          "part2a": "Entra nelle rovine della città e inizia la tua esplorazione.",
+          "part2b": "Indaga sulle rovine dall'esterno, cercando informazioni da altre fonti."
+        },
+        "part3": {
+          "part3a": "Decidi di entrare direttamente nelle rovine della città. Mentre esplori i labirintici corridoi e le sale decadenti, incontri tecnologie avanzate e enigmi insolubili. Alla fine, raggiungi il nucleo della città e scopri una verità sorprendente sulla sua caduta. Con le tue scoperte, lanci una nuova era di progresso e conoscenza per l'intera umanità.",
+          "part3b": "Mentre esplori le rovine della città, ti imbatti in una rete intricata di trappole e dispositivi di difesa avanzati. Intrappolato nelle macchine della città antica, perdi ogni speranza di fuga e il tuo destino si consuma tra le rovine. ",
+          "part3c": "Preferisci investigare sulle rovine dall'esterno, cercando informazioni da altre fonti. Durante le tue indagini, incontri antichi manufatti e registrazioni di una civiltà perduta. Con il passare del tempo, assembli un puzzle di indizi che rivela la vera natura della città degli antichi. Le tue scoperte cambiano la comprensione dell'umanità sulla propria storia e la sua posizione nell'universo.",
+          "part3d": "Investigando le rovine dall'esterno, attiri l'attenzione di una fazione ostile che vuole proteggere i segreti della città degli antichi a tutti i costi. Sei costretto a fuggire per salvare la tua vita e, mentre sfuggi ai tuoi inseguitori, scopri che la città nasconde minacce più grandi di quanto avessi mai immaginato."
+        }
+      },
+      "slug": "la-citta-degli-antichi",
+      "id": 3
+    },
+    {
+      "title": "L'Ultimo Viaggio della Spada Perduta",
+      "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
+      "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
+      "genre": [
+        "Post-Apocalyptic",
+        "Adventure",
+        "Fantasy"
+      ],
+      "author": "Giovanni Bianchi",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Nel mondo devastato da cataclismi e guerre, sei un eroe solitario con una missione epica: trovare l'antica Spada Perduta, leggendaria arma di potere, e usarla per fermare la distruzione e portare la speranza alla tua gente. Il tuo viaggio inizia in una città in rovina, dove sei determinato a trovare indizi sulla posizione della spada. Cosa farai?",
+        "part2": {
+          "part2a": "Esplora le rovine della città alla ricerca di indizi.",
+          "part2b": "Cerca informazioni da mercanti e viaggiatori sulle terre selvagge al di fuori della città."
+        },
+        "part3": {
+          "part3a": "Decidi di esplorare le rovine della città, dove incontri pericoli e sorprese. Tra le macerie, trovi una mappa antica che indica la posizione della Spada Perduta in una caverna nascosta nelle montagne. Il tuo viaggio diventa sempre più pericoloso, ma alla fine, dopo molte prove, raggiungi la caverna e trovi la spada. Con essa, affronti le forze del male che minacciano il tuo mondo e diventi un eroe leggendario.",
+          "part3b": "Mentre esplori le rovine della città, sei catturato da una banda di predoni che ti tengono prigioniero per mesi. Durante la prigionia, perdi ogni speranza di trovare la Spada Perduta e il tuo destino si consuma nell'oscurità ",
+          "part3c": "Decidi di avventurarti nelle terre selvagge al di fuori della città, dove incontri tribù nomadi, creature selvagge e antichi guardiani della conoscenza. Attraverso i tuoi incontri, scopri che la Spada Perduta si trova nelle terre desolate del deserto. Dopo un lungo viaggio attraverso il deserto, raggiungi la tomba dei Re Antichi, dove trovi la spada tra le rovine. Con la spada in mano, torni nella tua terra natale e conduci la tua gente verso una nuova era di prosperità e pace",
+          "part3d": "Nelle terre selvagge al di fuori della città, incontri un potente stregone che ti offre il potere e la gloria in cambio della tua lealtà. Accetti l'offerta, ma presto scopri che il potere del stregone è corrotto e porta solo distruzione. Diventi uno strumento nelle mani del male e il tuo nome diventa sinonimo di terrore e morte."
+        }
+      },
+      "slug": "l-ultimo-viaggio-della-spada-perduta",
+      "id": 2
+    },
+    {
+      "title": "Il Quadro dell'Amore Perduto",
+      "plot": "In una tranquilla cittadina, un giovane artista scopre un quadro che racconta una storia d'amore antica e struggente.",
+      "description": "Un racconto romantico e commovente che attraversa il tempo e lo spazio",
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "author": "Laura Colombo",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Sei Marco, un giovane artista di talento che vive in una piccola cittadina. Un giorno, mentre esplori un mercatino dell'antiquariato, incontri un quadro che cattura la tua attenzione. Il dipinto sembra narrare una storia d'amore antica e misteriosa. Affascinato dalla bellezza e dalla tristezza del dipinto, decidi di indagare sulla sua origine. Cosa farai?",
+        "part2": {
+          "part2a": "Inizia a cercare indizi sulla storia del quadro nella tua città.",
+          "part2b": "Fai ricerche su internet e contatta esperti per scoprire di più sul dipinto."
+        },
+        "part3": {
+          "part3a": "Decidi di iniziare la tua ricerca nella tua città, parlando con gli anziani e cercando indizi nei luoghi storici. Con il passare del tempo, scopri una leggenda locale che sembra collegata al dipinto. La leggenda racconta di un amore perduto che attraversa i secoli. Determinato a scoprire la verità, continui a scavare nel passato fino a trovare una sconvolgente verità che cambierà per sempre la tua visione del mondo.",
+          "part3b": "Mentre cerchi indizi sulla storia del quadro nella tua città, incontri ostacoli e resistenza da parte di coloro che vogliono mantenere il segreto del dipinto nascosto. Intrappolato in una rete di inganni e tradimenti, il tuo viaggio diventa una lotta per la verità e la sopravvivenza. ",
+          "part3c": "Decidi di fare ricerche su internet e contattare esperti per scoprire di più sul dipinto. Le tue ricerche ti portano a scoprire una serie di indizi e teorie su chi potrebbe essere l'artista e chi potrebbero essere i soggetti del dipinto. Le tue scoperte ti portano in un viaggio emozionante attraverso il tempo e lo spazio, mentre cerchi di svelare il mistero dietro il quadro dell'amore perduto.",
+          "part3d": "Fare ricerche su internet e contattare esperti porta alla luce una serie di teorie e congetture, ma nessuna risposta definitiva. Alla fine, devi decidere se accettare che alcune storie rimarranno per sempre un mistero o continuare a cercare la verità, nonostante le difficoltà."
+        }
+      },
+      "slug": "il-quadro-dell'amore-perduto",
+      "id": 4
+    },
+    {
+      "title": "L'Enigma della Pittura Perduta",
+      "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
+      "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
+      "genre": [
+        "Drama",
+        "Historical Fiction",
+        "Mystery"
+      ],
+      "author": "Marco Russo",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Sei Luca Rossi, un giovane studioso d'arte appassionato di storia. Durante una visita a una galleria d'arte locale, scopri un dipinto antico e misterioso che sembra nascondere un segreto. Determinato a scoprire la verità dietro la pittura perduta, inizi un viaggio che ti porterà attraverso secoli di storia e mistero.Cosa farai?",
+        "part2": {
+          "part2a": "Inizia la tua ricerca nella città storica, cercando indizi sul dipinto e sul suo creatore",
+          "part2b":"Indaga su antichi manoscritti e documenti per trovare tracce della pittura perduta."
+        },
+        "part3": {
+          "part3a": "Decidi di iniziare la tua ricerca nella città storica, dove scopri che il dipinto è stato creato da un artista misterioso del Rinascimento. Attraverso interviste, ricerche negli archivi e osservazioni sul campo, riesci a rintracciare la storia del dipinto e del suo creatore. Alla fine, scopri un segreto sorprendente che cambierà la tua comprensione dell'arte e della storia.",
+          "part3b": "Mentre cerchi indizi nella città storica, scopri che non sei l'unico interessato alla pittura perduta. Inizi a essere seguito da individui oscuri e minacciosi che vogliono tenere il segreto nascosto. Intrappolato in una rete di intrighi e pericoli, il tuo viaggio diventa una lotta per la sopravvivenza e la verità. ",
+          "part3c": "Decidi di indagare su antichi manoscritti e documenti per trovare tracce della pittura perduta. Le tue ricerche ti portano attraverso biblioteche polverose e archivi segreti, dove trovi indizi criptici e frammenti di verità. Con determinazione e pazienza, riesci a ricostruire la storia del dipinto e a risolvere l'enigma secolare.",
+          "part3d": "Le tue ricerche su antichi manoscritti ti conducono a scoperte sorprendenti, ma anche a nuove domande senza risposta. Alla fine, ti ritrovi a dover fare una scelta: continuare a cercare la verità o accettare che alcune cose rimarranno per sempre un mistero."
+        }
+      },
+      "slug": "l'enigma-della-pittura-perduta",
+      "id": 5
+    },
+    {
+      "title": "Il Mistero del Vecchio Manicomio",
+      "plot": "In una cittadina sonnolenta, un detective affronta un caso oscuro legato a un vecchio manicomio abbandonato, dove i confini tra realtà e sovrannaturale si sfumano",
+      "description": "Un thriller psicologico avvincente con elementi sovrannaturali e misteri irrisolti.",
+      "genre": [
+        "Crime",
+        "Supernatural",
+        "Psychological"
+      ],
+      "author": "Chiara Romano",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Sei John Smith, un detective che ha visto di tutto. Ma nulla ti ha preparato al caso del Vecchio Manicomio. Nella sonnolenta cittadina di Blackwood, una serie di omicidi insoliti portano l'attenzione su un vecchio manicomio abbandonato ai margini della città. Il manicomio è stato chiuso da decenni, ma ci sono voci di attività sinistre e presenze spettrali all'interno. Sarai tu a investigare su questa oscura vicenda?",
+        "part2": {
+          "part2a": "Esplora il vecchio manicomio e cerca indizi sulle strane attività che vi hanno luogo",
+          "part2b":"Interroga i residenti locali e studia la storia del manicomio per scoprire eventi passati che potrebbero essere collegati agli omicidi."
+        },
+        "part3": {
+          "part3a": "Decidi di esplorare il vecchio manicomio, armato solo della tua determinazione e della tua torcia. Le ombre sembrano muoversi e i suoni echeggiano tra i corridoi vuoti. Mentre cerchi indizi, ti imbatti in eventi che sfidano la tua comprensione della realtà. Alla fine, affronti la verità terrificante che si cela dietro le mura del manicomio e risolvi il caso, anche se a un prezzo molto alto.",
+          "part3b": "Esplorando il vecchio manicomio, ti trovi a combattere con entità sovrannaturali e forze oscure che minacciano di annientare la tua sanità mentale. In un crescendo di tensione, la linea tra ciò che è reale e ciò che è immaginario diventa sempre più sfumata. Alla fine, non riesci a distinguere tra il vero e il falso, e il mistero del manicomio rimane irrisolto.",
+          "part3c": "Preferisci interrogare i residenti locali e studiare la storia del manicomio. Scopri storie di abusi, tragedie e fenomeni inspiegabili legati al luogo. Mentre scavano nel passato, i pezzi del puzzle cominciano a unirsi, ma la tua mente viene messa alla prova da eventi inquietanti e visioni misteriose. Alla fine, risolvi il caso ma rimani con più domande che risposte",
+          "part3d": "Interrogando i residenti locali e studiando la storia del manicomio, scopri che la verità è più oscura di quanto avessi mai immaginato. Intrappolato in un vortice di complotti e menzogne, l'indagine si trasforma in una lotta per la sopravvivenza contro poteri sovrannaturali che non possono essere spiegati. Alla fine, ti rendi conto che alcune verità sono meglio lasciate sepolte nel passato."
+        }
+      },
+      "slug": "il-mistero-del-vecchio-manicomio",
+      "id": 6
+    },
+    {
+      "title": "Le Terre Desolate",
+      "plot": "In un mondo devastato dalle guerre e dalle catastrofi, un gruppo di sopravvissuti cerca di creare un futuro migliore nelle terre desolate",
+      "description": "Un'avventura epica di sopravvivenza e speranza in un mondo post-apocalittico.",
+      "genre": [
+        "Survival",
+        "Post-Apocalyptic",
+        "Dystopian"
+      ],
+      "author": "Chiara Romano",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Dopo la fine del mondo come lo conoscevamo, la civiltà è collassata e il mondo è diventato un luogo desolato e ostile. Tu sei uno dei pochi sopravvissuti, determinato a non arrenderti alla disperazione. Reunisci un gruppo di altri sopravvissuti e insieme vi mettete in viaggio attraverso le terre desolate, cercando un luogo sicuro dove poter iniziare una nuova vita. Qual è la tua mossa?",
+        "part2": {
+          "part2a": "Esplora le città in rovina alla ricerca di risorse e alleati.",
+          "part2b":"Dirigiti verso le regioni rurali in cerca di un rifugio naturale lontano dal caos urbano."
+        },
+        "part3": {
+          "part3a": "Decidi di esplorare le città in rovina, nonostante i pericoli e le minacce che vi si nascondono. Durante la tua ricerca, incontri sia risorse preziose che nuovi alleati disposti a unirsi alla tua causa. Ma il percorso è pericoloso e non tutti riescono a sopravvivere alle minacce del mondo post-apocalittico. Alla fine, riesci a trovare un rifugio sicuro e a iniziare la tua nuova vita.",
+          "part3b": "Mentre esplori le città in rovina, scopri che non sei solo. Altri gruppi di sopravvissuti competono per le stesse risorse e territori. La lotta per la sopravvivenza diventa una battaglia brutale e senza quartiere, mettendo alla prova la tua fede nella bontà umana. Alla fine, ti rendi conto che il vero nemico potrebbe non essere là fuori, ma dentro di te.",
+          "part3c": "Preferisci dirigerti verso le regioni rurali, sperando di trovare un rifugio naturale lontano dal caos urbano. Lungo il cammino, affronti sfide uniche e pericoli nascosti, ma anche scopri la bellezza sopravvissuta della natura. Con impegno e determinazione, crei un insediamento nelle terre desolate e inizi a costruire un futuro migliore per te e i tuoi compagni sopravvissuti.",
+          "part3d": "Dirigendoti verso le regioni rurali, ti rendi conto che la natura stessa è diventata il tuo peggior nemico. La terra è inospitale e le risorse sono scarse. Con il passare del tempo, le tensioni all'interno del gruppo aumentano e il tuo sogno di un futuro migliore si sfuma lentamente. Alla fine, sei costretto a confrontarti con la dura realtà del mondo post-apocalittico."
+        }
+      },
+      "slug": "le-terre-desolate",
+      "id": 7
+    },
+    {
+      "title": "Il Mistero della Foresta Incantata",
+      "plot": "In una foresta incantata, un viaggiatore si imbatte in un antico segreto che cambierà per sempre il suo destino.",
+      "description": "Un'avventura magica e misteriosa che ti porterà in luoghi incredibili e ti farà scoprire segreti nascosti",
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Horror"
+      ],
+      "author": "Matteo Ricci",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Sei un viaggiatore solitario che si avventura nella misteriosa Foresta Incantata, una terra piena di magia e creature straordinarie. Durante il tuo viaggio, incontri un bivio: un sentiero oscuro che si inoltra nella foresta e un sentiero illuminato che porta al villaggio più vicino. Cosa farai?",
+        "part2": {
+          "part2a": "Segui il sentiero oscuro e avventurati più a fondo nella foresta.",
+          "part2b":"Prendi il sentiero illuminato e raggiungi il villaggio."
+        },
+        "part3": {
+          "part3a": "Decidi di seguire il sentiero oscuro e inizi una lunga e avventurosa esplorazione della foresta. Lungo il cammino, incontri creature magiche e superi prove difficili. Alla fine, raggiungi una radura segreta al centro della foresta, dove trovi un antico tempio nascosto. Dentro il tempio, scopri un artefatto magico che ti conferisce poteri incredibili e diventi una leggenda vivente della Foresta Incantata.",
+          "part3b": "Seguendo il sentiero oscuro, ti ritrovi presto perso nella densa foresta. Mentre cerchi di orientarti, incontri una misteriosa figura incappucciata che ti offre un patto oscuro. Accetti il patto, ma presto scopri che hai venduto la tua anima in cambio di poteri oscuri. La foresta si trasforma in un luogo di terrore e disperazione, e il tuo destino è segnato per sempre.",
+          "part3c": "Decidi di prendere il sentiero illuminato e raggiungi il villaggio più vicino. Una volta lì, scopri che il villaggio è in preda a una terribile maledizione che solo tu puoi rompere. Con l'aiuto degli abitanti del villaggio, sconfiggi il male e riporti la pace nella regione. Per il tuo coraggio e la tua saggezza, diventi un eroe rispettato e amato in tutto il regno.",
+          "part3d": "Scegliendo la sicurezza del sentiero illuminato, raggiungi il villaggio e scopri che è governato da un tiranno malvagio. Decidi di combattere contro l'ingiustizia e unirti a una ribellione segreta per rovesciare il tiranno. Dopo una lunga e dura battaglia, il tiranno è sconfitto e il villaggio è libero. Grazie al tuo coraggio e alla tua leadership, diventi un simbolo di speranza e libertà per tutti gli abitanti del villaggio."
+        }
+      },
+      "slug": "il-mistero-della-foresta-incantata",
+      "id": 8
+    },
+    {
+      "title": "La Torre dell'Archimago",
+      "plot": "Un giovane apprendista mago si imbarca in un'avventura per svelare i segreti di una misteriosa torre magica.",
+      "description": "Un'avventura interattiva ricca di magia, pericoli e scoperte sorprendenti.",
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Mystery"
+      ],
+      "author": "Maria Rossi",
+      "image_url": null,
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "Sei Arlen, un giovane apprendista mago desideroso di dimostrare il tuo valore. Un giorno, mentre esplori una foresta vicina, scopri una torre misteriosa emergere improvvisamente dal suolo. Decidi di esplorare la torre per svelare i suoi segreti. Cosa farai?",
+        "part2": {
+          "part2a": "Entra nella torre e inizia la tua avventura.",
+          "part2b":"Rimani fuori e osserva la torre da lontano."
+        },
+        "part3": {
+          "part3a": "Decidi di entrare nella torre, ma una volta all'interno, ti ritrovi intrappolato in un labirinto magico senza via d'uscita. Dopo giorni di vagare nel labirinto, ti rendi conto di essere stato ingannato da un incantesimo oscuro. Rimani intrappolato nella torre per sempre.",
+          "part3b": "Decidi di entrare nella torre e iniziare la tua avventura. Durante l'esplorazione, incontri una serie di trappole mortali e creature magiche. Tuttavia, la tua determinazione non vacilla e, alla fine, raggiungi il cuore della torre. Lì, trovi un antico archivio di conoscenza segreta, che ti fornisce risposte a domande millenarie e poteri magici inimmaginabili. Diventi il più grande Archimago di tutti i tempi e la tua storia diventa leggenda.",
+          "part3c": "Rimanendo al di fuori della torre, decidi di indagare ulteriormente sul suo mistero. Trovi indizi che ti conducono a una grotta segreta nascosta sotto la torre. Esplorando la grotta, trovi un antico artefatto magico che ti concede poteri straordinari. Con i tuoi nuovi poteri, diventi una leggenda vivente nel regno, anche se la verità sulla torre rimane un mistero",
+          "part3d": "Rimanendo al di fuori della torre, decidi di ritornare al villaggio e riprendere la tua vita quotidiana. Tuttavia, durante il tuo viaggio di ritorno, incontri un gruppo di avventurieri che stanno cercando di svelare il mistero della torre. Decidi di unirti a loro e insieme formate una squadra eccezionale. Attraverso la vostra collaborazione, scoprite i segreti della torre e diventate eroi leggendari nel regno."
+        }
+      },
+      "slug": "la-torre-dell-archimago",
+      "id": 9
+    }
   ]
 }
