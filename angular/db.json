@@ -409,8 +409,42 @@
           "part3d": "dcdcdc"
         }
       },
-      "slug": "cdcdc",
-      "id": 10
+      "slug": "il-segreto-della-villa-abbandonata",
+      "id": 12
+    },
+    {
+      "title": "Il Labirinto Oscuro",
+      "plot": "Ti ritrovi imprigionato in un labirinto misterioso, dove ogni passo può portare alla salvezza o alla perdizione. Affronta le tue paure e prendi decisioni sagge per trovare la via d'uscita.",
+      "description": "In questa avventura interattiva, ti troverai intrappolato in un labirinto oscuro pieno di insidie. Le tue scelte determineranno il tuo destino. Riuscirai a sopravvivere e a trovare la via d'uscita?",
+      "genre": ["Fantasy", "Horror", "Mystery"],
+      "author": "Anonymous",
+      "image_url": null,
+      "created_at": "2024-06-11",
+      "story": {
+        "part1": "Ti svegli in una stanza buia. Non ricordi come sei arrivato qui. Davanti a te si apre un passaggio. Cosa fai?",
+        "firstChoice": {
+          "choice1": "Esplora il passaggio",
+          "choice2": "Resta nella stanza e aspetta"
+        },
+        "part2": {
+          "part2A": "Decidi di esplorare il passaggio. Trovi una mappa del labirinto e una fioca luce che proviene da una direzione. Segui la luce.",
+          "part2B": "Preferisci rimanere nella stanza e aspettare. Dopo un po', la stanza inizia a riempirsi di fumo. Devi fare qualcosa!"
+        },
+        "secondChoice": {
+          "choice1": "Continua a seguire la luce",
+          "choice2": "Torna indietro e cerca un'altra via",
+          "choice3": "Sfonda una parete",
+          "choice4": "Cerca un oggetto utile nella stanza"
+        },
+        "part3": {
+          "part3A": "Seguendo con determinazione la luce, ti avventuri attraverso il passaggio e finalmente trovi una porta. Con il cuore che batte forte, spingi la porta e davanti a te si apre un bagliore accecante. Respiri l'aria fresca mentre esci dal labirinto. Hai finalmente raggiunto la libertà, lasciandoti alle spalle le ombre del labirinto oscuro.",
+          "part3B": "In un momento di incertezza, decidi di tornare indietro per cercare un'altra via, ma le pareti del labirinto sembrano muoversi, cambiando continuamente il percorso. La tua speranza svanisce mentre ti allontani sempre di più dalla speranza di trovare l'uscita. Il labirinto ha il sopravvento, inghiottendoti nelle sue tenebre per sempre.",
+          "part3C": "Con un urto determinato, sfondi la parete e scopri un passaggio segreto che ti conduce a una stanza misteriosa. Al centro della stanza, una luce fioca illumina un antico artefatto magico. Ti avvicini cautamente e lo raccogli tra le mani tremanti, sentendo un potere misterioso fluire attraverso di te. Con questo artefatto, hai la chiave per sfuggire al labirinto e riconquistare la tua libertà.",
+          "part3D": "Con occhi attenti, esplori la stanza e trovi una torcia accesa, emanando una luce fioca che taglia le tenebre del labirinto. Prendi la torcia e senti una sensazione di sicurezza mentre continui la tua avventura, sapendo che ora hai un alleato per affrontare le ombre del labirinto. Passo dopo passo, segui la luce della torcia, pronti a scoprire cosa riserva il destino."
+        }
+      },
+      "slug": "il-labirinto-oscuro",
+      "id": 13
     }
   ]
 }
