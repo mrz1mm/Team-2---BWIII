@@ -22,4 +22,14 @@ constructor(private lightNovelService:LightNovelService,private authSvc:AuthServ
    });
   }
  }
+
+ isFavourite: boolean = false;
+
+ // Metodo per sostituire gli spazi con trattini
+ replaceSpacesWithDashes(input: string): string {
+   return input.replace(/ /g, '-');
+ }
+
+ toggleFavourite(event: Event) {}
 }
+
