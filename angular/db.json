@@ -90,7 +90,11 @@
       "title": "Il Segreto del Libro Antico",
       "plot": "In un mondo pieno di misteri e magia, la scoperta di un antico enigma porta a un'avventura epica alla ricerca del segreto di un libro leggendario.",
       "description": "Un'avventura interattiva in cui le tue scelte plasmano il destino di Alessio, un giovane bibliotecario desideroso di scoprire la verità.",
-      "genre": ["Mystery", "Adventure", "Fantasy"],
+      "genre": [
+        "Mystery",
+        "Adventure",
+        "Fantasy"
+      ],
       "author": "Federica Martini",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -124,7 +128,11 @@
       "title": "L'Ultimo Viaggio della Spada Perduta",
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
-      "genre": ["Post-Apocalyptic", "Adventure", "Fantasy"],
+      "genre": [
+        "Post-Apocalyptic",
+        "Adventure",
+        "Fantasy"
+      ],
       "author": "Giovanni Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -148,7 +156,11 @@
       "title": "La Città degli Antichi",
       "plot": "In un mondo futuristico, un esploratore si immerge nelle rovine di una città sconosciuta, scoprendo segreti sepolti da millenni",
       "description": "Un'avventura fantascientifica ricca di enigmi e scoperte sorprendenti.",
-      "genre": ["Sci-Fi", "Adventure", "Mystery"],
+      "genre": [
+        "Sci-Fi",
+        "Adventure",
+        "Mystery"
+      ],
       "author": "Luca Ferrari",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -172,7 +184,11 @@
       "title": "L'Ultimo Viaggio della Spada Perduta",
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
-      "genre": ["Post-Apocalyptic", "Adventure", "Fantasy"],
+      "genre": [
+        "Post-Apocalyptic",
+        "Adventure",
+        "Fantasy"
+      ],
       "author": "Giovanni Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -196,7 +212,10 @@
       "title": "Il Quadro dell'Amore Perduto",
       "plot": "In una tranquilla cittadina, un giovane artista scopre un quadro che racconta una storia d'amore antica e struggente.",
       "description": "Un racconto romantico e commovente che attraversa il tempo e lo spazio",
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "author": "Laura Colombo",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -220,7 +239,11 @@
       "title": "L'Enigma della Pittura Perduta",
       "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
       "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
-      "genre": ["Drama", "Historical Fiction", "Mystery"],
+      "genre": [
+        "Drama",
+        "Historical Fiction",
+        "Mystery"
+      ],
       "author": "Marco Russo",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -244,7 +267,11 @@
       "title": "Il Mistero del Vecchio Manicomio",
       "plot": "In una cittadina sonnolenta, un detective affronta un caso oscuro legato a un vecchio manicomio abbandonato, dove i confini tra realtà e sovrannaturale si sfumano",
       "description": "Un thriller psicologico avvincente con elementi sovrannaturali e misteri irrisolti.",
-      "genre": ["Crime", "Supernatural", "Psychological"],
+      "genre": [
+        "Crime",
+        "Supernatural",
+        "Psychological"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -268,7 +295,11 @@
       "title": "Le Terre Desolate",
       "plot": "In un mondo devastato dalle guerre e dalle catastrofi, un gruppo di sopravvissuti cerca di creare un futuro migliore nelle terre desolate",
       "description": "Un'avventura epica di sopravvivenza e speranza in un mondo post-apocalittico.",
-      "genre": ["Survival", "Post-Apocalyptic", "Dystopian"],
+      "genre": [
+        "Survival",
+        "Post-Apocalyptic",
+        "Dystopian"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -292,7 +323,11 @@
       "title": "Il Mistero della Foresta Incantata",
       "plot": "In una foresta incantata, un viaggiatore si imbatte in un antico segreto che cambierà per sempre il suo destino.",
       "description": "Un'avventura magica e misteriosa che ti porterà in luoghi incredibili e ti farà scoprire segreti nascosti",
-      "genre": ["Adventure", "Fantasy", "Horror"],
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Horror"
+      ],
       "author": "Matteo Ricci",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -316,7 +351,11 @@
       "title": "La Torre dell'Archimago",
       "plot": "Un giovane apprendista mago si imbarca in un'avventura per svelare i segreti di una misteriosa torre magica.",
       "description": "Un'avventura interattiva ricca di magia, pericoli e scoperte sorprendenti.",
-      "genre": ["Adventure", "Fantasy", "Mystery"],
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Mystery"
+      ],
       "author": "Maria Rossi",
       "image_url": null,
       "created_at": "11/06/2024",
