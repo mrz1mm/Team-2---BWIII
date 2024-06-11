@@ -9,15 +9,17 @@
       <h2>AREA CAROSELLO</h2>
       <splide>
         <splide-slide *ngFor="let lightNovel of lightNovelsArray">
-          <img
-            [src]="
-              '../../../assets/img/lightNovelImg/' +
-              replaceSpacesWithDashes(lightNovel.title) +
-              '.png'
-            "
-            alt="{{ lightNovel.title }}"
-          />
-          <p class="bg-dark text-white">{{ lightNovel.title }}</p>
+          <a routerLink="/lightNovelDetails/{{ lightNovel.id }}">
+            <img
+              [src]="
+                '../../../assets/img/lightNovelImg/' +
+                replaceSpacesWithDashes(lightNovel.title) +
+                '.png'
+              "
+              alt="{{ lightNovel.title }}"
+            />
+            <p class="bg-dark text-white">{{ lightNovel.title }}</p>
+          </a>
         </splide-slide>
       </splide>
     </div>
