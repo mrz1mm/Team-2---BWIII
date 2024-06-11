@@ -9,8 +9,83 @@
         />
         <div class="card-body d-flex flex-column align-items-center mt-4">
           <h5 class="card-title mb-2">Titolo: {{ lightNovel.title }}</h5>
+          <p class="card-text">{{ lightNovel.plot }}</p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Debugging Area -->
+  <div class="row">
+    <div class="col-12">
+      <p>Current Part: {{ currentPart }}</p>
+    </div>
+  </div>
+
+  <!-- Part 1 -->
+  <div class="row" *ngIf="currentPart === 'part1'">
+    <div class="col">
+      <p>{{ lightNovel.story.part1 }}</p>
+      <button class="btn btn-primary" (click)="chooseFirstChoice('choice1')">
+        {{ lightNovel.story.firstChoice.choice1 }}
+      </button>
+      <button class="btn btn-primary" (click)="chooseFirstChoice('choice2')">
+        {{ lightNovel.story.firstChoice.choice2 }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Part 2A -->
+  <div class="row" *ngIf="currentPart === 'part2A'">
+    <div class="col">
+      <p>{{ lightNovel.story.part2.part2A }}</p>
+      <button class="btn btn-primary" (click)="chooseSecondChoice('choice1')">
+        {{ lightNovel.story.secondChoice.choice1 }}
+      </button>
+      <button class="btn btn-primary" (click)="chooseSecondChoice('choice2')">
+        {{ lightNovel.story.secondChoice.choice2 }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Part 2B -->
+  <div class="row" *ngIf="currentPart === 'part2B'">
+    <div class="col">
+      <p>{{ lightNovel.story.part2.part2B }}</p>
+      <button class="btn btn-primary" (click)="chooseSecondChoice('choice3')">
+        {{ lightNovel.story.secondChoice.choice3 }}
+      </button>
+      <button class="btn btn-primary" (click)="chooseSecondChoice('choice4')">
+        {{ lightNovel.story.secondChoice.choice4 }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Part 3A -->
+  <div class="row" *ngIf="currentPart === 'part3A'">
+    <div class="col">
+      <p>{{ lightNovel.story.part3.part3A }}</p>
+    </div>
+  </div>
+
+  <!-- Part 3B -->
+  <div class="row" *ngIf="currentPart === 'part3B'">
+    <div class="col">
+      <p>{{ lightNovel.story.part3.part3B }}</p>
+    </div>
+  </div>
+
+  <!-- Part 3C -->
+  <div class="row" *ngIf="currentPart === 'part3C'">
+    <div class="col">
+      <p>{{ lightNovel.story.part3.part3C }}</p>
+    </div>
+  </div>
+
+  <!-- Part 3D -->
+  <div class="row" *ngIf="currentPart === 'part3D'">
+    <div class="col">
+      <p>{{ lightNovel.story.part3.part3D }}</p>
     </div>
   </div>
 </div>
