@@ -38,6 +38,19 @@
             Inserisci correttamente la descrizione
           </p>
 
+          <label for="author">Inserisci l'autore</label>
+          <input
+            type="text"
+            formControlName="author"
+            class="form-control"
+            placeholder="Write your author..."
+            name="author"
+            id="author"
+          />
+          <p *ngIf="isTouchedInvalid('author')">
+            Inserisci correttamente il nome dell'autore
+          </p>
+
           <div formArrayName="genre">
             <div *ngFor="let genre of genreArr; let i = index">
               <label for="{{ genre }}">{{ genre }}</label>
@@ -155,6 +168,10 @@
 
           <button (click)="addLightNovel()" class="btn btn-primary">
             Crea
+          </button>
+          <button (click)="cleanForum()" class="btn btn-primary">Svuota</button>
+          <button (click)="redirectToHome()" class="btn btn-primary">
+            prova
           </button>
         </form>
       </section>

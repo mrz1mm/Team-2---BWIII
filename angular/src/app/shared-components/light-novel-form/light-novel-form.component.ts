@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
 import { LightNovelService } from '../../services/light-novel.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-light-novel-form',
@@ -8,8 +9,11 @@ import { LightNovelService } from '../../services/light-novel.service';
   styleUrls: ['./light-novel-form.component.scss'],
 })
 export class LightNovelFormComponent implements OnInit {
+  [x: string]: any;
   createLightNovelForm!: FormGroup;
 
+  alertMessage: string | null = null;
+  alertTimeout: any;
   genreArr: string[] = [
     'Fantasy',
     'Sci-Fi',
@@ -45,7 +49,8 @@ export class LightNovelFormComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private lightNovelSvc: LightNovelService
+    private lightNovelSvc: LightNovelService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -113,5 +118,63 @@ export class LightNovelFormComponent implements OnInit {
     this.lightNovelSvc.addLightNovel(newLightNovel).subscribe((data) => {
       console.log(data);
     });
+    alert("Light Novel creata")
+    this.redirectToHome();
+    this.cleanForum();
   }
+
+  cleanForum() {
+    this.createLightNovelForm = this.fb.group({
+      title: [''],
+      plot: [''],
+      description: [''],
+      genre: this.fb.array(this.genreArr.map(() => this.fb.control(false))),
+      author: [''],
+      image_url: [''],
+      created_at: [''],
+      story: this.fb.group({
+        part1: [''],
+        part2: this.fb.group({
+          part2a: [''],
+          part2b: [''],
+        }),
+        part3: this.fb.group({
+          part3a: [''],
+          part3b: [''],
+          part3c: [''],
+          part3d: [''],
+        }),
+      }),
+    });
+  }
+
+  redirectToHome(): void {
+    this.router.navigate(['/home']);
+  }
+
+  // showAlert(message: string): void {
+  //   this.alertMessage = message;
+
+  //   // Redirect to home after 10 seconds
+  //   this.alertTimeout = setTimeout(() => {
+  //     this.redirectToHome();
+  //   }, 10000);
+  // }
+
+  // closeAlert(): void {
+  //   this.alertMessage = null;
+
+  //   // Clear the timeout if the alert is closed manually
+  //   if (this.alertTimeout) {
+  //     clearTimeout(this.alertTimeout);
+  //   }
+
+  //   // Redirect to home immediately
+  //   this.redirectToHome();
+  // }
+
+  // isTouchedInvalid(controlName: string): boolean | undefined {
+  //   const control = this.createLightNovelForm.get(controlName);
+  //   return control?.touched && control?.invalid;
+  // }
 }
