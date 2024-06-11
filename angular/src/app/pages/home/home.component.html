@@ -7,10 +7,33 @@
   </div>
   <div class="row">
     <div class="col-12">
+      <div>
+        <i class="bi bi-list-ul"></i>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
       <h2>LIGHT NOVEL DI STO CA..</h2>
     </div>
     <div class="col" *ngFor="let lightNovel of lightNovelsArray">
       <app-card-home [lightNovelCard]="lightNovel"></app-card-home>
     </div>
+  </div>
+</div>
+
+<div ngbDropdown class="d-inline-block">
+  <button
+    type="button"
+    class="btn btn-outline-primary"
+    id="dropdownBasic1"
+    ngbDropdownToggle
+  >
+    Toggle dropdown
+  </button>
+  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+    <button ngbDropdownItem>Action - 1</button>
+    <button ngbDropdownItem>Another Action</button>
+    <button ngbDropdownItem>Something else is here</button>
   </div>
 </div>
