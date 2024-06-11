@@ -2,7 +2,9 @@
   <a routerLink="/lightNovelDetails/:{{ lightNovelCard.id }}">
     <img
       [src]="
-        '../../../assets/img/lightNovelImg/' + lightNovelCard.title + '.png'
+        '../../../assets/img/lightNovelImg/' +
+        replaceSpacesWithDashes(lightNovelCard.title) +
+        '.png'
       "
       class="card-img-left"
       alt="{{ lightNovelCard.title }}"
