@@ -178,6 +178,32 @@
       },
       "slug": "in-do-autem-non-labo",
       "id": 3
+    },
+    {
+      "title": "Provasasas",
+      "plot": "askndoasjdn",
+      "description": "asodjnfsdojfnsdofjnsdofjn",
+      "genre": [
+        "Detective"
+      ],
+      "author": null,
+      "image_url": "C:\\fakepath\\o3n31so817b71.jpg",
+      "created_at": "11/06/2024",
+      "story": {
+        "part1": "1123123",
+        "part2": {
+          "part2a": "123123123",
+          "part2b": "123123123"
+        },
+        "part3": {
+          "part3a": "123123123",
+          "part3b": "123123123",
+          "part3c": "123123123",
+          "part3d": "123123123"
+        }
+      },
+      "slug": "provasasas",
+      "id": 4
     }
   ],
   "favouriteLightNovels": []

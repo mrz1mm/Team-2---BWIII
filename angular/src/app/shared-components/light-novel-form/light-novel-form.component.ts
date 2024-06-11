@@ -43,7 +43,10 @@ export class LightNovelFormComponent implements OnInit {
     'Noir',
   ];
 
-  constructor(private fb: FormBuilder, private lightNovelSvc: LightNovelService) {}
+  constructor(
+    private fb: FormBuilder,
+    private lightNovelSvc: LightNovelService
+  ) {}
 
   ngOnInit(): void {
     this.createLightNovelForm = this.fb.group({
@@ -73,14 +76,41 @@ export class LightNovelFormComponent implements OnInit {
   get genreControls() {
     return (this.createLightNovelForm.get('genre') as FormArray).controls;
   }
-  isTouchedInvalid(fieldName:string){
-    const field = this.createLightNovelForm.get(fieldName);//Cerco il campo
-    return field?.invalid && field?.touched//Verifico se il campo è valido e se è stato anche toccato
+  isTouchedInvalid(fieldName: string) {
+    const field = this.createLightNovelForm.get(fieldName); //Cerco il campo
+    return field?.invalid && field?.touched; //Verifico se il campo è valido e se è stato anche toccato
   }
 
+  getTodaysDate(): string {
+    const today = new Date();
+    const day = today.getDate().toString().padStart(2, '0');
+    const month = (today.getMonth() + 1).toString().padStart(2, '0');
+    const year = today.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
+
+  slugify(str: string): string {
+    str = str.replace(/^\s+|\s+$/g, ''); // trim leading/trailing white space
+    str = str.toLowerCase(); // convert string to lowercase
+    str = str
+      .replace(/[^a-z0-9 -]/g, '') // remove any non-alphanumeric characters
+      .replace(/\s+/g, '-') // replace spaces with hyphens
+      .replace(/-+/g, '-'); // remove consecutive hyphens
+    return str;
+  }
 
   addLightNovel() {
-    this.lightNovelSvc.addLightNovel(this.createLightNovelForm.value).subscribe((data) => {
+    const formValue = this.createLightNovelForm.value;
+    const selectedGenres = this.genreArr.filter((_, i) => formValue.genre[i]);
+
+    const newLightNovel = {
+      ...formValue,
+      genre: selectedGenres,
+      created_at: this.getTodaysDate(),
+      slug: this.slugify(formValue.title),
+    };
+
+    this.lightNovelSvc.addLightNovel(newLightNovel).subscribe((data) => {
       console.log(data);
     });
   }
