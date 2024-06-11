@@ -123,6 +123,7 @@ export class LightNovelFormComponent implements OnInit {
       genre: selectedGenres,
       created_at: this.getTodaysDate(),
       slug: this.slugify(formValue.title),
+
     };
 
     this.lightNovelSvc.addLightNovel(newLightNovel).subscribe((data) => {
