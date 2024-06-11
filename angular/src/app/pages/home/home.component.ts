@@ -1,4 +1,3 @@
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { LightNovelService } from '../../services/light-novel.service';
