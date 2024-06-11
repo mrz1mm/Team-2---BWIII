@@ -197,7 +197,7 @@
       "id": 3
     },
     {
-       "title": "L'Enigma della Pittura Perduta",
+       "title": "Il Quadro dell'Amore Perduto",
     "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
     "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
     "genre": ["Drama", "Historical Fiction", "Mystery"],
@@ -231,42 +231,38 @@
       "id": 4
     },
     {
-      "title": "L'Enigma della Pittura Perduta",
-      "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
-      "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
-      "genre": [
-        "Drama",
-        "Historical Fiction",
-        "Mystery"
-      ],
-      "author": "Marco Russo",
+      "title": "Il Castello delle Ombre",
+      "plot": "In un remoto regno avvolto dalle tenebre, un avventuriero si trova di fronte a un antico castello avvolto dal mistero.",
+      "description": "Un'avventura piena di suspense e segreti nascosti in un mondo oscuro.",
+      "genre": ["Horror", "Mystery", "Supernatural"],
+      "author": "Marco Rossi",
       "image_url": null,
-      "created_at": "11/06/2024",
+      "created_at": "2024-06-12",
       "story": {
-          "part1": "Sei Luca Rossi, un giovane studioso d'arte appassionato di storia. Durante una visita a una galleria d'arte locale, scopri un dipinto antico e misterioso che sembra nascondere un segreto. Determinato a scoprire la verità dietro la pittura perduta, inizi un viaggio che ti porterà attraverso secoli di storia e mistero. Cosa farai?",
+          "part1": "Ti ritrovi davanti al maestoso Castello delle Ombre, con le sue torri che si ergono minacciose verso il cielo. Cosa farai?",
           "firstChoice": {
-              "choice1": "Inizia la tua ricerca nella città storica, cercando indizi sul dipinto e sul suo creatore",
-              "choice2": "Indaga su antichi manoscritti e documenti per trovare tracce della pittura perduta."
+              "choice1": "Decidi di esplorare le tenebrose stanze del castello, attirato dal suo mistero.",
+              "choice2": "Preferisci allontanarti dal castello e cercare rifugio altrove."
           },
           "part2": {
-              "part2A": "Decidi di iniziare la tua ricerca nella città storica, dove scopri che il dipinto è stato creato da un artista misterioso del Rinascimento. Attraverso interviste, ricerche negli archivi e osservazioni sul campo, riesci a rintracciare la storia del dipinto e del suo creatore. Alla fine, scopri un segreto sorprendente che cambierà la tua comprensione dell'arte e della storia.",
-              "part2B": "Mentre cerchi indizi nella città storica, scopri che non sei l'unico interessato alla pittura perduta. Inizi a essere seguito da individui oscuri e minacciosi che vogliono tenere il segreto nascosto. Intrappolato in una rete di intrighi e pericoli, il tuo viaggio diventa una lotta per la sopravvivenza e la verità."
+              "part2A": "Ti addentri coraggiosamente nelle profondità oscure del castello, affrontando le sue insidie e gli orrori che si nascondono tra le ombre.",
+              "part2B": "Opti per allontanarti dal castello, ma mentre ti allontani, senti una strana attrazione che ti spinge a tornare indietro e ad esplorare il suo oscuro passato."
           },
           "secondChoice": {
-              "choice1": "Continua la tua ricerca nella città storica.",
-              "choice2": "Rifletti sulle scoperte fatte finora e pianifica la tua prossima mossa per proseguire le indagini.",
-              "choice3": "Intraprendi un'operazione di sorveglianza per identificare gli individui oscuri e minacciosi che ti seguono.",
-              "choice4": "Intensifica la tua ricerca nei manoscritti e documenti per scoprire ulteriori dettagli sulla pittura perduta."
+              "choice1": "Continui la tua esplorazione del castello, determinato a svelare i suoi segreti.",
+              "choice2": "Decidi di ritirarti, temendo per la tua incolumità.",
+              "choice3": "Cerchi di trovare una via d'uscita alternativa dal castello, evitando ulteriori pericoli.",
+              "choice4": "Ricerca una mappa o indizi che possano aiutarti a comprendere meglio il mistero del castello."
           },
           "part3": {
-              "part3A": "Continui la tua ricerca nella città storica, approfondendo ulteriormente la storia del dipinto e del suo creatore. Scopri nuove informazioni che ti portano alla svelatura del mistero.",
-              "part3C": "Decidi di proseguire le tue indagini sui manoscritti e documenti, approfondendo la tua comprensione dell'enigma della pittura perduta. Scopri nuove tracce che ti avvicinano alla soluzione.",
-              "part3B": "Decidi di indagare sugli individui oscuri e minacciosi che ti seguono, cercando di scoprire le loro intenzioni e il legame con la pittura perduta. Questa scelta può portare a ulteriori rischi e pericoli.",
-              "part3D": "Dopo aver riflettuto sulle scoperte fatte finora, decidi di valutare attentamente il prosieguo delle tue ricerche. Questa scelta può portare a un cambiamento di strategia o a una pausa nella tua indagine."
+              "part3A": "Esplorando le profondità del castello, scopri una cripta segreta contenente antichi manoscritti che rivelano la verità dietro il suo oscuro passato.",
+              "part3B": "Mentre esci dal castello, senti un'oscura presenza che ti segue. Tuttavia, riesci a fuggire, portando con te solo un vago senso di inquietudine.",
+              "part3C": "Trovi una via d'uscita alternativa, ma lungo il percorso scopri un oscuro segreto che getta luce sulla vera natura del castello.",
+              "part3D": "Dopo una lunga ricerca, trovi una mappa che rivela un passaggio segreto nel castello. Esplorandolo, scopri un tesoro nascosto, ma anche una terribile maledizione che minaccia chiunque osi disturbarlo."
           }
       },
-      "slug": "l'enigma-della-pittura-perduta",
-      "Id": 5
+      "slug": "il-castello-delle-ombre",
+      "id": 5
     },
     {
         "title": "Il Mistero del Vecchio Manicomio",
