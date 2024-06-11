@@ -71,9 +71,9 @@
     ></button>
   </div>
   <div class="modal-body">
-    Sei sicuro di voler eliminare l'utente
+    Are you sure you want to delete the user
     <strong>{{ userToDelete?.firstName }}</strong
-    >? Per confermare, digita il nome dell'utente:
+    >? To confirm, type the user's name:
     <input
       type="text"
       [(ngModel)]="confirmName"
@@ -87,14 +87,14 @@
       class="btn btn-secondary"
       (click)="modal.dismiss('cancel click')"
     >
-      Annulla
+      Cancel
     </button>
     <button
       class="btn btn-danger"
       [disabled]="confirmName !== userToDelete.username"
       (click)="confirmDelete(modal)"
     >
-      Elimina
+      Delete
     </button>
   </div>
 </ng-template>
