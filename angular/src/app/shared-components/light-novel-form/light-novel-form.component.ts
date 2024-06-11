@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
+import { LightNovelService } from '../../services/light-novel.service';
 
 @Component({
   selector: 'app-light-novel-form',
@@ -42,7 +43,7 @@ export class LightNovelFormComponent implements OnInit {
     'Noir',
   ];
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private lightNovelSvc: LightNovelService) {}
 
   ngOnInit(): void {
     this.createLightNovelForm = this.fb.group({
@@ -71,5 +72,16 @@ export class LightNovelFormComponent implements OnInit {
 
   get genreControls() {
     return (this.createLightNovelForm.get('genre') as FormArray).controls;
+  }
+  isTouchedInvalid(fieldName:string){
+    const field = this.createLightNovelForm.get(fieldName);//Cerco il campo
+    return field?.invalid && field?.touched//Verifico se il campo è valido e se è stato anche toccato
+  }
+
+
+  addLightNovel() {
+    this.lightNovelSvc.addLightNovel(this.createLightNovelForm.value).subscribe((data) => {
+      console.log(data);
+    });
   }
 }

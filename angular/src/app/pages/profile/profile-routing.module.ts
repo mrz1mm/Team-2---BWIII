@@ -12,7 +12,7 @@ const routes: Routes = [
     component: CreateLightNovelComponent,
   },
   {
-    path: 'favorites',
+    path: 'favourites',
     component: FavouritesComponent,
   },
   {

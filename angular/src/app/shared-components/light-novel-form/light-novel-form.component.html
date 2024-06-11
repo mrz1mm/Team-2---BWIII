@@ -14,7 +14,9 @@
             name="title"
             id="title"
           />
-
+          <p *ngIf="isTouchedInvalid('title')">
+            Inserisci correttamente il titolo
+          </p>
           <label for="plot">Inserisci una breve trama</label>
           <textarea
             name="plot"
@@ -22,7 +24,9 @@
             class="form-control"
             id="plot"
           ></textarea>
-
+          <p *ngIf="isTouchedInvalid('plot')">
+            Inserisci correttamente la trama
+          </p>
           <label for="description">Inserisci una breve descrizione</label>
           <textarea
             name="description"
@@ -30,16 +34,9 @@
             class="form-control"
             id="description"
           ></textarea>
-
-          <div *ngFor="let genre of genreArr; let i = index">
-            <label for="{{ genre }}">{{ genre }}</label>
-            <input
-              type="checkbox"
-              formControlName="{{ genre }}"
-              value="{{ genre }}"
-              id="{{ genre }}"
-            />
-          </div>
+          <p *ngIf="isTouchedInvalid('description')">
+            Inserisci correttamente la descrizione
+          </p>
 
           <div formArrayName="genre">
             <div *ngFor="let genre of genreArr; let i = index">
@@ -66,6 +63,10 @@
               id="part1"
             />
 
+            <p *ngIf="isTouchedInvalid('story.part1')">
+              Inserisci correttamente la parte interattiva
+            </p>
+
             <div formGroupName="part2">
               <label for="part2a"
                 >Inserisci la seconda sezione (2A) interattiva</label
@@ -77,6 +78,9 @@
                 placeholder="Write the section interactive..."
                 id="part2a"
               />
+              <p *ngIf="isTouchedInvalid('story.part2.part2a')">
+                Inserisci correttamente la parte interattiva
+              </p>
 
               <label for="part2b"
                 >Inserisci la seconda sezione (2B) interattiva</label
@@ -88,6 +92,9 @@
                 placeholder="Write the section interactive..."
                 id="part2b"
               />
+              <p *ngIf="isTouchedInvalid('story.part2.part2b')">
+                Inserisci correttamente la parte interattiva
+              </p>
             </div>
 
             <div formGroupName="part3">
@@ -101,7 +108,9 @@
                 placeholder="Write the section interactive..."
                 id="part3a"
               />
-
+              <p *ngIf="isTouchedInvalid('story.part3.part3a')">
+                Inserisci correttamente la parte interattiva
+              </p>
               <label for="part3b"
                 >Inserisci la terza sezione (3B) interattiva</label
               >
@@ -112,7 +121,9 @@
                 placeholder="Write the section interactive..."
                 id="part3b"
               />
-
+              <p *ngIf="isTouchedInvalid('story.part3.part3b')">
+                Inserisci correttamente la parte interattiva
+              </p>
               <label for="part3c"
                 >Inserisci la terza sezione (3C) interattiva</label
               >
@@ -123,7 +134,9 @@
                 placeholder="Write the section interactive..."
                 id="part3c"
               />
-
+              <p *ngIf="isTouchedInvalid('story.part3.part3c')">
+                Inserisci correttamente la parte interattiva
+              </p>
               <label for="part3d"
                 >Inserisci la terza sezione (3D) interattiva</label
               >
@@ -134,10 +147,15 @@
                 placeholder="Write the section interactive..."
                 id="part3d"
               />
+              <p *ngIf="isTouchedInvalid('story.part3.part3d')">
+                Inserisci correttamente la parte interattiva
+              </p>
             </div>
           </div>
 
-          <button class="btn btn-primary">Crea</button>
+          <button (click)="addLightNovel()" class="btn btn-primary">
+            Crea
+          </button>
         </form>
       </section>
     </div>

@@ -1,0 +1,10 @@
+.container {
+  min-height: 80vh;
+
+  input.ng-invalid.ng-touched {
+    border-color: red;
+  }
+  textarea.ng-invalid.ng-touched {
+    border-color: red;
+  }
+}

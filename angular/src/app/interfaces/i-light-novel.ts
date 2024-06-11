@@ -8,7 +8,7 @@ export interface iLightNovel {
   genre: string[];
   author: string;
   image_url: string;
-  created_at: string;
+  created_at: number;
   story: {
     part1: string;
     part2: {
