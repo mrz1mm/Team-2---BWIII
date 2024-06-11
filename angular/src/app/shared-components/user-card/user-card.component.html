@@ -71,7 +71,7 @@
       </button>
     </div>
     <div class="modal-body">
-      <form #userForm="ngForm" (ngSubmit)="updateUser()"></form>
+      <form #userForm="ngForm" (ngSubmit)="updateUser()">
         <div class="form-group">
           <label for="name">Nome</label>
           <input
@@ -106,8 +106,8 @@
           />
         </div>
         <!-- Aggiungi qui altri campi del form se necessario -->
+        <button (click)="updateUser()">Save</button>
       </form>
     </div>
-    <button (click)="updateUser()">Save</button>
   </ng-template>
 </div>

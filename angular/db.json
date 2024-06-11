@@ -39,8 +39,22 @@
       "userImage": "Cillum labore est au",
       "username": "Quam aspernatur fuga",
       "confirmPassword": "CiaoCiao.88$",
-      "role": "auth",
+      "role": "admin",
       "id": 4
+    },
+    {
+      "email": "xuxuqi@mailinator.com",
+      "password": "$2a$10$QMUSNvkT9WUCK6zcXcs0n.WGcZRA0aQxALUbpjXYLb.3/7x77Ls.O",
+      "name": "Beatae aut consectet",
+      "surname": "Vero odio ut numquam",
+      "gender": "female",
+      "dateBirth": "1977-02-18",
+      "biography": "Magna inventore iust",
+      "userImage": "Similique corrupti ",
+      "username": "Et enim quo aute fug",
+      "confirmPassword": "CiaoCiao.88$",
+      "role": "admin",
+      "id": 5
     }
   ],
   "lightnovel": [],

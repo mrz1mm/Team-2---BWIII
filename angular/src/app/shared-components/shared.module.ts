@@ -5,10 +5,11 @@ import { LightNovelFormComponent } from './light-novel-form/light-novel-form.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardHomeComponent } from './card-home/card-home.component';
 import { UserCardComponent } from './user-card/user-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [LightNovelFormComponent, CardHomeComponent],
-  imports: [CommonModule, RouterModule, ReactiveFormsModule],
-  exports: [CardHomeComponent, LightNovelFormComponent,UserCardComponent],
+  declarations: [LightNovelFormComponent, CardHomeComponent, UserCardComponent],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule,FormsModule],
+  exports: [CardHomeComponent, LightNovelFormComponent, UserCardComponent],
 })
 export class SharedModule {}
