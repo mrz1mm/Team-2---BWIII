@@ -34,8 +34,9 @@
       <div>
         <button
           class="btn btn-secondary btn-sm me-2 buttonTags"
-          *ngFor="let genre of genres"
-          (click)="selectedGenre(genre)"
+          [ngClass]="{ active: activeIndex === i }"
+          (click)="handleButtonClick(i, genre)"
+          *ngFor="let genre of genres; let i = index"
         >
           {{ genre }}
         </button>
@@ -72,7 +73,7 @@
     <div class="col-12">
       <h2>LIGHT NOVEL DI STO CA..</h2>
     </div>
-    <div class="col" *ngFor="let lightNovel of lightNovelsArray">
+    <div class="col" *ngFor="let lightNovel of filteredLightNovelsArray">
       <app-card-home [lightNovelCard]="lightNovel"></app-card-home>
     </div>
   </div>
