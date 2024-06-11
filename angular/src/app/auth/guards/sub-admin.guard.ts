@@ -25,7 +25,7 @@ export class SubAdminGuard {
     ]).pipe(
       // trasformo l'array di combineLatest in un nuovo observable
       switchMap(([user, isLoggedIn]) => {
-        if (isLoggedIn && user?.role === 'admin') {
+        if (isLoggedIn && user?.role === 'sub-admin') {
           return of(true);
         }
         // creo un observable che emette un UrlTree che reindirizza alla pagina di forbidden

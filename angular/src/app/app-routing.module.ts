@@ -1,6 +1,7 @@
 import { AdminGuard } from '../app/auth/guards/admin.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SubAdminGuard } from './auth/guards/sub-admin.guard';
 
 const routes: Routes = [
   {
@@ -33,7 +34,7 @@ const routes: Routes = [
     path: 'users',
     loadChildren: () =>
       import('./pages/users/users.module').then((m) => m.UsersModule),
-    canActivate: [AdminGuard],
+    canActivate: [AdminGuard || SubAdminGuard]
   },
   {
     path: 'page401',
