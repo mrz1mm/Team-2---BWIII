@@ -11,15 +11,25 @@ export interface iLightNovel {
   created_at: string;
   story: {
     part1: string;
+    firstChoice: {
+      choice1: string;
+      choice2: string;
+    };
     part2: {
-      part2a: string;
-      part2b: string;
+      part2A: string;
+      part2B: string;
+    };
+    secondChoice: {
+      choice1: string;
+      choice2: string;
+      choice3: string;
+      choice4: string;
     };
     part3: {
-      part3a: string;
-      part3b: string;
-      part3c: string;
-      part3d: string;
+      part3A: string;
+      part3B: string;
+      part3C: string;
+      part3D: string;
     };
   };
 }

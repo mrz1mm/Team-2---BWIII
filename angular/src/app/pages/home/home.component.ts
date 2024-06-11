@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { LightNovelService } from '../../services/light-novel.service';
 import { AuthService } from '../../auth/auth.service';
 import { iLightNovel } from '../../interfaces/i-light-novel';
+import { Splide } from '@splidejs/splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 @Component({
   selector: 'app-home',
@@ -23,5 +25,18 @@ export class HomeComponent {
       this.lightNovelsArray = lightNovels;
       console.log('lightNovelsArray:', this.lightNovelsArray);
     });
+  }
+
+  ngAfterViewInit() {
+    new Splide('.splide', {
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      perPage: 3,
+      autoScroll: {
+        speed: 1,
+      },
+      extensions: { AutoScroll },
+    }).mount({ AutoScroll });
   }
 }
