@@ -1,3 +1,13 @@
 .container-fluid {
   min-height: 80vh;
+
+  ul,
+  li {
+    background-color: transparent;
+    border: none;
+  }
+
+  .buttonTags:hover {
+    background-color: green;
+  }
 }

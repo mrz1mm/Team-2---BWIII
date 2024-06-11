@@ -71,16 +71,19 @@ export class LightNovelService {
     );
   }
   getNovelsByUserId(userId: number): Observable<iLightNovel[]> {
-  const url = `${this.lightNovelsUrl}?userId=${userId}`;
-  return this.httpSvc.get<iLightNovel[]>(url).pipe(
-    catchError((error) => {
-      console.error('Error fetching light novels by user id:', error.message);
-      return throwError(
-        () => new Error('Error fetching light novels by user id: ' + error.message)
-      );
-    })
-  );
-}
+    const url = `${this.lightNovelsUrl}?userId=${userId}`;
+    return this.httpSvc.get<iLightNovel[]>(url).pipe(
+      catchError((error) => {
+        console.error('Error fetching light novels by user id:', error.message);
+        return throwError(
+          () =>
+            new Error(
+              'Error fetching light novels by user id: ' + error.message
+            )
+        );
+      })
+    );
+  }
 
   // metodo per ottenere una lightnovel tramite slug
   getLightNovelBySlug(slug: string): Observable<iLightNovel | undefined> {
@@ -204,6 +207,20 @@ export class LightNovelService {
           );
         })
       );
+  }
+
+  getAllGenres(): string[] {
+    const genres = this.lightNovelsArray.map((lightNovel) => lightNovel.genre);
+    const genresArray = genres.flat();
+    const uniqueGenres = [...new Set(genresArray)];
+    return uniqueGenres.sort();
+  }
+
+  // metodo per ottenere le lightnovel preferite di un utente
+  getLightNovelsByGenre(genre: string): iLightNovel[] {
+    return this.lightNovelsArray.filter((lightNovel) =>
+      lightNovel.genre.includes(genre)
+    );
   }
 
   // metodo per ottenere il termine di ricerca
