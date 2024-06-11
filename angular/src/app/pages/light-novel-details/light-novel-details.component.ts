@@ -11,6 +11,7 @@ import { LightNovelService } from '../../services/light-novel.service';
 export class LightNovelDetailsComponent implements OnInit {
   lightNovel: iLightNovel | undefined;
   currentPart: string = 'part1';
+  background: string = '';
 
   constructor(
     private route: ActivatedRoute,
