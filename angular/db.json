@@ -41,6 +41,48 @@
       "confirmPassword": "Pa$$w0rd!",
       "role": "auth",
       "id": 3
+    },
+    {
+      "email": "CiaoCiao@gmail.com",
+      "password": "$2a$10$S./ggpMkx5ErYLCyUKxtBeQ2BM1FsW/38YcH0R4khuIr1GE.BbjHu",
+      "name": "Provasasa",
+      "surname": "Paosmaskm",
+      "gender": "male",
+      "dateBirth": "2024-06-07",
+      "biography": "\\12312312",
+      "userImage": "123123123",
+      "username": "123123123",
+      "confirmPassword": "CiaoCiao.88$",
+      "role": "auth",
+      "id": 4
+    },
+    {
+      "email": "Hulk@gmail.com",
+      "password": "$2a$10$3RW7iAJIeqA2PV.9Q1Wtt.iv6gldtcqnnYqUc73pRKOPBylfHclu6",
+      "name": "123123123123",
+      "surname": "123123123",
+      "gender": "male",
+      "dateBirth": "2024-06-06",
+      "biography": "123123123",
+      "userImage": "123123123",
+      "username": "Hulk",
+      "confirmPassword": "CiaoCiao.88$",
+      "role": "auth",
+      "id": 5
+    },
+    {
+      "email": "kils@gmail.com",
+      "password": "$2a$10$J06sN6gpvNUHylX98nqbEOiu1sKQX5dUYbjirsj1FtSHBXeYBhvEy",
+      "name": "Simone",
+      "surname": ">Aaen ",
+      "gender": "male",
+      "dateBirth": "2024-06-07",
+      "biography": "asdasdasd",
+      "userImage": "asdasd",
+      "username": "asdnasdkn",
+      "confirmPassword": "CiaoCiao.88$",
+      "role": "auth",
+      "id": 6
     }
   ],
   "lightNovels": [

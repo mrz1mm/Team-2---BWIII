@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { iLightNovel } from '../../interfaces/i-light-novel';
 import { LightNovelService } from '../../services/light-novel.service';
