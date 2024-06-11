@@ -70,6 +70,17 @@ export class LightNovelService {
       map((data) => data.find((data) => data.id === id))
     );
   }
+  getNovelsByUserId(userId: number): Observable<iLightNovel[]> {
+  const url = `${this.lightNovelsUrl}?userId=${userId}`;
+  return this.httpSvc.get<iLightNovel[]>(url).pipe(
+    catchError((error) => {
+      console.error('Error fetching light novels by user id:', error.message);
+      return throwError(
+        () => new Error('Error fetching light novels by user id: ' + error.message)
+      );
+    })
+  );
+}
 
   // metodo per ottenere una lightnovel tramite slug
   getLightNovelBySlug(slug: string): Observable<iLightNovel | undefined> {

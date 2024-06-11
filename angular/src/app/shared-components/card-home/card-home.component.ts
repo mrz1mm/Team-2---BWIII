@@ -23,5 +23,10 @@ export class CardHomeComponent {
   isFavourite: boolean = false;
   userId: number | null;
 
+  // Metodo per sostituire gli spazi con trattini
+  replaceSpacesWithDashes(input: string): string {
+    return input.replace(/ /g, '-');
+  }
+
   toggleFavourite(event: Event) {}
 }

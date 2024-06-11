@@ -64,9 +64,19 @@ export class LightNovelFormComponent implements OnInit {
       created_at: this.fb.control(null, [Validators.required]),
       story: this.fb.group({
         part1: this.fb.control(null, [Validators.required]),
+        firstChoice: this.fb.group({
+          choice1: this.fb.control(null, [Validators.required]),
+          choice2: this.fb.control(null, [Validators.required]),
+        }),
         part2: this.fb.group({
           part2a: this.fb.control(null, [Validators.required]),
           part2b: this.fb.control(null, [Validators.required]),
+        }),
+        secondChoice:this.fb.group({
+          secondChoice1: this.fb.control(null, [Validators.required]),
+          secondChoice2: this.fb.control(null, [Validators.required]),
+          secondChoice3: this.fb.control(null, [Validators.required]),
+          secondChoice4: this.fb.control(null, [Validators.required]),
         }),
         part3: this.fb.group({
           part3a: this.fb.control(null, [Validators.required]),
@@ -118,7 +128,7 @@ export class LightNovelFormComponent implements OnInit {
     this.lightNovelSvc.addLightNovel(newLightNovel).subscribe((data) => {
       console.log(data);
     });
-    alert("Light Novel creata")
+    alert('Light Novel creata');
     this.redirectToHome();
     this.cleanForum();
   }
@@ -134,9 +144,19 @@ export class LightNovelFormComponent implements OnInit {
       created_at: [''],
       story: this.fb.group({
         part1: [''],
+        firstChoice: this.fb.group({
+          choice1: [''],
+          choice2: [''],
+        }),
         part2: this.fb.group({
           part2a: [''],
           part2b: [''],
+        }),
+        secondChoice:this.fb.group({
+          secondChoice1: [''],
+          secondChoice2: [''],
+          secondChoice3: [''],
+          secondChoice4: [''],
         }),
         part3: this.fb.group({
           part3a: [''],

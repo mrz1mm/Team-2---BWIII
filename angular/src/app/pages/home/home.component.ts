@@ -39,4 +39,9 @@ export class HomeComponent {
       extensions: { AutoScroll },
     }).mount({ AutoScroll });
   }
+
+  // Metodo per sostituire gli spazi con trattini
+  replaceSpacesWithDashes(input: string): string {
+    return input.replace(/ /g, '-');
+  }
 }

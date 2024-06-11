@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { iLightNovel } from '../../interfaces/i-light-novel';
 import { LightNovelService } from '../../services/light-novel.service';
@@ -6,12 +6,14 @@ import { LightNovelService } from '../../services/light-novel.service';
 @Component({
   selector: 'app-light-novel-details',
   templateUrl: './light-novel-details.component.html',
-  styleUrl: './light-novel-details.component.scss',
+  styleUrls: ['./light-novel-details.component.scss'],
 })
 export class LightNovelDetailsComponent implements OnInit {
   lightNovel: iLightNovel | undefined;
   currentPart: string = 'part1';
-  background: string = '';
+  imagePath: string = '';
+  imagePath2: string =
+    '../../../assets/img/lightNovelImg/Il Segreto del Libro Antico.png';
 
   constructor(
     private route: ActivatedRoute,
@@ -22,22 +24,22 @@ export class LightNovelDetailsComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.lightNovelService.getLightNovelById(id).subscribe((lightNovel) => {
       this.lightNovel = lightNovel;
-      console.log('Light novel loaded:', this.lightNovel); // Debugging log
+      this.imagePath = `../../../assets/img/lightNovelImg/${this.lightNovel?.title}.png`;
+
+      console.log('Light novel loaded:', this.lightNovel);
+      console.log('Image path:', this.imagePath);
     });
   }
 
   chooseFirstChoice(choice: string) {
-    console.log('First choice selected:', choice);
     if (choice === 'choice1') {
       this.currentPart = 'part2A';
     } else if (choice === 'choice2') {
       this.currentPart = 'part2B';
     }
-    console.log('Current part:', this.currentPart);
   }
 
   chooseSecondChoice(choice: string) {
-    console.log('Second choice selected:', choice);
     if (choice === 'choice1') {
       this.currentPart = 'part3A';
     } else if (choice === 'choice2') {
@@ -47,6 +49,10 @@ export class LightNovelDetailsComponent implements OnInit {
     } else if (choice === 'choice4') {
       this.currentPart = 'part3D';
     }
-    console.log('Current part:', this.currentPart);
+  }
+
+  // Metodo per sostituire gli spazi con trattini
+  replaceSpacesWithDashes(input: string): string {
+    return input.replace(/ /g, '-');
   }
 }

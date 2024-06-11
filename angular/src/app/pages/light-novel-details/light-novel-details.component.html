@@ -1,26 +1,21 @@
-<div class="container" *ngIf="lightNovel">
+<div
+  class="container-fluid"
+  *ngIf="lightNovel"
+  [ngStyle]="{
+    backgroundImage:
+      'url(/assets/img/lightNovelImg/' +
+      replaceSpacesWithDashes(lightNovel.title) +
+      '.png)'
+  }"
+>
   <div class="row">
     <div class="col d-flex justify-content-center my-5">
       <div class="card">
-        <img
-          [src]="
-            '../../../assets/img/lightNovelImg/' + lightNovel.title + '.png'
-          "
-          class="card-img-left"
-          alt="{{ lightNovel.title }}"
-        />
         <div class="card-body d-flex flex-column align-items-center mt-4">
           <h5 class="card-title mb-2">Titolo: {{ lightNovel.title }}</h5>
           <p class="card-text">{{ lightNovel.plot }}</p>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Debugging Area -->
-  <div class="row">
-    <div class="col-12">
-      <p>Current Part: {{ currentPart }}</p>
     </div>
   </div>
 
