@@ -11,6 +11,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class UserCardComponent {
   users: any[] = [];
   selectedUser: any;
+  userToDelete: any = null;
+  confirmName: string = '';
 
   constructor(private usersService: UsersService,private modalService:NgbModal) { }
 
@@ -23,21 +25,13 @@ export class UserCardComponent {
       this.users = users;
     });
   }
-  updateUser() {
-    this.usersService.updateUser(this.selectedUser.id, this.selectedUser)
-      .subscribe(() => {
-        this.modalService.dismissAll();
-      });
-  }
-  open(content: any, user: any) {
-    this.selectedUser = user;
-    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' });
-  }
+
   deleteUser(id: number): void {
     this.usersService.deleteUser(id).subscribe(() => {
       this.getUsers();
     });
   }
+
 
   upgradeUser(id: number): void {
     this.usersService.upgradeUser(id).subscribe(() => {
@@ -50,4 +44,19 @@ export class UserCardComponent {
       this.getUsers();
     });
   }
+  openDeleteModal(user: any, deleteModal: any): void {
+    this.userToDelete = user;
+    this.confirmName = '';
+    this.modalService.open(deleteModal, { centered: true });
+  }
+
+confirmDelete(modal: any): void {
+  if (this.confirmName === this.userToDelete.username) {
+    this.usersService.deleteUser(this.userToDelete.id).subscribe(() => {
+      this.users = this.users.filter(user => user.id !== this.userToDelete.id);
+      modal.dismiss('Deleted');
+      this.getUsers();
+    });
+  }
+}
 }

@@ -1,113 +1,100 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card mb-3" *ngFor="let user of users">
-        <div class="row g-0">
-          <div class="col-8">
+<div class="container mt-4">
+  <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Avatar</th>
+        <th scope="col">Nome Utente</th>
+        <th scope="col">Cognome utente</th>
+        <th scope="col">Genere</th>
+        <th scope="col">Username</th>
+        <th scope="col">email</th>
+        <th scope="col">actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>
+          <div class="text-center">
             <img
-              [src]="'http://place-hold.it/300'"
-              class="img-fluid rounded-start"
-              alt="..."
-              style="width: 100px; height: 100px"
+              src="http://place-hold.it/300"
+              alt="icon"
+              class="rounded-circle"
+              style="width: 24px; height: 24px"
             />
-            <div class="card-body">
-              <h5 class="card-title">{{ user.username }}</h5>
-              <small class="card-text">{{ user.role }}</small>
-            </div>
           </div>
-          <div class="col-4">
-            <div class="card-body">
-              <button
-                class="btn btn-danger mx-1"
-                (click)="deleteUser(user.id)"
-                ngbTooltip="Delete User"
-                placement="top"
-              >
-                <i class="bi bi-trash"></i>
-              </button>
-              <button
-                class="btn btn-info"
-                (click)="open(content, user)"
-                ngbTooltip="Edit User"
-                placement="top"
-              >
-                <i class="bi bi-pencil-fill"></i>
-                <!-- Questo è il tag di chiusura mancante -->
-              </button>
-              <button
-                class="btn btn-success mx-1"
-                *ngIf="user.role === 'auth'"
-                (click)="upgradeUser(user.id)"
-                ngbTooltip="Upgrade User"
-                placement="top"
-              >
-                <i class="bi bi-arrow-up"></i>
-              </button>
-              <button
-                class="btn btn-warning mx-1"
-                *ngIf="user.role === 'sub-admin'"
-                (click)="downgradeUser(user.id)"
-                ngbTooltip="Downgrade User"
-                placement="top"
-              >
-                <i class="bi bi-arrow-down"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <ng-template #content let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Modifica utente</h4>
-      <button
-        type="button"
-        class="close"
-        aria-label="Close"
-        (click)="modal.dismiss('Cross click')"
-      >
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <form #userForm="ngForm" (ngSubmit)="updateUser()">
-        <div class="form-group">
-          <label for="name">Nome</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            [(ngModel)]="selectedUser.name"
-            name="name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            [(ngModel)]="selectedUser.email"
-            name="email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="role">Ruolo</label>
-          <input
-            type="text"
-            class="form-control"
-            id="role"
-            [(ngModel)]="selectedUser.role"
-            name="role"
-            required
-          />
-        </div>
-        <!-- Aggiungi qui altri campi del form se necessario -->
-        <button (click)="updateUser()">Save</button>
-      </form>
-    </div>
-  </ng-template>
+        </td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.surname }}</td>
+        <td>{{ user.gender }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>
+          <button
+            class="btn btn-danger mx-1"
+            (click)="openDeleteModal(user, deleteModal)"
+            ngbTooltip="Delete User"
+            placement="top"
+          >
+            <i class="bi bi-trash"></i>
+          </button>
+          <button
+            class="btn btn-success mx-1"
+            *ngIf="user.role === 'auth'"
+            (click)="upgradeUser(user.id)"
+            ngbTooltip="Upgrade User"
+            placement="top"
+          >
+            <i class="bi bi-arrow-up"></i>
+          </button>
+          <button
+            class="btn btn-warning mx-1"
+            *ngIf="user.role === 'sub-admin'"
+            (click)="downgradeUser(user.id)"
+            ngbTooltip="Downgrade User"
+            placement="top"
+          >
+            <i class="bi bi-arrow-down"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+<ng-template #deleteModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Conferma Eliminazione</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    Sei sicuro di voler eliminare l'utente
+    <strong>{{ userToDelete?.firstName }}</strong
+    >? Per confermare, digita il nome dell'utente:
+    <input
+      type="text"
+      [(ngModel)]="confirmName"
+      class="form-control mt-2"
+      placeholder="Inserisci il nome utente per confermare"
+    />
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-secondary"
+      (click)="modal.dismiss('cancel click')"
+    >
+      Annulla
+    </button>
+    <button
+      class="btn btn-danger"
+      [disabled]="confirmName !== userToDelete.username"
+      (click)="confirmDelete(modal)"
+    >
+      Elimina
+    </button>
+  </div>
+</ng-template>
