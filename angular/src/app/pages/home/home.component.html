@@ -12,9 +12,7 @@
           <a routerLink="/lightNovelDetails/{{ lightNovel.id }}">
             <img
               [src]="
-                '../../../assets/img/lightNovelImg/' +
-                replaceSpacesWithDashes(lightNovel.title) +
-                '.png'
+                '../../../assets/img/lightNovelImg/' + lightNovel.slug + '.png'
               "
               alt="{{ lightNovel.title }}"
             />
