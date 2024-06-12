@@ -1,17 +1,33 @@
-<div class="card my-3">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img *ngIf="!user.userImage" src="https://as1.ftcdn.net/v2/jpg/02/71/59/92/1000_F_271599217_f9pIx8B1GiJZunOokVAeP2BF1BiXM2Ms.jpg" class="img-fluid rounded-start" alt="...">
-      <img *ngIf="user.userImage" [src]="user.userImage" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body my-5">
-        <h5 class="card-title">Email: {{user.email}}</h5>
-        <p class="card-text">Nome: {{user.name}}</p>
-        <p class="card-text">Cognome: {{user.surname}}</p>
-        <p class="card-text">{{user.gender}}</p>
-        <p class="card-text">{{user.biography}}</p>
-        <p class="card-text">{{user.username}}</p>
+<div class="container my-5">
+  <div class="card shadow-lg">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          *ngIf="!user.userImage"
+          src="https://as1.ftcdn.net/v2/jpg/02/71/59/92/1000_F_271599217_f9pIx8B1GiJZunOokVAeP2BF1BiXM2Ms.jpg"
+          class="img-fluid profile-img"
+          alt="Default Profile Image"
+        />
+        <img
+          *ngIf="user.userImage"
+          [src]="user.userImage"
+          class="img-fluid profile-img"
+          alt="User Profile Image"
+        />
+      </div>
+      <div class="col-md-8 profile-info">
+        <div class="card-body">
+          <h5 class="card-title">Email: {{ user.email }}</h5>
+          <p class="card-text"><strong>Name:</strong> {{ user.name }}</p>
+          <p class="card-text"><strong>Surname:</strong> {{ user.surname }}</p>
+          <p class="card-text"><strong>Gender:</strong> {{ user.gender }}</p>
+          <p class="card-text">
+            <strong>Biography:</strong> {{ user.biography }}
+          </p>
+          <p class="card-text">
+            <strong>Username:</strong> {{ user.username }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
