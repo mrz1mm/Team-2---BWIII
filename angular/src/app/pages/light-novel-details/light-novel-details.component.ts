@@ -50,9 +50,4 @@ export class LightNovelDetailsComponent implements OnInit {
       this.currentPart = 'part3D';
     }
   }
-
-  // Metodo per sostituire gli spazi con trattini
-  replaceSpacesWithDashes(input: string): string {
-    return input.replace(/ /g, '-');
-  }
 }
