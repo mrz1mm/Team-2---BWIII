@@ -83,6 +83,20 @@
       "confirmPassword": "CiaoCiao.88$",
       "role": "auth",
       "id": 6
+    },
+    {
+      "email": "zimone17@gmail.com",
+      "password": "$2a$10$WPgp2J/y37k1mc5XVSIg3.9lhhJ/8ACgEePhRIra6YiEvQvDtY6EW",
+      "name": "Simone",
+      "surname": "Attanasio",
+      "gender": "male",
+      "dateBirth": "1995-10-25",
+      "biography": "asdkmasdkasm",
+      "userImage": "askdmaskdmasdkm",
+      "username": "mr_z1m",
+      "confirmPassword": "CiaoCiao.88$",
+      "role": "auth",
+      "id": 7
     }
   ],
   "lightNovels": [
@@ -90,7 +104,11 @@
       "title": "Il Segreto del Libro Antico",
       "plot": "In un mondo pieno di misteri e magia, la scoperta di un antico enigma porta a un'avventura epica alla ricerca del segreto di un libro leggendario.",
       "description": "Un'avventura interattiva in cui le tue scelte plasmano il destino di Alessio, un giovane bibliotecario desideroso di scoprire la verità.",
-      "genre": ["Mystery", "Adventure", "Fantasy"],
+      "genre": [
+        "Mystery",
+        "Adventure",
+        "Fantasy"
+      ],
       "author": "Federica Martini",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -125,7 +143,11 @@
       "title": "L'Ultimo Viaggio della Spada Perduta",
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
-      "genre": ["Post-Apocalyptic", "Adventure", "Fantasy"],
+      "genre": [
+        "Post-Apocalyptic",
+        "Adventure",
+        "Fantasy"
+      ],
       "author": "Giovanni Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -160,7 +182,11 @@
       "title": "La Città degli Antichi",
       "plot": "In un mondo futuristico, un esploratore si immerge nelle rovine di una città sconosciuta, scoprendo segreti sepolti da millenni.",
       "description": "Un'avventura fantascientifica ricca di enigmi e scoperte sorprendenti.",
-      "genre": ["Sci-Fi", "Adventure", "Mystery"],
+      "genre": [
+        "Sci-Fi",
+        "Adventure",
+        "Mystery"
+      ],
       "author": "Luca Ferrari",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -195,7 +221,11 @@
       "title": "Il Quadro dell'Amore Perduto",
       "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
       "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
-      "genre": ["Drama", "Historical Fiction", "Mystery"],
+      "genre": [
+        "Drama",
+        "Historical Fiction",
+        "Mystery"
+      ],
       "author": "Marco Russo",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -265,7 +295,11 @@
       "title": "Il Mistero del Vecchio Manicomio",
       "plot": "In una cittadina sonnolenta, un detective affronta un caso oscuro legato a un vecchio manicomio abbandonato, dove i confini tra realtà e sovrannaturale si sfumano",
       "description": "Un thriller psicologico avvincente con elementi sovrannaturali e misteri irrisolti.",
-      "genre": ["Crime", "Supernatural", "Psychological"],
+      "genre": [
+        "Crime",
+        "Supernatural",
+        "Psychological"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -300,7 +334,11 @@
       "title": "Le Terre Desolate",
       "plot": "In un mondo devastato dalle guerre e dalle catastrofi, un gruppo di sopravvissuti cerca di creare un futuro migliore nelle terre desolate",
       "description": "Un'avventura epica di sopravvivenza e speranza in un mondo post-apocalittico.",
-      "genre": ["Survival", "Post-Apocalyptic", "Dystopian"],
+      "genre": [
+        "Survival",
+        "Post-Apocalyptic",
+        "Dystopian"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -335,7 +373,11 @@
       "title": "Il Mondo dei Misteri",
       "plot": "In un mondo pieno di misteri e incantesimi, un avventuriero intraprende un viaggio per scoprire la verità nascosta dietro le nebbie dell'ignoto.",
       "description": "Un'avventura epica di scoperta e intrigo in un mondo fantastico.",
-      "genre": ["Adventure", "Fantasy", "Mystery"],
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Mystery"
+      ],
       "author": "Luca Rossi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -370,7 +412,11 @@
       "title": "L'Enigma dell'Antica Città",
       "plot": "In un mondo di antiche rovine e misteri sepolti, un esploratore solitario si imbarca in un viaggio per svelare l'enigma di un'antica città perduta.",
       "description": "Un'avventura mozzafiato ricca di misteri e scoperte in un mondo dimenticato.",
-      "genre": ["Adventure", "Mystery", "Fantasy"],
+      "genre": [
+        "Adventure",
+        "Mystery",
+        "Fantasy"
+      ],
       "author": "Luca Rossi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -405,7 +451,11 @@
       "title": "Il Mistero della Città Sommersa",
       "plot": "In un mondo devastato dalle acque, un audace esploratore si imbarca in un'avventura per svelare il mistero di una città sommersa.",
       "description": "Un'avventura avvincente e piena di suspense in un mondo sottomarino pieno di segreti.",
-      "genre": ["Adventure", "Mystery", "Sci-Fi"],
+      "genre": [
+        "Adventure",
+        "Mystery",
+        "Sci-Fi"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "09/06/2024",
@@ -440,7 +490,11 @@
       "title": "L'Ultimo Viaggio del Capitano Drake",
       "plot": "Nel secolo 18, il leggendario pirata Capitano Drake parte per un'ultima avventura alla ricerca di un tesoro nascosto in un'isola remota.",
       "description": "Un'avventura mozzafiato nei mari infestati dai pirati del passato.",
-      "genre": ["Adventure", "Historical Fiction", "Action"],
+      "genre": [
+        "Adventure",
+        "Historical Fiction",
+        "Action"
+      ],
       "author": "Marco De Luca",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -475,7 +529,10 @@
       "title": "Il Segreto della Villa Abbandonata",
       "plot": "In una notte tempestosa, un gruppo di amici decide di esplorare una villa abbandonata, ma presto scoprono che nasconde oscuri segreti.",
       "description": "Un'avventura avvincente piena di misteri e colpi di scena.",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "author": "Giulia Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -510,7 +567,12 @@
       "title": "Il Portale dei Mondi",
       "plot": "Un giovane scopre un antico portale che conduce a mondi paralleli, ognuno con i propri pericoli e meraviglie.",
       "description": "Alex, un giovane curioso, trova un misterioso portale che lo conduce in vari mondi fantastici. Deve fare scelte cruciali per sopravvivere e tornare a casa.",
-      "genre": ["Fantasy", "Adventure", "Mystery", "Sci-Fi"],
+      "genre": [
+        "Fantasy",
+        "Adventure",
+        "Mystery",
+        "Sci-Fi"
+      ],
       "author": "Giovanni Rossi",
       "image_url": null,
       "created_at": "01/06/2024",
@@ -545,7 +607,12 @@
       "title": "L'Ombra del Futuro",
       "plot": "In un mondo dominato dalla tecnologia avanzata e segreti oscuri, un individuo si trova a dover fare scelte cruciali per la sua sopravvivenza e per il destino dell'umanità.",
       "description": "Una storia interattiva che esplora le profonde implicazioni delle nostre scelte in un futuro distopico.",
-      "genre": ["Sci-Fi", "Dystopian", "Thriller", "Adventure"],
+      "genre": [
+        "Sci-Fi",
+        "Dystopian",
+        "Thriller",
+        "Adventure"
+      ],
       "author": "Giovanni Rossi",
       "image_url": null,
       "created_at": "06/06/2024",
@@ -580,7 +647,12 @@
       "title": "Il Segreto del Bosco Dimenticato",
       "plot": "Una giovane ragazza scopre un misterioso segreto nascosto nel cuore di un Bosco Dimenticato.",
       "description": "In un piccolo villaggio ai margini di un bosco incantato, una ragazza intraprende un'avventura che cambierà la sua vita per sempre.",
-      "genre": ["Mythology", "Urban Fantasy", "Dark Fantasy", "Fairy Tale"],
+      "genre": [
+        "Mythology",
+        "Urban Fantasy",
+        "Dark Fantasy",
+        "Fairy Tale"
+      ],
       "author": "Luca Rossi",
       "image_url": null,
       "created_at": "08/06/2024",
@@ -615,7 +687,11 @@
       "title": "L'Inganno del Codice Nero",
       "plot": "Un agente segreto si trova intrappolato in una rete di inganni e tradimenti mentre cerca di decifrare il misterioso Codice Nero, una sequenza crittografica che potrebbe cambiare le sorti della guerra.",
       "description": "In un mondo sospeso tra le ombre dell'intrigo e della spionaggio, l'Agente Delta si trova ad affrontare una sfida mortale mentre cerca di proteggere il segreto del Codice Nero.",
-      "genre": ["Crime", "Espionage", "Military"],
+      "genre": [
+        "Crime",
+        "Espionage",
+        "Military"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "12/06/2024",
@@ -798,5 +874,7 @@
         "updated_by": 1,
         "id": 20
       }
-  ]
+  ],
+  "favouriteLightNovels": []
+
 }

@@ -42,8 +42,8 @@ export class LightNovelService {
   searchTermSubject = new BehaviorSubject<string>('');
   searchTerm$ = this.searchTermSubject.asObservable();
 
-  lightNovelsUrl: string = `${environment.apiUrl}/lightnovels`;
-  favouriteLightNovelsUrl: string = `${environment.apiUrl}/favourite-lightNovels`;
+  lightNovelsUrl: string = `${environment.apiUrl}/lightNovels`;
+  favouriteLightNovelsUrl: string = `${environment.apiUrl}/favouriteLightNovels`;
 
   // metodo per ottenere tutti le lightnovel
   getAllLightNovels(): void {
@@ -70,7 +70,6 @@ export class LightNovelService {
       map((data) => data.find((data) => data.id === id))
     );
   }
-
   getNovelsByUserId(userId: number): Observable<iLightNovel[]> {
     const url = `${this.lightNovelsUrl}?updated_by=${userId}`;
     return this.httpSvc.get<iLightNovel[]>(url).pipe(
@@ -110,7 +109,7 @@ export class LightNovelService {
   deleteLightNovel() {}
 
   // metodo per ottenere tutte le lightnovel preferite
-  getAllFavouriteLightNovels(): Observable<iFavouriteLightNovel[] | undefined> {
+  getAllFavouriteLightNovels(): Observable<iFavouriteLightNovel[]> {
     return this.httpSvc
       .get<iFavouriteLightNovel[]>(this.favouriteLightNovelsUrl)
       .pipe(
@@ -230,5 +229,4 @@ export class LightNovelService {
   // metodo per cercare una lightnovel tramite titolo
 
   searchByLightNovelTitle() {}
-
 }

@@ -2,7 +2,6 @@ import { Component,OnInit } from '@angular/core';
 import{iLightNovel} from '../../../interfaces/i-light-novel';
 import { LightNovelService } from '../../../services/light-novel.service';
 import { AuthService } from '../../../auth/auth.service';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,7 +12,7 @@ import { Router } from '@angular/router';
 export class MyLightNovelComponent implements OnInit {
  novels!:iLightNovel[];
 
-constructor(private lightNovelService:LightNovelService,private authSvc:AuthService,private router: Router){}
+constructor(private lightNovelService:LightNovelService,private authSvc:AuthService){}
 
  ngOnInit(){
   const userId:number|null= this.authSvc.getCurrentUserId();
@@ -33,9 +32,6 @@ constructor(private lightNovelService:LightNovelService,private authSvc:AuthServ
 
  toggleFavourite(event: Event) {}
 
- redirectCreate(novel:iLightNovel){
-  console.log(novel)
-  this.router.navigate([`/profile/createLightNovel/${novel.id}`])
- }
+
 }
 

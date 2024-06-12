@@ -12,10 +12,6 @@ const routes: Routes = [
     component: CreateLightNovelComponent,
   },
   {
-    path: 'createLightNovel/:id',
-    component: CreateLightNovelComponent,
-  },
-  {
     path: 'favourites',
     component: FavouritesComponent,
   },
