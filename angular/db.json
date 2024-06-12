@@ -877,6 +877,86 @@
       "slug": "Il-Tesoro-del-Faraone",
       "updated_by": 1,
       "id": 20
+    },
+    {
+      "title": "ererter",
+      "plot": null,
+      "description": null,
+      "genre": [],
+      "author": null,
+      "image_url": null,
+      "created_at": "12/06/2024",
+      "story": {
+        "part1": null,
+        "firstChoice": {
+          "choice1": null,
+          "choice2": null
+        },
+        "part2": {
+          "part2A": null,
+          "part2B": null
+        },
+        "secondChoice": {
+          "choice1": null,
+          "choice2": null,
+          "choice3": null,
+          "choice4": null
+        },
+        "part3": {
+          "part3A": null,
+          "part3B": null,
+          "part3C": null,
+          "part3D": null
+        }
+      },
+      "slug": "ererter",
+      "updated_by": 1,
+      "id": 21
+    },
+    {
+      "title": "AAAAAAAAAAAAAA",
+      "plot": "Odio expedita nulla ",
+      "description": "Cupiditate maxime ma",
+      "genre": [
+        "Thriller",
+        "Supernatural",
+        "Dystopian",
+        "Post-Apocalyptic",
+        "Steampunk",
+        "Cyberpunk",
+        "Detective",
+        "Western",
+        "Fairy Tale"
+      ],
+      "author": "Assumenda qui autem ",
+      "image_url": null,
+      "created_at": "12/06/2024",
+      "story": {
+        "part1": "Eos iusto unde non ",
+        "firstChoice": {
+          "choice1": "Dolorum cumque dolor",
+          "choice2": "Reprehenderit et hic"
+        },
+        "part2": {
+          "part2A": "Dolore dolorem maior",
+          "part2B": "Eum in omnis in dolo"
+        },
+        "secondChoice": {
+          "choice1": "Aliquip ipsum facer",
+          "choice2": "Quis dolorum dolores",
+          "choice3": "Rerum sint pariatur",
+          "choice4": "Unde mollitia minima"
+        },
+        "part3": {
+          "part3A": "Dolorem sapiente in ",
+          "part3B": "Placeat eos omnis ",
+          "part3C": "Rerum consequat Qui",
+          "part3D": "Ullamco est placeat"
+        }
+      },
+      "slug": "aaaaaaaaaaaaaa",
+      "updated_by": 1,
+      "id": 22
     }
   ],
   "favouriteLightNovels": []

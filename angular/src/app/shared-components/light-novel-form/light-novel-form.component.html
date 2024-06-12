@@ -265,18 +265,10 @@
             </div>
           </div>
 
-          <button
-            *ngIf="!formCompiled"
-            (click)="addLightNovel()"
-            class="btn btn-primary"
-          >
+          <button (click)="addLightNovel()" class="btn btn-primary">
             Crea
           </button>
-          <button
-            *ngIf="formCompiled"
-            (click)="updateLightNovel()"
-            class="btn btn-primary"
-          >
+          <button (click)="updateLightNovel()" class="btn btn-primary">
             Modifica
           </button>
           <button (click)="cleanForum()" class="btn btn-primary">Svuota</button>
