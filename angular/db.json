@@ -706,6 +706,43 @@
     "slug": "linganno-del-codice-nero",
     "updated_by": 3,
     "id": 16
+  },
+  {
+    "title": "Il Segreto del Cyborg",
+    "plot": "In un futuro cyberpunk, la guerra tra umani e macchine è imminente. Un soldato cyborg, dopo essere stato riportato in vita con parti meccaniche, scopre un segreto che potrebbe cambiare il corso della guerra.",
+    "description": "In un mondo dilaniato dalla guerra tra umani e macchine, il destino è nelle tue mani. Scopri il segreto del cyborg e decidi il destino dell'umanità.",
+    "genre": [
+      "Military",
+      "Cyberpunk",
+      "Urban Fantasy"
+    ],
+    "author": "Anonimo",
+    "image_url": null,
+    "created_at": "2024-06-12",
+    "story": "Sei un soldato cyborg, riportato in vita con parti meccaniche dopo essere caduto in battaglia. La tua missione è cruciale per il destino dell'umanità. Sulla tua strada, scopri un segreto che potrebbe cambiare tutto. Scegli con saggezza.",
+    "firstChoice": {
+      "choice1": "Investiga il laboratorio segreto",
+      "choice2": "Incontra il leader della resistenza"
+    },
+    "part2": {
+      "part2A": "Esplori il laboratorio e scopri un progetto segreto. Ora devi decidere cosa farne.",
+      "part2B": "Incontri il leader della resistenza, che ti offre un'alleanza. Devi decidere se accettare."
+    },
+    "secondChoice": {
+      "choice1": "Utilizza il segreto per potenziarti",
+      "choice2": "Condividi il segreto con la resistenza",
+      "choice3": "Unisciti alla causa della macchina",
+      "choice4": "Vivi in pace, lontano dal conflitto"
+    },
+    "part3": {
+      "part3A": "Decidi di utilizzare il segreto per potenziare le tue capacità. Ti trasformi in un'arma vivente, ma il potere ti consuma e perdi la tua umanità. Diventi la più grande minaccia per entrambe le fazioni.",
+      "part3B": "Condividi il segreto con la resistenza. Insieme, pianificate un attacco risolutivo contro le macchine. La battaglia è epica e molte vite vengono sacrificate, ma alla fine, l'umanità prevale e la pace è restaurata, almeno per ora.",
+      "part3C": "Abbracci la causa delle macchine, tradendo l'umanità. Ti unisci al loro esercito e diventi uno dei loro leader più temuti. Ma anche se hai ottenuto potere, rimani sempre diviso tra il tuo passato umano e il presente cibernetico.",
+      "part3D": "Decidi di vivere in pace, lontano dal conflitto. Ma il passato torna a tormentarti quando la guerra raggiunge anche il tuo rifugio. Scegli di combattere per la tua libertà e quella dei tuoi compagni, o abbraccia la tua nuova vita e lascia che la guerra scorra intorno a te."
+    },
+    "slug": "il-segreto-del-cyborg",
+    "updated_by": 13,
+    "id": 17
   }
   ]
 }
