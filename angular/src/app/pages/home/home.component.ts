@@ -5,6 +5,8 @@ import { AuthService } from '../../auth/auth.service';
 import { iLightNovel } from '../../interfaces/i-light-novel';
 import { Splide } from '@splidejs/splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+import { UsersService } from '../../services/users.service';
+import { iUser } from '../../auth/interfaces/i-user';
 
 @Component({
   selector: 'app-home',
@@ -15,9 +17,11 @@ export class HomeComponent {
   constructor(
     private routerSvc: Router,
     private lightNovelSvc: LightNovelService,
-    private authSvc: AuthService
+    private authSvc: AuthService,
+    private usersSvc: UsersService
   ) {}
 
+  usersArray: iUser[] = [];
   lightNovelsArray: iLightNovel[] = [];
   filteredLightNovelsArray: iLightNovel[] = [];
   genres: string[] = [];
@@ -28,6 +32,12 @@ export class HomeComponent {
       this.lightNovelsArray = lightNovels;
       this.filteredLightNovelsArray = this.lightNovelsArray;
       this.genres = this.lightNovelSvc.getAllGenres();
+    });
+
+    this.usersSvc.users$.subscribe((users) => {
+      if (users) {
+        this.usersArray = users;
+      }
     });
   }
 
