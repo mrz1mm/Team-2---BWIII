@@ -70,6 +70,7 @@ export class LightNovelService {
       map((data) => data.find((data) => data.id === id))
     );
   }
+
   getNovelsByUserId(userId: number): Observable<iLightNovel[]> {
     const url = `${this.lightNovelsUrl}?userId=${userId}`;
     return this.httpSvc.get<iLightNovel[]>(url).pipe(
@@ -229,4 +230,5 @@ export class LightNovelService {
   // metodo per cercare una lightnovel tramite titolo
 
   searchByLightNovelTitle() {}
+
 }
