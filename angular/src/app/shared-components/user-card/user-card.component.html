@@ -1,88 +1,68 @@
 <div class="container mt-4">
-  <table class="table table-bordered table-hover shadow-sm">
+  <table class="table table-bordered">
     <thead class="thead-light">
       <tr>
-        <th scope="col">Info</th>
-        <th scope="col">Actions</th>
+        <th scope="col">Avatar</th>
+        <th scope="col">Nome Utente</th>
+        <th scope="col">Cognome utente</th>
+        <th scope="col">Genere</th>
+        <th scope="col">Username</th>
+        <th scope="col">email</th>
+        <th scope="col">actions</th>
       </tr>
     </thead>
     <tbody>
-      <tr
-        *ngFor="
-          let user of users | paginate : { itemsPerPage: 5, currentPage: p }
-        "
-      >
+      <tr *ngFor="let user of users">
         <td>
-          <div class="row g-0">
-            <div
-              class="col-md-4 align-items-center d-flex justify-content-center"
-            >
-              <img
-                [src]="user.userImage"
-                alt="icon"
-                class="rounded-circle"
-                style="width: 100px; height: auto"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">{{ user.name }} {{ user.surname }}</h5>
-                <p class="card-text">
-                  <strong>Gender:</strong> {{ user.gender }}
-                </p>
-                <p class="card-text">
-                  <strong>Username:</strong> {{ user.username }}
-                </p>
-                <p class="card-text">
-                  <strong>Email:</strong> {{ user.email }}
-                </p>
-              </div>
-            </div>
+          <div class="text-center">
+            <img
+              [src]="user.userImage"
+              alt="icon"
+              class="rounded-circle"
+              style="width: 60px; height: 60px"
+            />
           </div>
         </td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.surname }}</td>
+        <td>{{ user.gender }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
         <td>
-          <div
-            class="text-center d-flex justify-content-center align-items-center"
+          <button
+            class="btn btn-danger mx-1"
+            (click)="openDeleteModal(user, deleteModal)"
+            ngbTooltip="Delete User"
+            placement="top"
           >
-            <button
-              class="btn btn-danger mx-1"
-              (click)="openDeleteModal(user, deleteModal)"
-              ngbTooltip="Delete User"
-              placement="top"
-            >
-              <i class="bi bi-trash"></i>
-            </button>
-            <button
-              class="btn btn-success mx-1"
-              *ngIf="user.role === 'auth'"
-              (click)="upgradeUser(user.id)"
-              ngbTooltip="Upgrade User"
-              placement="top"
-            >
-              <i class="bi bi-arrow-up"></i>
-            </button>
-            <button
-              class="btn btn-warning mx-1"
-              *ngIf="user.role === 'sub-admin'"
-              (click)="downgradeUser(user.id)"
-              ngbTooltip="Downgrade User"
-              placement="top"
-            >
-              <i class="bi bi-arrow-down"></i>
-            </button>
-          </div>
+            <i class="bi bi-trash"></i>
+          </button>
+          <button
+            class="btn btn-success mx-1"
+            *ngIf="user.role === 'auth'"
+            (click)="upgradeUser(user.id)"
+            ngbTooltip="Upgrade User"
+            placement="top"
+          >
+            <i class="bi bi-arrow-up"></i>
+          </button>
+          <button
+            class="btn btn-warning mx-1"
+            *ngIf="user.role === 'sub-admin'"
+            (click)="downgradeUser(user.id)"
+            ngbTooltip="Downgrade User"
+            placement="top"
+          >
+            <i class="bi bi-arrow-down"></i>
+          </button>
         </td>
       </tr>
     </tbody>
   </table>
-  <div class="d-flex justify-content-center border-3">
-    <pagination-controls (pageChange)="p = $event"></pagination-controls>
-  </div>
 </div>
-
 <ng-template #deleteModal let-modal>
   <div class="modal-header">
-    <h4 class="modal-title">Are you sure about that?</h4>
+    <h4 class="modal-title">Conferma Eliminazione</h4>
     <button
       type="button"
       class="btn-close"
@@ -98,7 +78,7 @@
       type="text"
       [(ngModel)]="confirmName"
       class="form-control mt-2"
-      placeholder="type username..."
+      placeholder="Inserisci il nome utente per confermare"
     />
   </div>
   <div class="modal-footer">

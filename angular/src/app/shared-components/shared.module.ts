@@ -7,11 +7,10 @@ import { CardHomeComponent } from './card-home/card-home.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [LightNovelFormComponent, CardHomeComponent, UserCardComponent],
-  imports: [CommonModule, RouterModule, ReactiveFormsModule,NgbModule,FormsModule,NgxPaginationModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule,NgbModule,FormsModule],
   exports: [CardHomeComponent, LightNovelFormComponent, UserCardComponent],
 })
 export class SharedModule {}
