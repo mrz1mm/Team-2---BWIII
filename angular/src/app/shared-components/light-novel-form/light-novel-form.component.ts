@@ -114,7 +114,6 @@ export class LightNovelFormComponent implements OnInit {
 
   isTouchedInvalid(fieldName: string) {
     const field = this.createLightNovelForm.get(fieldName); //Cerco il campo
-   // console.log(`Field ${fieldName} - Invalid: ${field?.invalid}, Touched: ${field?.touched}`)
     return field?.invalid && field?.touched; //Verifico se il campo è valido e se è stato anche toccato
   }
 

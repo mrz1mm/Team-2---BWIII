@@ -5,7 +5,7 @@
         <form [formGroup]="createLightNovelForm">
           <h1 class="h3 text-center mb-3 fw-normal">Crea la tua Light Novel</h1>
 
-          <label for="title">Inserisci il titolo*</label>
+          <label for="title">Inserisci il titolo</label>
           <input
             type="text"
             formControlName="title"
@@ -174,9 +174,9 @@
                 placeholder="Write the choice interactive..."
                 id="choice2"
               />
-              <!-- <p *ngIf="isTouchedInvalid('story.secondChoice.choice2')">
+              <p *ngIf="isTouchedInvalid('story.secondChoice.choice2')">
                 Inserisci correttamente la parte interattiva
-              </p> -->
+              </p>
 
               <label for="choice3"
                 >Inserisci la seconda sezione (C2c) interattiva</label
@@ -204,9 +204,9 @@
                 placeholder="Write the choice interactive..."
                 id="choice4"
               />
-              <!-- <p *ngIf="isTouchedInvalid('story.secondChoice.choice4')"> -->
-              Inserisci correttamente la parte interattiva
-              <!-- </p> -->
+              <p *ngIf="isTouchedInvalid('story.secondChoice.choice4')">
+                Inserisci correttamente la parte interattiva
+              </p>
             </div>
 
             <div formGroupName="part3">
@@ -265,10 +265,18 @@
             </div>
           </div>
 
-          <button (click)="addLightNovel()" class="btn btn-primary">
+          <button
+            *ngIf="!formCompiled"
+            (click)="addLightNovel()"
+            class="btn btn-primary"
+          >
             Crea
           </button>
-          <button (click)="updateLightNovel()" class="btn btn-primary">
+          <button
+            *ngIf="formCompiled"
+            (click)="updateLightNovel()"
+            class="btn btn-primary"
+          >
             Modifica
           </button>
           <button (click)="cleanForum()" class="btn btn-primary">Svuota</button>
