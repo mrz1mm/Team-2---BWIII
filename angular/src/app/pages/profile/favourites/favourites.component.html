@@ -1,1 +1,19 @@
-<p>favourites works!</p>
+<div class="container" *ngIf="user">
+  <div class="row">
+    <div class="col">
+      <h3>Ciao {{ user.name }},</h3>
+      <h5>Qui la lista dei tuoi preferiti</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h5>Qui ci sono tutti i tuoi film preferiti:</h5>
+    </div>
+    <div
+      class="col-12 col-sm-6 col-lg-3 col-xl-4"
+      *ngFor="let lightNovel of favouriteLightNovelArray"
+    >
+      <app-card-home [lightNovelCard]="lightNovel"></app-card-home>
+    </div>
+  </div>
+</div>
