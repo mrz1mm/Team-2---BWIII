@@ -17,6 +17,7 @@
           <p *ngIf="isTouchedInvalid('title')">
             Inserisci correttamente il titolo
           </p>
+
           <label for="plot">Inserisci una breve trama</label>
           <textarea
             name="plot"
@@ -159,9 +160,9 @@
                 placeholder="Write the choice interactive..."
                 id="choice1"
               />
-              <!-- <p *ngIf="isTouchedInvalid('story.secondChoice.choice1')">
+              <p *ngIf="isTouchedInvalid('story.secondChoice.choice1')">
                 Inserisci correttamente la parte interattiva
-              </p> -->
+              </p>
 
               <label for="choice2"
                 >Inserisci la seconda sezione (C2b) interattiva</label
@@ -189,9 +190,9 @@
                 placeholder="Write the choice interactive..."
                 id="choice3"
               />
-              <!-- <p *ngIf="isTouchedInvalid('story.secondChoice.choice3')">
+              <p *ngIf="isTouchedInvalid('story.secondChoice.choice3')">
                 Inserisci correttamente la parte interattiva
-              </p> -->
+              </p>
 
               <label for="choice4"
                 >Inserisci la seconda sezione (C2d) interattiva</label
