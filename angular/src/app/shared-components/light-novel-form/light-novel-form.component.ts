@@ -89,20 +89,20 @@ export class LightNovelFormComponent implements OnInit {
           choice2: this.fb.control(null, [Validators.required]),
         }),
         part2: this.fb.group({
-          part2a: this.fb.control(null, [Validators.required]),
-          part2b: this.fb.control(null, [Validators.required]),
+          part2A: this.fb.control(null, [Validators.required]),
+          part2B: this.fb.control(null, [Validators.required]),
         }),
         secondChoice: this.fb.group({
-          secondChoice1: this.fb.control(null, [Validators.required]),
-          secondChoice2: this.fb.control(null, [Validators.required]),
-          secondChoice3: this.fb.control(null, [Validators.required]),
-          secondChoice4: this.fb.control(null, [Validators.required]),
+          choice1: this.fb.control(null, [Validators.required]),
+          choice2: this.fb.control(null, [Validators.required]),
+          choice3: this.fb.control(null, [Validators.required]),
+          choice4: this.fb.control(null, [Validators.required]),
         }),
         part3: this.fb.group({
-          part3a: this.fb.control(null, [Validators.required]),
-          part3b: this.fb.control(null, [Validators.required]),
-          part3c: this.fb.control(null, [Validators.required]),
-          part3d: this.fb.control(null, [Validators.required]),
+          part3A: this.fb.control(null, [Validators.required]),
+          part3B: this.fb.control(null, [Validators.required]),
+          part3C: this.fb.control(null, [Validators.required]),
+          part3D: this.fb.control(null, [Validators.required]),
         }),
       }),
     });
@@ -114,6 +114,7 @@ export class LightNovelFormComponent implements OnInit {
 
   isTouchedInvalid(fieldName: string) {
     const field = this.createLightNovelForm.get(fieldName); //Cerco il campo
+   // console.log(`Field ${fieldName} - Invalid: ${field?.invalid}, Touched: ${field?.touched}`)
     return field?.invalid && field?.touched; //Verifico se il campo è valido e se è stato anche toccato
   }
 
@@ -240,20 +241,20 @@ export class LightNovelFormComponent implements OnInit {
           choice2: [''],
         }),
         part2: this.fb.group({
-          part2a: [''],
-          part2b: [''],
+          part2A: [''],
+          part2B: [''],
         }),
         secondChoice: this.fb.group({
-          secondChoice1: [''],
-          secondChoice2: [''],
-          secondChoice3: [''],
-          secondChoice4: [''],
+          choice1: [''],
+          choice2: [''],
+          choice3: [''],
+          choice4: [''],
         }),
         part3: this.fb.group({
-          part3a: [''],
-          part3b: [''],
-          part3c: [''],
-          part3d: [''],
+          part3A: [''],
+          part3B: [''],
+          part3C: [''],
+          part3D: [''],
         }),
       }),
     });
@@ -278,23 +279,23 @@ export class LightNovelFormComponent implements OnInit {
         part1: [this.novel?.story.part1],
         firstChoice: this.fb.group({
           choice1: [this.novel?.story.firstChoice.choice1],
-          choice2: [this.novel?.story.firstChoice.choice2],
+          choice2: [this.novel?.story.firstChoice.choice2]
         }),
         part2: this.fb.group({
-          part2a: [this.novel?.story.part2.part2A],
-          part2b: [this.novel?.story.part2.part2B],
+          part2A: [this.novel?.story.part2.part2A],
+          part2B: [this.novel?.story.part2.part2B]
         }),
         secondChoice: this.fb.group({
-          secondChoice1: [this.novel?.story.secondChoice.choice1],
-          secondChoice2: [this.novel?.story.secondChoice.choice2],
-          secondChoice3: [this.novel?.story.secondChoice.choice3],
-          secondChoice4: [this.novel?.story.secondChoice.choice4],
+          choice1: [this.novel?.story.secondChoice.choice1],
+          choice2: [this.novel?.story.secondChoice.choice2],
+          choice3: [this.novel?.story.secondChoice.choice3],
+          choice4: [this.novel?.story.secondChoice.choice4]
         }),
         part3: this.fb.group({
-          part3a: [this.novel?.story.part3.part3A],
-          part3b: [this.novel?.story.part3.part3B],
-          part3c: [this.novel?.story.part3.part3C],
-          part3d: [this.novel?.story.part3.part3D],
+          part3A: [this.novel?.story.part3.part3A],
+          part3B: [this.novel?.story.part3.part3B],
+          part3C: [this.novel?.story.part3.part3C],
+          part3D: [this.novel?.story.part3.part3D],
         }),
       }),
     });
