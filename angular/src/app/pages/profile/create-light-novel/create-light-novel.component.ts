@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LightNovelService } from '../../../services/light-novel.service';
 import { iLightNovel } from '../../../interfaces/i-light-novel';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-create-light-novel',
@@ -19,13 +20,13 @@ export class CreateLightNovelComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe((params: any) => {
-      this.lightNovelId = params.id;
-      console.log('light novel id', this.lightNovelId);
+      this.lightNovelId = parseInt(params.id);
+      console.log('light novel id:', this.lightNovelId);
 
       this.novelSVC.getLightNovelById(this.lightNovelId).subscribe((data) => {
         this.novel = data;
-        console.log('questa è la light novel', this.novel);
       });
     });
+    console.log('questa è la light novel', this.novel);
   }
 }
