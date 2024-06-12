@@ -12,10 +12,32 @@ import { iLightNovel } from '../../interfaces/i-light-novel';
   styleUrls: ['./light-novel-form.component.scss'],
 })
 export class LightNovelFormComponent implements OnInit {
+  constructor(
+    private fb: FormBuilder,
+    private lightNovelSvc: LightNovelService,
+    private router: Router,
+    private autSVC: AuthService
+  ) {}
+
+  ngOnInit(): void {
+    this.autSVC.user$.subscribe((user) => {
+      if (user) {
+        this.user = user;
+      }
+    });
+
+    this.formValidator();
+    this.ripopulateForm();
+    this.formCompiledVerify();
+
+    console.log('Novel', this.novel);
+  }
+
   [x: string]: any;
-  @Input() novel:iLightNovel | undefined
+  @Input() novel: iLightNovel | undefined;
   createLightNovelForm!: FormGroup;
   user: iUser | null = this.autSVC.getCurrentUser();
+  formCompiled: boolean = false;
 
   alertMessage: string | null = null;
   alertTimeout: any;
@@ -52,14 +74,7 @@ export class LightNovelFormComponent implements OnInit {
     'Noir',
   ];
 
-  constructor(
-    private fb: FormBuilder,
-    private lightNovelSvc: LightNovelService,
-    private router: Router,
-    private autSVC: AuthService
-  ) {}
-
-  ngOnInit(): void {
+  formValidator() {
     this.createLightNovelForm = this.fb.group({
       title: this.fb.control(null, [Validators.required]),
       plot: this.fb.control(null, [Validators.required]),
@@ -91,20 +106,12 @@ export class LightNovelFormComponent implements OnInit {
         }),
       }),
     });
-
-    this.autSVC.user$.subscribe((user) => {
-      if (user) {
-        this.user = user;
-        console.log(this.user);
-      }
-    });
-
-    this.ripopulateForm()
   }
 
   get genreControls() {
     return (this.createLightNovelForm.get('genre') as FormArray).controls;
   }
+
   isTouchedInvalid(fieldName: string) {
     const field = this.createLightNovelForm.get(fieldName); //Cerco il campo
     return field?.invalid && field?.touched; //Verifico se il campo è valido e se è stato anche toccato
@@ -217,7 +224,6 @@ export class LightNovelFormComponent implements OnInit {
     this.redirectToHome();
   }
 
-
   cleanForum() {
     this.createLightNovelForm = this.fb.group({
       title: [''],
@@ -257,13 +263,14 @@ export class LightNovelFormComponent implements OnInit {
     this.router.navigate(['/home']);
   }
 
-
   ripopulateForm(): void {
     this.createLightNovelForm = this.fb.group({
       title: [this.novel?.title],
       plot: [this.novel?.plot],
       description: [this.novel?.description],
-      genre: this.fb.array(this.genreArr.map(genre => this.novel?.genre.includes(genre))),
+      genre: this.fb.array(
+        this.genreArr.map((genre) => this.novel?.genre.includes(genre))
+      ),
       author: [this.novel?.author],
       image_url: [this.novel?.image_url],
       created_at: [this.novel?.created_at],
@@ -292,6 +299,7 @@ export class LightNovelFormComponent implements OnInit {
       }),
     });
   }
+
   updateLightNovel() {
     const formValue = this.createLightNovelForm.value;
     const selectedGenres = this.genreArr.filter((_, i) => formValue.genre[i]);
@@ -302,14 +310,19 @@ export class LightNovelFormComponent implements OnInit {
       created_at: this.getTodaysDate(),
       slug: this.slugify(formValue.title),
       updated_by: this.user?.id,
+      id: this.novel?.id,
     };
 
     this.lightNovelSvc.updateLightNovel(LightNovel).subscribe(() => {
-      console.log('Il valore degli input aggiornati dopo:',formValue);
       alert('Light Novel aggiornata');
       this.cleanForum();
       this.redirectToHome();
-    })
+    });
+  }
+
+  formCompiledVerify() {
+    if (this.createLightNovelForm.dirty) {
+      this.formCompiled = true;
+    }
   }
 }
-

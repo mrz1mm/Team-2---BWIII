@@ -70,6 +70,7 @@ export class LightNovelService {
       map((data) => data.find((data) => data.id === id))
     );
   }
+
   getNovelsByUserId(userId: number): Observable<iLightNovel[]> {
     const url = `${this.lightNovelsUrl}?updated_by=${userId}`;
     return this.httpSvc.get<iLightNovel[]>(url).pipe(
@@ -98,15 +99,49 @@ export class LightNovelService {
   }
 
   // metodo per aggiungere una lightnovel
-  addLightNovel(newLightNovel: Partial<iLightNovel>) {
-    return this.httpSvc.post(this.lightNovelsUrl, newLightNovel);
+  addLightNovel(newLightNovel: Partial<iLightNovel>): Observable<iLightNovel> {
+    return this.httpSvc
+      .post<iLightNovel>(this.lightNovelsUrl, newLightNovel)
+      .pipe(
+        tap((addedLightNovel) => {
+          // Aggiungi la nuova light novel all'array
+          this.lightNovelsArray.push(addedLightNovel);
+          // Aggiorna il BehaviorSubject con il nuovo array
+          this.lightNovelsSubject.next([...this.lightNovelsArray]);
+        }),
+        catchError((error) => {
+          console.error('Error adding light novel:', error.message);
+          return throwError(
+            () => new Error('Error adding light novel: ' + error.message)
+          );
+        })
+      );
   }
 
-  // metodo per aggiornare una lightnovel
-  updateLightNovel(lightNovel: iLightNovel): Observable<iLightNovel> {
-    console.log('oggetto modificato:', lightNovel)
-    console.log('URL:', `${this.lightNovelsUrl}/${lightNovel.id}`);
-    return this.httpSvc.put<iLightNovel>(`${this.lightNovelsUrl}/${lightNovel.id}`, lightNovel)
+  // metodo per modificare una lightnovel
+  updateLightNovel(lightNovel: Partial<iLightNovel>): Observable<iLightNovel> {
+    return this.httpSvc
+      .put<iLightNovel>(`${this.lightNovelsUrl}/${lightNovel.id}`, lightNovel)
+      .pipe(
+        tap((updatedLightNovel) => {
+          // Trova l'indice della light novel modificata nell'array
+          const index = this.lightNovelsArray.findIndex(
+            (novel) => novel.id === updatedLightNovel.id
+          );
+          if (index !== -1) {
+            // Aggiorna l'array con la light novel modificata
+            this.lightNovelsArray[index] = updatedLightNovel;
+            // Aggiorna il BehaviorSubject con il nuovo array
+            this.lightNovelsSubject.next([...this.lightNovelsArray]);
+          }
+        }),
+        catchError((error) => {
+          console.error('Error updating light novel:', error.message);
+          return throwError(
+            () => new Error('Error updating light novel: ' + error.message)
+          );
+        })
+      );
   }
 
   // metodo per eliminare una lightnovel

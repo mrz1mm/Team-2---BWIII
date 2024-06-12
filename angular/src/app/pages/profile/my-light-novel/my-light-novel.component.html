@@ -4,11 +4,7 @@
       <div class="card d-flex align-items-center my-3 flex-row overflow-hidden">
         <a routerLink="/lightNovelDetails/{{ novel.id }}">
           <img
-            [src]="
-              '../../../assets/img/lightNovelImg/' +
-              replaceSpacesWithDashes(novel.title) +
-              '.png'
-            "
+            [src]="'../../../assets/img/lightNovelImg/' + novel.slug + '.png'"
             class="card-img-left"
             alt="{{ novel.title }}"
             id="img"

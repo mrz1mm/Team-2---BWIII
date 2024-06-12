@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-create-light-novel',
   templateUrl: './create-light-novel.component.html',
-  styleUrl: './create-light-novel.component.scss'
+  styleUrl: './create-light-novel.component.scss',
 })
 export class CreateLightNovelComponent {
   constructor(
@@ -19,13 +19,10 @@ export class CreateLightNovelComponent {
   ngOnInit() {
     this.route.params.subscribe((params: any) => {
       this.lightNovelId = parseInt(params.id);
-      console.log('light novel id:', this.lightNovelId);
 
       this.novelSVC.getLightNovelById(this.lightNovelId).subscribe((data) => {
         this.novel = data;
       });
     });
-    console.log('questa è la light novel', this.novel);
   }
 }
-
