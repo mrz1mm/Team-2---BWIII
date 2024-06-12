@@ -251,4 +251,7 @@ export class LightNovelFormComponent implements OnInit {
   redirectToHome(): void {
     this.router.navigate(['/home']);
   }
+
+
+
 }
