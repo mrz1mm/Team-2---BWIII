@@ -13,6 +13,7 @@ export class UserCardComponent {
   selectedUser: any;
   userToDelete: any = null;
   confirmName: string = '';
+  p:number=1
 
   constructor(private usersService: UsersService,private modalService:NgbModal) { }
 
