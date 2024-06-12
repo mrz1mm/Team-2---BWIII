@@ -101,7 +101,7 @@
   ],
   "lightNovels": [
     {
-      "title": "Il Segreto del Libro Antico",
+      "title": "Il Segreto del Libro Antico ",
       "plot": "In un mondo pieno di misteri e magia, la scoperta di un antico enigma porta a un'avventura epica alla ricerca del segreto di un libro leggendario.",
       "description": "Un'avventura interattiva in cui le tue scelte plasmano il destino di Alessio, un giovane bibliotecario desideroso di scoprire la verità.",
       "genre": [
@@ -119,20 +119,20 @@
           "choice2": "Ignori la pergamena e continui con i tuoi compiti di bibliotecario."
         },
         "part2": {
-          "part2a": null,
-          "part2b": null
+          "part2A": "Decidi di seguire l'enigma e inizi una ricerca per trovare il nascondiglio del libro antico. Il percorso è pieno di ostacoli e insidie, ma alla fine, dopo molte avventure, riesci a trovare il libro antico nascosto in una caverna oscura nel cuore della foresta. Con il libro tra le mani, ti trovi di fronte a un'altra decisione cruciale.",
+          "part2B": "Decidi di ignorare l'enigma e continuare con la tua vita quotidiana. La pergamena rimane un mistero non risolto, ma la tua vita continua senza intoppi."
         },
         "secondChoice": {
-          "secondChoice1": null,
-          "secondChoice2": null,
-          "secondChoice3": null,
-          "secondChoice4": null
+          "choice1": "Apri il libro e scopri il suo contenuto.",
+          "choice2": "Chiedi consiglio a un vecchio stregone della foresta.",
+          "choice3": "Coinvolgi un gruppo di avventurieri per aiutarti nella ricerca.",
+          "choice4": "Non apri il libro e lo nascondi di nuovo."
         },
         "part3": {
-          "part3a": null,
-          "part3b": null,
-          "part3c": null,
-          "part3d": null
+          "part3A": "Dentro il libro, trovi incantamenti e incantesimi dimenticati da secoli, ma anche avvertimenti su come usare il potere contenuto con saggezza. Decidi di condividere la tua scoperta con gli abitanti di Villarossa, portando prosperità e pace alla tua città natale.",
+          "part3B": "Il saggio stregone ti rivela che l'enigma porta al pericolo e ti avverte di lasciar perdere la ricerca. Decidi di seguire il suo consiglio e di dimenticare il libro antico, ma la curiosità ti consuma giorno dopo giorno, fino a quando non decidi di tornare indietro e risolvere l'enigma da solo. Purtroppo, quando torni alla caverna, trovi solo un mucchio di rovine e non riesci mai a scoprire il segreto del libro antico.",
+          "part3C": "Insieme agli avventurieri, affrontate pericoli e ostacoli, ma alla fine riuscite a trovare il libro e a svelarne il segreto. Dentro, scoprite un incantesimo per aprire un portale verso un mondo magico sconosciuto. Decidete di attraversare il portale insieme e iniziate una nuova avventura nel mondo magico, lasciando dietro di voi la vita ordinaria di Villarossa.",
+          "part3D": "Continui la tua vita da bibliotecario, ma con la consapevolezza che un grande segreto è in tuo possesso. Tuttavia, non resisti alla tentazione e anni dopo, decidi di aprire il libro. Trovi che il tempo ha alterato il suo contenuto e molti dei suoi segreti sono ormai perduti."
         }
       },
       "slug": "Il-Segreto-del-Libro-Antico",
@@ -144,13 +144,13 @@
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
       "genre": [
-        "Fantasy",
+        "Post-Apocalyptic",
         "Adventure",
-        "Post-Apocalyptic"
+        "Fantasy"
       ],
       "author": "Giovanni Bianchi",
       "image_url": null,
-      "created_at": "12/06/2024",
+      "created_at": "11/06/2024",
       "story": {
         "part1": "Nel mondo devastato da cataclismi e guerre, sei un eroe solitario con una missione epica: trovare l'antica Spada Perduta, leggendaria arma di potere, e usarla per fermare la distruzione e portare la speranza alla tua gente. Il tuo viaggio inizia in una città in rovina, dove sei determinato a trovare indizi sulla posizione della spada. Cosa farai?",
         "firstChoice": {
@@ -158,20 +158,20 @@
           "choice2": "Cerca informazioni da mercanti e viaggiatori sulle terre selvagge al di fuori della città."
         },
         "part2": {
-          "part2a": null,
-          "part2b": null
+          "part2A": "Decidi di esplorare le rovine della città, dove incontri pericoli e sorprese. Tra le macerie, trovi una mappa antica che indica la posizione della Spada Perduta in una caverna nascosta nelle montagne.",
+          "part2B": "Decidi di avventurarti nelle terre selvagge al di fuori della città, dove incontri tribù nomadi, creature selvagge e antichi guardiani della conoscenza."
         },
         "secondChoice": {
-          "secondChoice1": null,
-          "secondChoice2": null,
-          "secondChoice3": null,
-          "secondChoice4": null
+          "choice1": "Segui la mappa e avventurati verso la caverna nelle montagne.",
+          "choice2": "Mentre esplori le rovine della città, sei catturato da una banda di predoni.",
+          "choice3": "Scopri che la Spada Perduta si trova nelle terre desolate del deserto.",
+          "choice4": "Incontri un potente stregone che ti offre il potere in cambio della tua lealtà."
         },
         "part3": {
-          "part3a": null,
-          "part3b": null,
-          "part3c": null,
-          "part3d": null
+          "part3A": "Il tuo viaggio diventa sempre più pericoloso, ma alla fine, dopo molte prove, raggiungi la caverna e trovi la spada. Con essa, affronti le forze del male che minacciano il tuo mondo e diventi un eroe leggendario.",
+          "part3B": "Durante la prigionia, perdi ogni speranza di trovare la Spada Perduta e il tuo destino si consuma nell'oscurità.",
+          "part3C": "Dopo un lungo viaggio attraverso il deserto, raggiungi la tomba dei Re Antichi, dove trovi la spada tra le rovine. Con la spada in mano, torni nella tua terra natale e conduci la tua gente verso una nuova era di prosperità e pace.",
+          "part3D": "Accetti l'offerta, ma presto scopri che il potere del stregone è corrotto e porta solo distruzione. Diventi uno strumento nelle mani del male e il tuo nome diventa sinonimo di terrore e morte."
         }
       },
       "slug": "L'Ultimo-Viaggio-della-Spada-Perduta",
@@ -879,41 +879,84 @@
       "id": 20
     },
     {
-      "title": "Sdnasodjnas",
-      "plot": "asdjofnasodjnas",
-      "description": "zxodfjnaxofjnasd",
-      "genre": [
-        "Noir"
-      ],
+      "title": "ererter",
+      "plot": null,
+      "description": null,
+      "genre": [],
       "author": null,
       "image_url": null,
       "created_at": "12/06/2024",
       "story": {
-        "part1": "asdasdasd",
+        "part1": null,
         "firstChoice": {
-          "choice1": "asdasdasdasd",
-          "choice2": "asdasdasdasd"
+          "choice1": null,
+          "choice2": null
         },
         "part2": {
-          "part2a": "asdasdasdasd",
-          "part2b": "asdasdasdasd"
+          "part2A": null,
+          "part2B": null
         },
         "secondChoice": {
-          "secondChoice1": "asdasdasd",
-          "secondChoice2": "asdasdasdasd",
-          "secondChoice3": "asdasdasd",
-          "secondChoice4": "asdasdasdasd"
+          "choice1": null,
+          "choice2": null,
+          "choice3": null,
+          "choice4": null
         },
         "part3": {
-          "part3a": "asdasdasd",
-          "part3b": "asdasdasdasd",
-          "part3c": "asdasdasd",
-          "part3d": "asdasdasdasd"
+          "part3A": null,
+          "part3B": null,
+          "part3C": null,
+          "part3D": null
         }
       },
-      "slug": "sdnasodjnas",
+      "slug": "ererter",
       "updated_by": 1,
       "id": 21
+    },
+    {
+      "title": "AAAAAAAAAAAAAA",
+      "plot": "Odio expedita nulla ",
+      "description": "Cupiditate maxime ma",
+      "genre": [
+        "Thriller",
+        "Supernatural",
+        "Dystopian",
+        "Post-Apocalyptic",
+        "Steampunk",
+        "Cyberpunk",
+        "Detective",
+        "Western",
+        "Fairy Tale"
+      ],
+      "author": "Assumenda qui autem ",
+      "image_url": null,
+      "created_at": "12/06/2024",
+      "story": {
+        "part1": "Eos iusto unde non ",
+        "firstChoice": {
+          "choice1": "Dolorum cumque dolor",
+          "choice2": "Reprehenderit et hic"
+        },
+        "part2": {
+          "part2A": "Dolore dolorem maior",
+          "part2B": "Eum in omnis in dolo"
+        },
+        "secondChoice": {
+          "choice1": "Aliquip ipsum facer",
+          "choice2": "Quis dolorum dolores",
+          "choice3": "Rerum sint pariatur",
+          "choice4": "Unde mollitia minima"
+        },
+        "part3": {
+          "part3A": "Dolorem sapiente in ",
+          "part3B": "Placeat eos omnis ",
+          "part3C": "Rerum consequat Qui",
+          "part3D": "Ullamco est placeat"
+        }
+      },
+      "slug": "aaaaaaaaaaaaaa",
+      "updated_by": 1,
+      "id": 22
     }
   ],
   "favouriteLightNovels": [
