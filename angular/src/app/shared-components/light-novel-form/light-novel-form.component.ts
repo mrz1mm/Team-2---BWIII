@@ -14,7 +14,7 @@ export class LightNovelFormComponent implements OnInit {
   [x: string]: any;
   createLightNovelForm!: FormGroup;
 
-  user:iUser | null = this.autSVC.getCurrentUser()
+  user: iUser | null = this.autSVC.getCurrentUser();
 
   alertMessage: string | null = null;
   alertTimeout: any;
@@ -94,9 +94,8 @@ export class LightNovelFormComponent implements OnInit {
     this.autSVC.user$.subscribe((user) => {
       if (user) {
         this.user = user;
-        console.log(this.user)
+        console.log(this.user);
       }
-
     });
   }
 
@@ -117,12 +116,80 @@ export class LightNovelFormComponent implements OnInit {
   }
 
   slugify(str: string): string {
+    // Mappatura dei caratteri accentati
+    const accentMap: { [key: string]: string } = {
+      à: 'a',
+      á: 'a',
+      â: 'a',
+      ã: 'a',
+      ä: 'a',
+      å: 'a',
+      è: 'e',
+      é: 'e',
+      ê: 'e',
+      ë: 'e',
+      ì: 'i',
+      í: 'i',
+      î: 'i',
+      ï: 'i',
+      ò: 'o',
+      ó: 'o',
+      ô: 'o',
+      õ: 'o',
+      ö: 'o',
+      ø: 'o',
+      ù: 'u',
+      ú: 'u',
+      û: 'u',
+      ü: 'u',
+      ñ: 'n',
+      ç: 'c',
+      À: 'A',
+      Á: 'A',
+      Â: 'A',
+      Ã: 'A',
+      Ä: 'A',
+      Å: 'A',
+      È: 'E',
+      É: 'E',
+      Ê: 'E',
+      Ë: 'E',
+      Ì: 'I',
+      Í: 'I',
+      Î: 'I',
+      Ï: 'I',
+      Ò: 'O',
+      Ó: 'O',
+      Ô: 'O',
+      Õ: 'O',
+      Ö: 'O',
+      Ø: 'O',
+      Ù: 'U',
+      Ú: 'U',
+      Û: 'U',
+      Ü: 'U',
+      Ñ: 'N',
+      Ç: 'C',
+    };
+
+    // Sostituzione dei caratteri accentati
+    str = str
+      .split('')
+      .map((char) => accentMap[char] || char)
+      .join('');
+
+    // Rimozione degli spazi iniziali e finali
     str = str.replace(/^\s+|\s+$/g, ''); // trim leading/trailing white space
+
+    // Conversione in minuscolo
     str = str.toLowerCase(); // convert string to lowercase
+
+    // Sostituzione dei caratteri non alfanumerici, spazi e trattini multipli
     str = str
       .replace(/[^a-z0-9 -]/g, '') // remove any non-alphanumeric characters
       .replace(/\s+/g, '-') // replace spaces with hyphens
       .replace(/-+/g, '-'); // remove consecutive hyphens
+
     return str;
   }
 
@@ -135,7 +202,7 @@ export class LightNovelFormComponent implements OnInit {
       genre: selectedGenres,
       created_at: this.getTodaysDate(),
       slug: this.slugify(formValue.title),
-      update_by:this.user?.id
+      update_by: this.user?.id,
     };
 
     this.lightNovelSvc.addLightNovel(newLightNovel).subscribe((data) => {
@@ -144,7 +211,7 @@ export class LightNovelFormComponent implements OnInit {
     alert('Light Novel creata');
     this.cleanForum();
     this.redirectToHome();
-    }
+  }
 
   cleanForum() {
     this.createLightNovelForm = this.fb.group({
@@ -184,4 +251,7 @@ export class LightNovelFormComponent implements OnInit {
   redirectToHome(): void {
     this.router.navigate(['/home']);
   }
+
+
+
 }

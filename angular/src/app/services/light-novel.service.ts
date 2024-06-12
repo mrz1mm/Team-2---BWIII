@@ -230,4 +230,5 @@ export class LightNovelService {
   // metodo per cercare una lightnovel tramite titolo
 
   searchByLightNovelTitle() {}
+
 }

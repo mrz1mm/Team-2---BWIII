@@ -90,11 +90,7 @@
       "title": "Il Segreto del Libro Antico",
       "plot": "In un mondo pieno di misteri e magia, la scoperta di un antico enigma porta a un'avventura epica alla ricerca del segreto di un libro leggendario.",
       "description": "Un'avventura interattiva in cui le tue scelte plasmano il destino di Alessio, un giovane bibliotecario desideroso di scoprire la verità.",
-      "genre": [
-        "Mystery",
-        "Adventure",
-        "Fantasy"
-      ],
+      "genre": ["Mystery", "Adventure", "Fantasy"],
       "author": "Federica Martini",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -121,7 +117,7 @@
           "part3D": "Continui la tua vita da bibliotecario, ma con la consapevolezza che un grande segreto è in tuo possesso. Tuttavia, non resisti alla tentazione e anni dopo, decidi di aprire il libro. Trovi che il tempo ha alterato il suo contenuto e molti dei suoi segreti sono ormai perduti."
         }
       },
-      "slug": "il-segreto-del-libro-antico",
+      "slug": "Il-Segreto-del-Libro-Antico",
       "updated_by": 1,
       "id": 1
     },
@@ -129,11 +125,7 @@
       "title": "L'Ultimo Viaggio della Spada Perduta",
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
-      "genre": [
-        "Post-Apocalyptic",
-        "Adventure",
-        "Fantasy"
-      ],
+      "genre": ["Post-Apocalyptic", "Adventure", "Fantasy"],
       "author": "Giovanni Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -160,7 +152,7 @@
           "part3D": "Accetti l'offerta, ma presto scopri che il potere del stregone è corrotto e porta solo distruzione. Diventi uno strumento nelle mani del male e il tuo nome diventa sinonimo di terrore e morte."
         }
       },
-      "slug": "l-ultimo-viaggio-della-spada-perduta",
+      "slug": "L'Ultimo-Viaggio-della-Spada-Perduta",
       "updated_by": 1,
       "id": 2
     },
@@ -168,11 +160,7 @@
       "title": "La Città degli Antichi",
       "plot": "In un mondo futuristico, un esploratore si immerge nelle rovine di una città sconosciuta, scoprendo segreti sepolti da millenni.",
       "description": "Un'avventura fantascientifica ricca di enigmi e scoperte sorprendenti.",
-      "genre": [
-        "Sci-Fi",
-        "Adventure",
-        "Mystery"
-      ],
+      "genre": ["Sci-Fi", "Adventure", "Mystery"],
       "author": "Luca Ferrari",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -199,7 +187,7 @@
           "part3D": "Sei costretto a fuggire per salvare la tua vita e, mentre sfuggi ai tuoi inseguitori, scopri che la città nasconde minacce più grandi di quanto avessi mai immaginato."
         }
       },
-      "slug": "la-citta-degli-antichi",
+      "slug": "La-Citta-degli-Antichi",
       "updated_by": 1,
       "id": 3
     },
@@ -207,11 +195,7 @@
       "title": "Il Quadro dell'Amore Perduto",
       "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
       "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
-      "genre": [
-        "Drama",
-        "Historical Fiction",
-        "Mystery"
-      ],
+      "genre": ["Drama", "Historical Fiction", "Mystery"],
       "author": "Marco Russo",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -238,58 +222,50 @@
           "part3D": "Dopo aver riflettuto sulle scoperte fatte finora, decidi di valutare attentamente il prosieguo delle tue ricerche. Questa scelta può portare a un cambiamento di strategia o a una pausa nella tua indagine."
         }
       },
-      "slug": "il-quadro-dell'amore-perduto",
+      "slug": "Il-Quadro-dell'Amore-Perduto",
       "updated_by": 2,
       "id": 4
     },
     {
       "title": "La Città Perduta",
-    "plot": "Dopo un cataclisma globale, la società è crollata e le città sono diventate terre desolate. In questo mondo post-apocalittico, una leggenda parla di una città perduta che nasconde antichi segreti.",
-    "description": "Un'avventura epica in un mondo post-apocalittico, dove il destino dell'umanità è nelle tue mani.",
-    "genre": [
-        "Post-Apocalittico",
-        "Steampunk",
-        "Politico"
-    ],
-    "author": "Anonimo",
-    "image_url": "https://example.com/immagine.jpg",
-    "created_at": "2024-06-12",
-    "story": {
+      "plot": "Dopo un cataclisma globale, la società è crollata e le città sono diventate terre desolate. In questo mondo post-apocalittico, una leggenda parla di una città perduta che nasconde antichi segreti.",
+      "description": "Un'avventura epica in un mondo post-apocalittico, dove il destino dell'umanità è nelle tue mani.",
+      "genre": ["Post-Apocalittico", "Steampunk", "Politico"],
+      "author": "Anonimo",
+      "image_url": "https://example.com/immagine.jpg",
+      "created_at": "2024-06-12",
+      "story": {
         "part1": "Ti ritrovi a vagare nel deserto, alla ricerca di risposte tra le rovine della vecchia civiltà."
-    },
-    "firstChoice": {
+      },
+      "firstChoice": {
         "choice1": "Esplora le rovine di una città abbandonata.",
         "choice2": "Unisciti a una carovana di sopravvissuti."
-    },
-    "part2": {
+      },
+      "part2": {
         "part2A": "Scopri un'antica mappa che indica la posizione della Città Perduta.",
         "part2B": "Ti imbatti in una banda di predoni che minaccia di attaccare la tua carovana."
-    },
-    "secondChoice": {
+      },
+      "secondChoice": {
         "choice1": "Segui la mappa e dirigi verso la Città Perduta.",
         "choice2": "Difendi la carovana dagli attacchi dei predoni.",
         "choice3": "Cerca di negoziare con i predoni per evitare lo scontro.",
         "choice4": "Abbandona la carovana e cerca rifugio altrove."
-    },
-    "part3": {
+      },
+      "part3": {
         "part3A": "Finalmente raggiungi la leggendaria Città Perduta, scoprendo i suoi segreti e diventando un eroe nella storia dell'umanità.",
         "part3B": "Nonostante i tuoi sforzi, la carovana viene distrutta dai predoni. Ti ritrovi da solo nel deserto, con la speranza di trovare un nuovo scopo.",
         "part3C": "Le tue negoziazioni con i predoni hanno successo e eviti lo scontro. Continui il tuo viaggio con la carovana, cercando un luogo sicuro dove stabilirti.",
         "part3D": "Decidi di abbandonare la carovana e ti avventuri da solo nel deserto. Le tue scorte si esauriscono rapidamente, ma la tua determinazione non vacilla. Chi sa cosa troverai nel deserto senza fine..."
-    },
-    "slug": "la-citta-perduta",
-    "updated_by": 2,
-    "id": 5
+      },
+      "slug": "la-citta-perduta",
+      "updated_by": 2,
+      "id": 5
     },
     {
       "title": "Il Mistero del Vecchio Manicomio",
       "plot": "In una cittadina sonnolenta, un detective affronta un caso oscuro legato a un vecchio manicomio abbandonato, dove i confini tra realtà e sovrannaturale si sfumano",
       "description": "Un thriller psicologico avvincente con elementi sovrannaturali e misteri irrisolti.",
-      "genre": [
-        "Crime",
-        "Supernatural",
-        "Psychological"
-      ],
+      "genre": ["Crime", "Supernatural", "Psychological"],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -316,7 +292,7 @@
           "part3D": "Decidi di abbandonare il caso, ma le ombre del manicomio e il suo mistero continuano a tormentarti, lasciandoti con il rimpianto di non aver scoperto la verità."
         }
       },
-      "slug": "il-mistero-del-vecchio-manicomio",
+      "slug": "Il-Mistero-del-Vecchio-Manicomio",
       "updated_by": 3,
       "id": 6
     },
@@ -324,11 +300,7 @@
       "title": "Le Terre Desolate",
       "plot": "In un mondo devastato dalle guerre e dalle catastrofi, un gruppo di sopravvissuti cerca di creare un futuro migliore nelle terre desolate",
       "description": "Un'avventura epica di sopravvivenza e speranza in un mondo post-apocalittico.",
-      "genre": [
-        "Survival",
-        "Post-Apocalyptic",
-        "Dystopian"
-      ],
+      "genre": ["Survival", "Post-Apocalyptic", "Dystopian"],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -355,7 +327,7 @@
           "part3D": "Nonostante le difficoltà delle regioni rurali, mantieni viva la speranza e l'ottimismo. La tua determinazione a costruire un futuro migliore ti guida attraverso le sfide e le avversità, ispirando il tuo gruppo a lottare insieme per una vita migliore."
         }
       },
-      "slug": "le-terre-desolate",
+      "slug": "Le-Terre-Desolate",
       "updated_by": 4,
       "id": 7
     },
@@ -363,11 +335,7 @@
       "title": "Il Mondo dei Misteri",
       "plot": "In un mondo pieno di misteri e incantesimi, un avventuriero intraprende un viaggio per scoprire la verità nascosta dietro le nebbie dell'ignoto.",
       "description": "Un'avventura epica di scoperta e intrigo in un mondo fantastico.",
-      "genre": [
-        "Adventure",
-        "Fantasy",
-        "Mystery"
-      ],
+      "genre": ["Adventure", "Fantasy", "Mystery"],
       "author": "Luca Rossi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -394,7 +362,7 @@
           "part3D": "Nel villaggio vicino, trovi un saggio anziano disposto a guidarti. Insieme, affrontate gli enigmi della foresta proibita e svelate la verità nascosta."
         }
       },
-      "slug": "il-mondo-dei-misteri",
+      "slug": "Il-Mondo-dei-Misteri",
       "updated_by": 3,
       "id": 8
     },
@@ -402,11 +370,7 @@
       "title": "L'Enigma dell'Antica Città",
       "plot": "In un mondo di antiche rovine e misteri sepolti, un esploratore solitario si imbarca in un viaggio per svelare l'enigma di un'antica città perduta.",
       "description": "Un'avventura mozzafiato ricca di misteri e scoperte in un mondo dimenticato.",
-      "genre": [
-        "Adventure",
-        "Mystery",
-        "Fantasy"
-      ],
+      "genre": ["Adventure", "Mystery", "Fantasy"],
       "author": "Luca Rossi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -433,7 +397,7 @@
           "part3D": "Durante la notte, sei attaccato da banditi che cercano di rubarti le tue scoperte. Riesci a respingerli e, al mattino, continui il tuo viaggio con rinnovata determinazione."
         }
       },
-      "slug": "il-mistero-del-vecchio-manicomio",
+      "slug": "L'Enigma-dell'Antica-Citta",
       "updated_by": 2,
       "id": 9
     },
@@ -441,11 +405,7 @@
       "title": "Il Mistero della Città Sommersa",
       "plot": "In un mondo devastato dalle acque, un audace esploratore si imbarca in un'avventura per svelare il mistero di una città sommersa.",
       "description": "Un'avventura avvincente e piena di suspense in un mondo sottomarino pieno di segreti.",
-      "genre": [
-        "Adventure",
-        "Mystery",
-        "Sci-Fi"
-      ],
+      "genre": ["Adventure", "Mystery", "Sci-Fi"],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "09/06/2024",
@@ -472,7 +432,7 @@
           "part3D": "Con il tuo nuovo compagno di avventura, esplori insieme la città sommersa e condividete la gioia di fare scoperte straordinarie sotto il mare."
         }
       },
-      "slug": "il-mistero-della-citta-sommersa",
+      "slug": "Il-Mistero-della-Citta-Sommersa",
       "updated_by": 2,
       "id": 10
     },
@@ -480,11 +440,7 @@
       "title": "L'Ultimo Viaggio del Capitano Drake",
       "plot": "Nel secolo 18, il leggendario pirata Capitano Drake parte per un'ultima avventura alla ricerca di un tesoro nascosto in un'isola remota.",
       "description": "Un'avventura mozzafiato nei mari infestati dai pirati del passato.",
-      "genre": [
-        "Adventure",
-        "Historical Fiction",
-        "Action"
-      ],
+      "genre": ["Adventure", "Historical Fiction", "Action"],
       "author": "Marco De Luca",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -511,7 +467,7 @@
           "part3D": "Con l'aiuto degli abitanti dell'isola, scopri una rete di caverne segrete che conducono al tesoro. Grazie alla loro guida, trovi il tesoro e lasci un'eredità indelebile per le generazioni future."
         }
       },
-      "slug": "l-ultimo-viaggio-del-capitano-drake",
+      "slug": "L'Ultimo-Viaggio-del-Capitano-Drake",
       "updated_by": 3,
       "id": 11
     },
@@ -519,10 +475,7 @@
       "title": "Il Segreto della Villa Abbandonata",
       "plot": "In una notte tempestosa, un gruppo di amici decide di esplorare una villa abbandonata, ma presto scoprono che nasconde oscuri segreti.",
       "description": "Un'avventura avvincente piena di misteri e colpi di scena.",
-      "genre": [
-        "Horror",
-        "Thriller"
-      ],
+      "genre": ["Horror", "Thriller"],
       "author": "Giulia Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -549,7 +502,7 @@
           "part3D": "Chiamando le autorità, vi rendete conto che la villa è stata abbandonata per anni. Ma cosa nasconde veramente? Gli eventi si precipitano mentre attendete l'arrivo degli agenti."
         }
       },
-      "slug": "il-segreto-della-villa-abbandonata",
+      "slug": "Il-Segreto-della-Villa-Abbandonata",
       "updated_by": 5,
       "id": 12
     },
@@ -562,302 +515,136 @@
       "image_url": null,
       "created_at": "01/06/2024",
       "story": {
-          "part1": "Alex, mentre esplora un'antica biblioteca, scopre un portale nascosto dietro uno scaffale. Senza pensarci due volte, lo attraversa e si ritrova in un mondo completamente diverso. Davanti a lui ci sono due sentieri: uno porta a una foresta luminosa, l'altro a un castello oscuro.",
-          "firstChoice": {
-              "choice1": "Prendi il sentiero verso la foresta luminosa.",
-              "choice2": "Prendi il sentiero verso il castello oscuro."
-          },
-          "part2": {
-              "part2A": "Alex si addentra nella foresta luminosa. Gli alberi brillano di una luce magica e creature misteriose lo osservano. Incontra un saggio elfo che gli offre due opzioni: esplorare un antico tempio o aiutare una fata in pericolo.",
-              "part2B": "Alex si dirige verso il castello oscuro. Le ombre si allungano e il silenzio è inquietante. Viene avvicinato da uno stregone che gli propone due sfide: affrontare un drago o risolvere un enigma antico."
-          },
-          "secondChoice": {
-              "choice1": "Esplora l'antico tempio.",
-              "choice2": "Aiuta la fata in pericolo.",
-              "choice3": "Affronta il drago.",
-              "choice4": "Risolve l'enigma antico."
-          },
-          "part3": {
-              "part3A": "Nel tempio, Alex trova un artefatto che lo riporta a casa, ma con poteri magici. Questo oggetto, un antico amuleto, gli conferisce la capacità di comunicare con le creature magiche e di proteggere il suo mondo da minacce future. Alex torna nel suo villaggio, diventando un guardiano rispettato e ammirato da tutti.",
-              "part3B": "Salvando la fata, Alex viene ricompensato con un viaggio sicuro di ritorno e un amuleto protettivo. La fata, in segno di gratitudine, dona ad Alex una pietra magica che può esaudire un desiderio. Tornato a casa, Alex usa la pietra per portare prosperità al suo villaggio, diventando un eroe leggendario.",
-              "part3C": "Dopo aver sconfitto il drago, Alex scopre un portale che lo riporta a casa, diventando un eroe leggendario. Il drago, riconoscendo il suo coraggio, gli concede una gemma del potere che lo rende invincibile. Alex ritorna nel suo mondo, usando i suoi nuovi poteri per difendere il suo popolo e mantenere la pace.",
-              "part3D": "Risolto l'enigma, il castello si trasforma e Alex trova una via sicura per tornare a casa, portando con sé un'antica saggezza. Il castello, in realtà, era un'antica scuola di magia e Alex diventa il nuovo custode del sapere perduto. Con le nuove conoscenze, Alex istruisce una nuova generazione di maghi, assicurando un futuro luminoso per il suo mondo."
-          }
+        "part1": "Alex, mentre esplora un'antica biblioteca, scopre un portale nascosto dietro uno scaffale. Senza pensarci due volte, lo attraversa e si ritrova in un mondo completamente diverso. Davanti a lui ci sono due sentieri: uno porta a una foresta luminosa, l'altro a un castello oscuro.",
+        "firstChoice": {
+          "choice1": "Prendi il sentiero verso la foresta luminosa.",
+          "choice2": "Prendi il sentiero verso il castello oscuro."
+        },
+        "part2": {
+          "part2A": "Alex si addentra nella foresta luminosa. Gli alberi brillano di una luce magica e creature misteriose lo osservano. Incontra un saggio elfo che gli offre due opzioni: esplorare un antico tempio o aiutare una fata in pericolo.",
+          "part2B": "Alex si dirige verso il castello oscuro. Le ombre si allungano e il silenzio è inquietante. Viene avvicinato da uno stregone che gli propone due sfide: affrontare un drago o risolvere un enigma antico."
+        },
+        "secondChoice": {
+          "choice1": "Esplora l'antico tempio.",
+          "choice2": "Aiuta la fata in pericolo.",
+          "choice3": "Affronta il drago.",
+          "choice4": "Risolve l'enigma antico."
+        },
+        "part3": {
+          "part3A": "Nel tempio, Alex trova un artefatto che lo riporta a casa, ma con poteri magici. Questo oggetto, un antico amuleto, gli conferisce la capacità di comunicare con le creature magiche e di proteggere il suo mondo da minacce future. Alex torna nel suo villaggio, diventando un guardiano rispettato e ammirato da tutti.",
+          "part3B": "Salvando la fata, Alex viene ricompensato con un viaggio sicuro di ritorno e un amuleto protettivo. La fata, in segno di gratitudine, dona ad Alex una pietra magica che può esaudire un desiderio. Tornato a casa, Alex usa la pietra per portare prosperità al suo villaggio, diventando un eroe leggendario.",
+          "part3C": "Dopo aver sconfitto il drago, Alex scopre un portale che lo riporta a casa, diventando un eroe leggendario. Il drago, riconoscendo il suo coraggio, gli concede una gemma del potere che lo rende invincibile. Alex ritorna nel suo mondo, usando i suoi nuovi poteri per difendere il suo popolo e mantenere la pace.",
+          "part3D": "Risolto l'enigma, il castello si trasforma e Alex trova una via sicura per tornare a casa, portando con sé un'antica saggezza. Il castello, in realtà, era un'antica scuola di magia e Alex diventa il nuovo custode del sapere perduto. Con le nuove conoscenze, Alex istruisce una nuova generazione di maghi, assicurando un futuro luminoso per il suo mondo."
+        }
       },
-      "slug": "il-portale-dei-mondi",
+      "slug": "Il-Portale-dei-Mondi",
       "updated_by": 5,
       "id": 13
     },
     {
-    "title": "L'Ombra del Futuro",
-    "plot": "In un mondo dominato dalla tecnologia avanzata e segreti oscuri, un individuo si trova a dover fare scelte cruciali per la sua sopravvivenza e per il destino dell'umanità.",
-    "description": "Una storia interattiva che esplora le profonde implicazioni delle nostre scelte in un futuro distopico.",
-    "genre": [
-        "Sci-Fi",
-        "Dystopian",
-        "Thriller",
-        "Adventure"
-    ],
-    "author": "Giovanni Rossi",
-    "image_url": null,
-    "created_at": "06/06/2024",
-    "story": {
+      "title": "L'Ombra del Futuro",
+      "plot": "In un mondo dominato dalla tecnologia avanzata e segreti oscuri, un individuo si trova a dover fare scelte cruciali per la sua sopravvivenza e per il destino dell'umanità.",
+      "description": "Una storia interattiva che esplora le profonde implicazioni delle nostre scelte in un futuro distopico.",
+      "genre": ["Sci-Fi", "Dystopian", "Thriller", "Adventure"],
+      "author": "Giovanni Rossi",
+      "image_url": null,
+      "created_at": "06/06/2024",
+      "story": {
         "part1": "Il cielo sopra la città era un reticolo di luci al neon e droni che pattugliavano le strade. Jonathan camminava tra la folla, sentendo il peso di un segreto che avrebbe potuto cambiare tutto. Doveva prendere una decisione: fidarsi di un vecchio amico hacker o cercare rifugio con un gruppo di ribelli nascosti nelle rovine sotterranee.",
         "firstChoice": {
-            "choice1": "Andare dall'amico hacker",
-            "choice2": "Rifugiarsi con i ribelli"
+          "choice1": "Andare dall'amico hacker",
+          "choice2": "Rifugiarsi con i ribelli"
         },
         "part2": {
-            "part2A": "Alex si diresse verso l'appartamento di Helia, l'hacker. Helia lo accolse con un sorriso teso. 'Ho scoperto qualcosa di enorme, Jonathan. Ma abbiamo poco tempo. Puoi aiutarmi a diffondere queste informazioni o distruggere il server centrale e fermare il sistema.'",
-            "part2B": "Scendendo nelle rovine, Jonathan trovò i ribelli. Erano ben organizzati e pronti a combattere. La loro leader, Mara, gli propose due opzioni: infiltrarsi nella torre del governo per un'operazione segreta o sabotare le linee di rifornimento per indebolire le forze nemiche."
+          "part2A": "Alex si diresse verso l'appartamento di Helia, l'hacker. Helia lo accolse con un sorriso teso. 'Ho scoperto qualcosa di enorme, Jonathan. Ma abbiamo poco tempo. Puoi aiutarmi a diffondere queste informazioni o distruggere il server centrale e fermare il sistema.'",
+          "part2B": "Scendendo nelle rovine, Jonathan trovò i ribelli. Erano ben organizzati e pronti a combattere. La loro leader, Mara, gli propose due opzioni: infiltrarsi nella torre del governo per un'operazione segreta o sabotare le linee di rifornimento per indebolire le forze nemiche."
         },
         "secondChoice": {
-            "choice1": "Aiutare Helia a diffondere le informazioni",
-            "choice2": "Distruggere il server centrale",
-            "choice3": "Infiltrarsi nella torre del governo",
-            "choice4": "Sabotare le linee di rifornimento"
+          "choice1": "Aiutare Helia a diffondere le informazioni",
+          "choice2": "Distruggere il server centrale",
+          "choice3": "Infiltrarsi nella torre del governo",
+          "choice4": "Sabotare le linee di rifornimento"
         },
         "part3": {
-            "part3A": "Diffondendo le informazioni, la verità venne a galla. La popolazione si sollevò, portando a una rivoluzione che cambiò il mondo. Jonathan diventò un eroe, ma sapeva che la strada per la vera libertà era ancora lunga.",
-            "part3B": "La missione per distruggere il server centrale ebbe successo, ma a un grande costo. Max perse la vita e Jonathan fu costretto a fuggire. Anche se il sistema crollò, Helia si trovò a riflettere se il sacrificio fosse stato davvero necessario.",
-            "part3C": "L'infiltrazione nella torre del governo fu un successo spettacolare. Jonathan e Mara riuscirono a ottenere informazioni critiche che permisero ai ribelli di pianificare un attacco decisivo. La vittoria sembrava più vicina che mai.",
-            "part3D": "Il sabotaggio delle linee di rifornimento indebolì le forze nemiche, ma provocò anche una reazione violenta del governo. Jonathan e i ribelli dovettero affrontare una serie di battaglie, ma la loro determinazione e coraggio li portarono a una vittoria insperata."
+          "part3A": "Diffondendo le informazioni, la verità venne a galla. La popolazione si sollevò, portando a una rivoluzione che cambiò il mondo. Jonathan diventò un eroe, ma sapeva che la strada per la vera libertà era ancora lunga.",
+          "part3B": "La missione per distruggere il server centrale ebbe successo, ma a un grande costo. Max perse la vita e Jonathan fu costretto a fuggire. Anche se il sistema crollò, Helia si trovò a riflettere se il sacrificio fosse stato davvero necessario.",
+          "part3C": "L'infiltrazione nella torre del governo fu un successo spettacolare. Jonathan e Mara riuscirono a ottenere informazioni critiche che permisero ai ribelli di pianificare un attacco decisivo. La vittoria sembrava più vicina che mai.",
+          "part3D": "Il sabotaggio delle linee di rifornimento indebolì le forze nemiche, ma provocò anche una reazione violenta del governo. Jonathan e i ribelli dovettero affrontare una serie di battaglie, ma la loro determinazione e coraggio li portarono a una vittoria insperata."
         }
-    },
-    "slug": "l-ombra-del-futuro",
-    "updated_by": 1,
-    "id": 14
+      },
+      "slug": "L'Ombra-del-Futuro",
+      "updated_by": 1,
+      "id": 14
     },
     {
-    "title": "Il Segreto del Bosco Dimenticato",
-    "plot": "Una giovane ragazza scopre un misterioso segreto nascosto nel cuore di un Bosco Dimenticato.",
-    "description": "In un piccolo villaggio ai margini di un bosco incantato, una ragazza intraprende un'avventura che cambierà la sua vita per sempre.",
-    "genre": [
-        "Mythology",
-        "Urban Fantasy",
-        "Dark Fantasy",
-        "Fairy Tale"
-    ],
-    "author": "Luca Rossi",
-    "image_url": null,
-    "created_at": "08/06/2024",
-    "story": {
+      "title": "Il Segreto del Bosco Dimenticato",
+      "plot": "Una giovane ragazza scopre un misterioso segreto nascosto nel cuore di un Bosco Dimenticato.",
+      "description": "In un piccolo villaggio ai margini di un bosco incantato, una ragazza intraprende un'avventura che cambierà la sua vita per sempre.",
+      "genre": ["Mythology", "Urban Fantasy", "Dark Fantasy", "Fairy Tale"],
+      "author": "Luca Rossi",
+      "image_url": null,
+      "created_at": "08/06/2024",
+      "story": {
         "part1": "Nel villaggio di Eldoria, ai margini del Bosco Dimenticato, viveva una giovane ragazza di nome Elara. Un giorno, mentre esplorava i confini del bosco, Elara trovò una vecchia mappa che indicava un luogo misterioso nascosto nelle profondità della foresta. Decise di seguirla, ignara dei pericoli e dei segreti che avrebbe svelato.",
         "firstChoice": {
-            "choice1": "Segui la mappa e avventurati nel Bosco Dimenticato.",
-            "choice2": "Ignora la mappa e torna al villaggio."
+          "choice1": "Segui la mappa e avventurati nel Bosco Dimenticato.",
+          "choice2": "Ignora la mappa e torna al villaggio."
         },
         "part2": {
-            "part2A": "Elara seguì la mappa e si addentrò nel Bosco Dimenticato. Dopo ore di cammino, arrivò a una radura dove trovò un antico altare coperto di rune. Sapeva che doveva decifrare le rune per svelare il segreto del bosco.",
-            "part2B": "Elara decise di ignorare la mappa e tornare al villaggio. Ma una volta tornata, non riuscì a smettere di pensare a ciò che avrebbe potuto scoprire. Quella notte, il bosco la chiamò in sogno, spingendola a ritornare e affrontare il suo destino."
+          "part2A": "Elara seguì la mappa e si addentrò nel Bosco Dimenticato. Dopo ore di cammino, arrivò a una radura dove trovò un antico altare coperto di rune. Sapeva che doveva decifrare le rune per svelare il segreto del bosco.",
+          "part2B": "Elara decise di ignorare la mappa e tornare al villaggio. Ma una volta tornata, non riuscì a smettere di pensare a ciò che avrebbe potuto scoprire. Quella notte, il bosco la chiamò in sogno, spingendola a ritornare e affrontare il suo destino."
         },
         "secondChoice": {
-            "choice1": "Decifra le rune e svela il segreto dell'altare.",
-            "choice2": "Ignora le rune e continua ad esplorare il bosco.",
-            "choice3": "Ritorna al bosco seguendo il richiamo del sogno.",
-            "choice4": "Condividi il sogno con gli anziani del villaggio."
+          "choice1": "Decifra le rune e svela il segreto dell'altare.",
+          "choice2": "Ignora le rune e continua ad esplorare il bosco.",
+          "choice3": "Ritorna al bosco seguendo il richiamo del sogno.",
+          "choice4": "Condividi il sogno con gli anziani del villaggio."
         },
         "part3": {
-            "part3A": "Decifrando le rune, Elara scoprì un antico incantesimo che risvegliò gli spiriti del bosco. Gli spiriti le rivelarono che era destinata a proteggere il bosco dai pericoli futuri. Elara accettò il suo destino e divenne la guardiana del Bosco Dimenticato.",
-            "part3B": "Ignorando le rune, Elara continuò a esplorare il bosco e trovò un portale che la trasportò in un mondo magico. Lì, scoprì di avere poteri straordinari e decise di rimanere per imparare a usarli, lasciando il suo vecchio mondo alle spalle.",
-            "part3C": "Seguendo il richiamo del sogno, Elara tornò al bosco e trovò un antico spirito che le rivelò la sua vera identità: era l'erede di una linea di potenti streghe. Accettò il suo destino e iniziò il suo addestramento per proteggere il bosco e il villaggio.",
-            "part3D": "Condividendo il sogno con gli anziani, Elara scoprì che anche loro conoscevano il segreto del bosco. Insieme, decisero di proteggere il segreto e il villaggio. Elara divenne una leader rispettata e il villaggio prosperò grazie alla sua guida."
+          "part3A": "Decifrando le rune, Elara scoprì un antico incantesimo che risvegliò gli spiriti del bosco. Gli spiriti le rivelarono che era destinata a proteggere il bosco dai pericoli futuri. Elara accettò il suo destino e divenne la guardiana del Bosco Dimenticato.",
+          "part3B": "Ignorando le rune, Elara continuò a esplorare il bosco e trovò un portale che la trasportò in un mondo magico. Lì, scoprì di avere poteri straordinari e decise di rimanere per imparare a usarli, lasciando il suo vecchio mondo alle spalle.",
+          "part3C": "Seguendo il richiamo del sogno, Elara tornò al bosco e trovò un antico spirito che le rivelò la sua vera identità: era l'erede di una linea di potenti streghe. Accettò il suo destino e iniziò il suo addestramento per proteggere il bosco e il villaggio.",
+          "part3D": "Condividendo il sogno con gli anziani, Elara scoprì che anche loro conoscevano il segreto del bosco. Insieme, decisero di proteggere il segreto e il villaggio. Elara divenne una leader rispettata e il villaggio prosperò grazie alla sua guida."
         }
-    },
-    "slug": "il-segreto-del-bosco-dimenticato",
-    "updated_by": 2,
-    "id": 15
-    },
-    {
-    "title": "L'Inganno del Codice Nero",
-    "plot": "Un agente segreto si trova intrappolato in una rete di inganni e tradimenti mentre cerca di decifrare il misterioso Codice Nero, una sequenza crittografica che potrebbe cambiare le sorti della guerra.",
-    "description": "In un mondo sospeso tra le ombre dell'intrigo e della spionaggio, l'Agente Delta si trova ad affrontare una sfida mortale mentre cerca di proteggere il segreto del Codice Nero.",
-    "genre": [
-        "Crime",
-        "Espionage",
-        "Military"
-    ],
-    "author": "Chiara Romano",
-    "image_url": null,
-    "created_at": "12/06/2024",
-    "story": {
-        "part1": "L'Agente Delta si infiltra nella base nemica per recuperare il Codice Nero. Mentre si avventura nei corridoi bui, deve decidere se entrare nell'ufficio del generale o sabotare le comunicazioni nemiche.",
-        "firstChoice": {
-            "choice1": "L'Agente Delta si dirige verso l'ufficio del generale.",
-            "choice2": "L'Agente Delta sabota le comunicazioni nemiche."
-        },
-        "part2": {
-            "part2A": "Dopo aver decifrato il Codice Nero, l'Agente Delta deve decidere se consegnarlo ai suoi superiori o utilizzarlo per un vantaggio personale.",
-            "part2B": "Dopo aver sabotato le comunicazioni nemiche, l'Agente Delta si trova di fronte a una decisione: fuggire dalla base o cercare ulteriori informazioni nel bunker."
-        },
-        "secondChoice": {
-            "choice1": "L'Agente Delta consegna il Codice Nero ai suoi superiori.",
-            "choice2": "L'Agente Delta utilizza il Codice Nero per un vantaggio personale.",
-            "choice3": "L'Agente Delta fugge dalla base nemica.",
-            "choice4": "L'Agente Delta cerca ulteriori informazioni nel bunker."
-        },
-        "part3": {
-            "part3A": "Il Codice Nero si rivela essere un'arma potentissima contro il nemico. L'Agente Delta viene promosso e celebrato come un eroe nazionale.",
-            "part3B": "Utilizzando il Codice Nero per i suoi scopi, l'Agente Delta viene scoperto e tradito dai suoi stessi superiori. Si ritrova fuggiasco, braccato da entrambi i lati del conflitto.",
-            "part3C": "Fuggendo dalla base nemica, l'Agente Delta scopre un'informazione vitale che potrebbe cambiare il corso della guerra. Tuttavia, prima che possa trasmetterla, viene catturato e torturato.",
-            "part3D": "Nel bunker, l'Agente Delta trova prove schiaccianti di un tradimento all'interno delle proprie linee. Decide di agire di conseguenza, ma viene scoperto prima di poter agire. Deve fuggire per salvarsi la vita."
-        }
-    },
-    "slug": "linganno-del-codice-nero",
-    "updated_by": 3,
-    "id": 16
-    },
-    {
-    "title": "Il Segreto del Cyborg",
-    "plot": "In un futuro cyberpunk, la guerra tra umani e macchine è imminente. Un soldato cyborg, dopo essere stato riportato in vita con parti meccaniche, scopre un segreto che potrebbe cambiare il corso della guerra.",
-    "description": "In un mondo dilaniato dalla guerra tra umani e macchine, il destino è nelle tue mani. Scopri il segreto del cyborg e decidi il destino dell'umanità.",
-    "genre": [
-      "Military",
-      "Cyberpunk",
-      "Urban Fantasy"
-    ],
-    "author": "Anonimo",
-    "image_url": null,
-    "created_at": "2024-06-12",
-    "story": "Sei un soldato cyborg, riportato in vita con parti meccaniche dopo essere caduto in battaglia. La tua missione è cruciale per il destino dell'umanità. Sulla tua strada, scopri un segreto che potrebbe cambiare tutto. Scegli con saggezza.",
-    "firstChoice": {
-      "choice1": "Investiga il laboratorio segreto",
-      "choice2": "Incontra il leader della resistenza"
-    },
-    "part2": {
-      "part2A": "Esplori il laboratorio e scopri un progetto segreto. Ora devi decidere cosa farne.",
-      "part2B": "Incontri il leader della resistenza, che ti offre un'alleanza. Devi decidere se accettare."
-    },
-    "secondChoice": {
-      "choice1": "Utilizza il segreto per potenziarti",
-      "choice2": "Condividi il segreto con la resistenza",
-      "choice3": "Unisciti alla causa della macchina",
-      "choice4": "Vivi in pace, lontano dal conflitto"
-    },
-    "part3": {
-      "part3A": "Decidi di utilizzare il segreto per potenziare le tue capacità. Ti trasformi in un'arma vivente, ma il potere ti consuma e perdi la tua umanità. Diventi la più grande minaccia per entrambe le fazioni.",
-      "part3B": "Condividi il segreto con la resistenza. Insieme, pianificate un attacco risolutivo contro le macchine. La battaglia è epica e molte vite vengono sacrificate, ma alla fine, l'umanità prevale e la pace è restaurata, almeno per ora.",
-      "part3C": "Abbracci la causa delle macchine, tradendo l'umanità. Ti unisci al loro esercito e diventi uno dei loro leader più temuti. Ma anche se hai ottenuto potere, rimani sempre diviso tra il tuo passato umano e il presente cibernetico.",
-      "part3D": "Decidi di vivere in pace, lontano dal conflitto. Ma il passato torna a tormentarti quando la guerra raggiunge anche il tuo rifugio. Scegli di combattere per la tua libertà e quella dei tuoi compagni, o abbraccia la tua nuova vita e lascia che la guerra scorra intorno a te."
-    },
-    "slug": "il-segreto-del-cyborg",
-    "updated_by": 13,
-    "id": 17
-    },
-    {
-    "title": "Nel Buio della Notte",
-    "plot": "Una piccola città è sconvolta da una serie di misteriosi omicidi. Un giovane detective si immerge nell'oscurità per svelare la verità, ma scopre che la linea tra giustizia e peccato è sottile.",
-    "description": "In una città avvolta dalle tenebre, il male si nasconde dietro ogni angolo. Sei pronto a scoprire la verità?",
-    "genre": [
-        "Thriller",
-        "Mystery",
-        "Dark Fantasy"
-    ],
-    "author": "Marco Russo",
-    "image_url": null,
-    "created_at": "12/06/2024",
-    "story": {
-        "part1": "La città di Bruma è avvolta da un'ombra sinistra. Il detective Marco Rossi si trova di fronte a una serie di omicidi inspiegabili. La sua indagine lo porta sempre più vicino al cuore della notte oscura.",
-        "firstChoice": {
-            "choice1": "Continua l'indagine nelle strade buie",
-            "choice2": "Ritorna alla stazione e ricomincia domani"
-        },
-        "part2": {
-            "part2A": "Il detective Rossi prosegue il suo cammino nelle strade oscure, cercando indizi tra i vicoli desolati.",
-            "part2B": "Il detective Rossi ritorna alla stazione, ma il senso di colpa per aver abbandonato l'indagine lo tormenta."
-        },
-        "secondChoice": {
-            "choice1": "Esplora il vicolo stretto",
-            "choice2": "Interroga un sospettato",
-            "choice3": "Analizza le prove",
-            "choice4": "Richiama l'assistenza di un collega"
-        },
-        "part3": {
-            "part3A": "Il detective Rossi, nel buio del vicolo, scorge un riflesso metallico. Si avvicina con cautela e trova un medaglione insanguinato, un indizio cruciale che lo porta alla tana del colpevole. Con coraggio affronta il suo nemico, mettendo fine alla notte oscura e riportando la luce sulla città.",
-            "part3B": "Il sospettato, sotto la pressione dell'interrogatorio, rivela la sua storia di dolore e rabbia. Le sue parole gettano una nuova luce sui crimini, svelando una trama intricata di vendetta e tradimento che ha consumato la città per anni.",
-            "part3C": "Le prove raccolte dal detective Rossi aprono un abisso di segreti nascosti. Dietro le facciate rispettabili della città si nasconde una rete di menzogne e manipolazioni. Il detective si rende conto che il male può celarsi anche dietro il volto più innocente.",
-            "part3D": "Il collega del detective Rossi, giunto in suo soccorso, scopre un orrore indicibile. Trova il corpo di un'altra vittima, segno che il male continua a serpeggiare nella città. Il detective si unisce a lui nella ricerca della verità, consapevole che la notte oscura non è ancora finita."
-        }
-    },
-    "slug": "nel-buio-della-notte",
-   "updated_by": 4,
-    "id": 18
-    },
-    {
-      "title": "Il Segreto della Rosa",
-      "plot": "In un regno lontano, un antico segreto è custodito da una rosa magica. La tua avventura comincia quando scopri di essere l'unico erede della famiglia incaricata di proteggerlo.",
-      "description": "Scopri il destino di un antico segreto e il potere dell'amore in questa storia romantica e fiabesca.",
-      "genre": [
-          "Romance",
-          "Fairy Tale"
-      ],
-      "author": "Giulia Bianchi",
-      "image_url": null,
-      "created_at": "07/06/2024",
-      "story": {
-          "part1": "Un giorno, mentre passeggiate nei giardini del castello, trovi una rosa particolarmente radiosa. Il suo profumo ti attira, e quando la tocchi, una porta segreta si apre ai tuoi piedi, rivelando un passaggio sotterraneo.",
-          "firstChoice": {
-              "choice1": "Esplora il passaggio",
-              "choice2": "Lascia la rosa e torna indietro"
-          },
-          "part2": {
-              "part2A": "Decidi di esplorare il passaggio. Dopo un breve cammino, ti trovi di fronte a due porte: una dorata e una argentata.",
-              "part2B": "Decidi di lasciare la rosa e tornare indietro."
-          },
-          "secondChoice": {
-              "choice1": "Entra nella porta dorata",
-              "choice2": "Entra nella porta argentata",
-              "choice3": "Ripensa alla rosa e ritorna indietro",
-              "choice4": "Continua a esplorare il passaggio"
-          },
-          "part3": {
-              "part3A": "Dietro la porta dorata, trovi una stanza incantata illuminata da una luce dorata. La rosa è al centro di tutto, emanando un'aura magica che ti avvolge delicatamente. Quando la tocchi, senti un calore avvolgerti e una voce gentile ti sussurra all'orecchio. È il segreto della rosa: può concedere desideri sinceri. Con questo nuovo potere, ti impegni a usarlo per il bene di chi ti circonda.",
-              "part3B": "Dietro la porta argentata, incontri un cavaliere misterioso avvolto in un mantello d'argento. I suoi occhi ti scrutano con una curiosità intrigante, e quando vi avvicinate, senti il cuore battere forte nel petto. È come se il destino avesse deciso di unire i vostri cammini. Presto scopri che il segreto della rosa è legato al suo amore: solo l'amore vero può rivelare il suo potere completo. Insieme, decidi di custodire questo segreto e proteggere la rosa, mentre il vostro amore cresce sempre di più.",
-              "part3C": "Ripensando alla rosa, realizzi che l'amore e l'onestà sono i veri tesori della vita. Decidi di condividere la tua scoperta con il mondo intero, portando amore e speranza ovunque tu vada. La tua storia diventa una leggenda che ispira le generazioni future a seguire il cuore e a credere nei miracoli.",
-              "part3D": "Continuando l'esplorazione, ti perdi nei meandri del passaggio sotterraneo. Alla fine, ritrovi la rosa, ma senza aver scoperto il suo segreto. Decidi di custodire il mistero, sperando che un giorno possa essere svelato. Nel frattempo, continui il tuo viaggio con la consapevolezza che ci sono segreti nell'universo che possono rimanere nascosti per sempre."
-          }
       },
-      "slug": "il-segreto-della-rosa",
+      "slug": "Il-Segreto-del-Bosco-Dimenticato",
       "updated_by": 2,
-      "id": 19
+      "id": 15
     },
     {
-      "title": "Il Tesoro del Faraone",
-      "plot": "Durante un'escursione nel deserto egiziano, scopri un antico tempio nascosto. Decidi di esplorarlo alla ricerca del leggendario tesoro del Faraone. Ma attenzione, ogni scelta potrebbe condurti a una diversa sorte!",
-      "description": "Ti trovi nel deserto dell'antico Egitto, circondato da dune di sabbia e dalle rovine di antichi templi. Mentre esplori le rovine, scopri un passaggio segreto che conduce a un'enorme sala piena di tesori antichi e reliquie misteriose.",
-      "genre": [
-          "Mythology",
-        "Historical Fiction"
-      ],
-      "author": "Marco De Luca",
+      "title": "L'Inganno del Codice Nero",
+      "plot": "Un agente segreto si trova intrappolato in una rete di inganni e tradimenti mentre cerca di decifrare il misterioso Codice Nero, una sequenza crittografica che potrebbe cambiare le sorti della guerra.",
+      "description": "In un mondo sospeso tra le ombre dell'intrigo e della spionaggio, l'Agente Delta si trova ad affrontare una sfida mortale mentre cerca di proteggere il segreto del Codice Nero.",
+      "genre": ["Crime", "Espionage", "Military"],
+      "author": "Chiara Romano",
       "image_url": null,
       "created_at": "12/06/2024",
       "story": {
-          "part1": "Sei all'ingresso della sala del tesoro, con le pareti decorate da geroglifici e le statue dei guardiani antichi che ti osservano.",
-          "firstChoice": {
-              "choice1": "Esamina i geroglifici alla tua destra.",
-              "choice2": "Esplora la stanza alla tua sinistra."
-          },
-          "part2": {
-              "part2A": "Decidi di esaminare i geroglifici, cercando indizi sul tesoro nascosto. Improvvisamente, una luce brillante risalta dal soffitto, facendo tremare il terreno sotto di te.",
-              "part2B": "Scegli di esplorare la stanza a sinistra, cercando di trovare altre vie d'uscita. Trovi un passaggio segreto dietro a un'enorme statua di un dio egizio."
-          },
-          "secondChoice": {
-              "choice1": "Cerca un nascondiglio segreto nella stanza.",
-              "choice2": "Fuggi verso l'uscita.",
-              "choice3": "Entra nel passaggio segreto.",
-              "choice4": "Resta nella stanza e cerca altro."
-          },
-          "part3": {
-              "part3A": "Nascondendoti nel nascondiglio segreto, riesci a sfuggire alla trappola e a scoprire una stanza ancora più antica, dove il tesoro del Faraone brilla alla luce delle torce. Ammira l'antica bellezza e senti l'emozione di essere il primo ad aver scoperto questo tesoro sepolto per millenni.",
-              "part3B": "Fuggendo verso l'uscita, inciampi su una leva nascosta che apre una porta segreta. Trovi te stesso in una stanza buia, con rumori misteriosi provenienti da ogni angolo. Decidi di esplorare ulteriormente e scopri una rete di cunicoli che conducono a una seconda camera segreta, dove trovi antiche scritture che parlano del destino dei fuggiaschi del tempio.",
-              "part3C": "Entrando nel passaggio segreto, ti ritrovi in una stanza piena di trappole mortali, ma con coraggio e astuzia riesci a superarle tutte e a raggiungere il cuore del tempio, dove il tesoro del Faraone giace intatto. Al momento di afferrare il tesoro, però, ti rendi conto che è solo un'illusione magica, e la vera ricchezza è la conoscenza acquisita durante il viaggio.",
-              "part3D": "Decidi di cercare altro nella stanza, ma scopri troppo tardi di essere caduto in una trappola mortale, e il tuo viaggio finisce qui."
-          }
+        "part1": "L'Agente Delta si infiltra nella base nemica per recuperare il Codice Nero. Mentre si avventura nei corridoi bui, deve decidere se entrare nell'ufficio del generale o sabotare le comunicazioni nemiche.",
+        "firstChoice": {
+          "choice1": "L'Agente Delta si dirige verso l'ufficio del generale.",
+          "choice2": "L'Agente Delta sabota le comunicazioni nemiche."
+        },
+        "part2": {
+          "part2A": "Dopo aver decifrato il Codice Nero, l'Agente Delta deve decidere se consegnarlo ai suoi superiori o utilizzarlo per un vantaggio personale.",
+          "part2B": "Dopo aver sabotato le comunicazioni nemiche, l'Agente Delta si trova di fronte a una decisione: fuggire dalla base o cercare ulteriori informazioni nel bunker."
+        },
+        "secondChoice": {
+          "choice1": "L'Agente Delta consegna il Codice Nero ai suoi superiori.",
+          "choice2": "L'Agente Delta utilizza il Codice Nero per un vantaggio personale.",
+          "choice3": "L'Agente Delta fugge dalla base nemica.",
+          "choice4": "L'Agente Delta cerca ulteriori informazioni nel bunker."
+        },
+        "part3": {
+          "part3A": "Il Codice Nero si rivela essere un'arma potentissima contro il nemico. L'Agente Delta viene promosso e celebrato come un eroe nazionale.",
+          "part3B": "Utilizzando il Codice Nero per i suoi scopi, l'Agente Delta viene scoperto e tradito dai suoi stessi superiori. Si ritrova fuggiasco, braccato da entrambi i lati del conflitto.",
+          "part3C": "Fuggendo dalla base nemica, l'Agente Delta scopre un'informazione vitale che potrebbe cambiare il corso della guerra. Tuttavia, prima che possa trasmetterla, viene catturato e torturato.",
+          "part3D": "Nel bunker, l'Agente Delta trova prove schiaccianti di un tradimento all'interno delle proprie linee. Decide di agire di conseguenza, ma viene scoperto prima di poter agire. Deve fuggire per salvarsi la vita."
+        }
       },
-      "slug": "il-tesoro-del-faraone",
-      "updated_by": 1,
-      "id": 20
+      "slug": "L'Inganno-del-Codice-Nero",
+      "updated_by": 3,
+      "id": 16
     }
   ]
 }
