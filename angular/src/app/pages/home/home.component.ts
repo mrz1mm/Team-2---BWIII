@@ -44,11 +44,6 @@ export class HomeComponent {
     }).mount({ AutoScroll });
   }
 
-  // Metodo per sostituire gli spazi con trattini
-  replaceSpacesWithDashes(input: string): string {
-    return input.replace(/ /g, '-');
-  }
-
   selectedGenre(genre: string) {
     this.filteredLightNovelsArray =
       this.lightNovelSvc.getLightNovelsByGenre(genre);

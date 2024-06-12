@@ -3,9 +3,7 @@
   *ngIf="lightNovel"
   [ngStyle]="{
     backgroundImage:
-      'url(/assets/img/lightNovelImg/' +
-      replaceSpacesWithDashes(lightNovel.title) +
-      '.png)'
+      'url(/assets/img/lightNovelImg/' + lightNovel.slug + '.png)'
   }"
 >
   <div class="row">
