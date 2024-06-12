@@ -90,7 +90,11 @@
       "title": "Il Segreto del Libro Antico",
       "plot": "In un mondo pieno di misteri e magia, la scoperta di un antico enigma porta a un'avventura epica alla ricerca del segreto di un libro leggendario.",
       "description": "Un'avventura interattiva in cui le tue scelte plasmano il destino di Alessio, un giovane bibliotecario desideroso di scoprire la verità.",
-      "genre": ["Mystery", "Adventure", "Fantasy"],
+      "genre": [
+        "Mystery",
+        "Adventure",
+        "Fantasy"
+      ],
       "author": "Federica Martini",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -118,13 +122,18 @@
         }
       },
       "slug": "il-segreto-del-libro-antico",
+      "update_by": 1,
       "id": 1
     },
     {
       "title": "L'Ultimo Viaggio della Spada Perduta",
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
-      "genre": ["Post-Apocalyptic", "Adventure", "Fantasy"],
+      "genre": [
+        "Post-Apocalyptic",
+        "Adventure",
+        "Fantasy"
+      ],
       "author": "Giovanni Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -152,13 +161,18 @@
         }
       },
       "slug": "l-ultimo-viaggio-della-spada-perduta",
+      "update_by": 1,
       "id": 2
     },
     {
       "title": "La Città degli Antichi",
       "plot": "In un mondo futuristico, un esploratore si immerge nelle rovine di una città sconosciuta, scoprendo segreti sepolti da millenni.",
       "description": "Un'avventura fantascientifica ricca di enigmi e scoperte sorprendenti.",
-      "genre": ["Sci-Fi", "Adventure", "Mystery"],
+      "genre": [
+        "Sci-Fi",
+        "Adventure",
+        "Mystery"
+      ],
       "author": "Luca Ferrari",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -186,13 +200,18 @@
         }
       },
       "slug": "la-citta-degli-antichi",
+      "update_by": 1,
       "id": 3
     },
     {
       "title": "Il Quadro dell'Amore Perduto",
       "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
       "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
-      "genre": ["Drama", "Historical Fiction", "Mystery"],
+      "genre": [
+        "Drama",
+        "Historical Fiction",
+        "Mystery"
+      ],
       "author": "Marco Russo",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -219,38 +238,19 @@
           "part3D": "Dopo aver riflettuto sulle scoperte fatte finora, decidi di valutare attentamente il prosieguo delle tue ricerche. Questa scelta può portare a un cambiamento di strategia o a una pausa nella tua indagine."
         }
       },
-      "slug": "l-ultimo-viaggio-della-spada-perduta",
-      "id": 2
-    },
-    {
-      "title": "Il Quadro dell'Amore Perduto",
-      "plot": "In una tranquilla cittadina, un giovane artista scopre un quadro che racconta una storia d'amore antica e struggente.",
-      "description": "Un racconto romantico e commovente che attraversa il tempo e lo spazio",
-      "genre": ["Drama", "Romance"],
-      "author": "Laura Colombo",
-      "image_url": null,
-      "created_at": "11/06/2024",
-      "story": {
-        "part1": "Sei Marco, un giovane artista di talento che vive in una piccola cittadina. Un giorno, mentre esplori un mercatino dell'antiquariato, incontri un quadro che cattura la tua attenzione. Il dipinto sembra narrare una storia d'amore antica e misteriosa. Affascinato dalla bellezza e dalla tristezza del dipinto, decidi di indagare sulla sua origine. Cosa farai?",
-        "part2": {
-          "part2a": "Inizia a cercare indizi sulla storia del quadro nella tua città.",
-          "part2b": "Fai ricerche su internet e contatta esperti per scoprire di più sul dipinto."
-        },
-        "part3": {
-          "part3a": "Decidi di iniziare la tua ricerca nella tua città, parlando con gli anziani e cercando indizi nei luoghi storici. Con il passare del tempo, scopri una leggenda locale che sembra collegata al dipinto. La leggenda racconta di un amore perduto che attraversa i secoli. Determinato a scoprire la verità, continui a scavare nel passato fino a trovare una sconvolgente verità che cambierà per sempre la tua visione del mondo.",
-          "part3b": "Mentre cerchi indizi sulla storia del quadro nella tua città, incontri ostacoli e resistenza da parte di coloro che vogliono mantenere il segreto del dipinto nascosto. Intrappolato in una rete di inganni e tradimenti, il tuo viaggio diventa una lotta per la verità e la sopravvivenza. ",
-          "part3c": "Decidi di fare ricerche su internet e contattare esperti per scoprire di più sul dipinto. Le tue ricerche ti portano a scoprire una serie di indizi e teorie su chi potrebbe essere l'artista e chi potrebbero essere i soggetti del dipinto. Le tue scoperte ti portano in un viaggio emozionante attraverso il tempo e lo spazio, mentre cerchi di svelare il mistero dietro il quadro dell'amore perduto.",
-          "part3d": "Fare ricerche su internet e contattare esperti porta alla luce una serie di teorie e congetture, ma nessuna risposta definitiva. Alla fine, devi decidere se accettare che alcune storie rimarranno per sempre un mistero o continuare a cercare la verità, nonostante le difficoltà."
-        }
-      },
       "slug": "il-quadro-dell'amore-perduto",
+      "update_by": 2,
       "id": 4
     },
     {
       "title": "L'Enigma della Pittura Perduta",
       "plot": "In una città storica, un appassionato di arte si immerge in un mistero che risale ai tempi antichi.",
       "description": "Una storia di arte, storia e mistero che ti porterà in un viaggio attraverso i secoli.",
-      "genre": ["Drama", "Historical Fiction", "Mystery"],
+      "genre": [
+        "Drama",
+        "Historical Fiction",
+        "Mystery"
+      ],
       "author": "Marco Russo",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -278,13 +278,18 @@
         }
       },
       "slug": "l'enigma-della-pittura-perduta",
+      "update_by": 2,
       "id": 5
     },
     {
       "title": "Il Mistero del Vecchio Manicomio",
       "plot": "In una cittadina sonnolenta, un detective affronta un caso oscuro legato a un vecchio manicomio abbandonato, dove i confini tra realtà e sovrannaturale si sfumano",
       "description": "Un thriller psicologico avvincente con elementi sovrannaturali e misteri irrisolti.",
-      "genre": ["Crime", "Supernatural", "Psychological"],
+      "genre": [
+        "Crime",
+        "Supernatural",
+        "Psychological"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -312,13 +317,18 @@
         }
       },
       "slug": "il-mistero-del-vecchio-manicomio",
+      "update_by": 3,
       "id": 6
     },
     {
       "title": "Le Terre Desolate",
       "plot": "In un mondo devastato dalle guerre e dalle catastrofi, un gruppo di sopravvissuti cerca di creare un futuro migliore nelle terre desolate",
       "description": "Un'avventura epica di sopravvivenza e speranza in un mondo post-apocalittico.",
-      "genre": ["Survival", "Post-Apocalyptic", "Dystopian"],
+      "genre": [
+        "Survival",
+        "Post-Apocalyptic",
+        "Dystopian"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -346,13 +356,18 @@
         }
       },
       "slug": "le-terre-desolate",
+      "update_by": 4,
       "id": 7
     },
     {
       "title": "Il Mondo dei Misteri",
       "plot": "In un mondo pieno di misteri e incantesimi, un avventuriero intraprende un viaggio per scoprire la verità nascosta dietro le nebbie dell'ignoto.",
       "description": "Un'avventura epica di scoperta e intrigo in un mondo fantastico.",
-      "genre": ["Adventure", "Fantasy", "Mystery"],
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Mystery"
+      ],
       "author": "Luca Rossi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -380,13 +395,18 @@
         }
       },
       "slug": "il-mondo-dei-misteri",
+      "update_by": 3,
       "id": 8
     },
     {
       "title": "L'Enigma dell'Antica Città",
       "plot": "In un mondo di antiche rovine e misteri sepolti, un esploratore solitario si imbarca in un viaggio per svelare l'enigma di un'antica città perduta.",
       "description": "Un'avventura mozzafiato ricca di misteri e scoperte in un mondo dimenticato.",
-      "genre": ["Adventure", "Mystery", "Fantasy"],
+      "genre": [
+        "Adventure",
+        "Mystery",
+        "Fantasy"
+      ],
       "author": "Luca Rossi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -414,85 +434,18 @@
         }
       },
       "slug": "il-mistero-del-vecchio-manicomio",
-      "id": 6
-    },
-    {
-      "title": "Le Terre Desolate",
-      "plot": "In un mondo devastato dalle guerre e dalle catastrofi, un gruppo di sopravvissuti cerca di creare un futuro migliore nelle terre desolate",
-      "description": "Un'avventura epica di sopravvivenza e speranza in un mondo post-apocalittico.",
-      "genre": ["Survival", "Post-Apocalyptic", "Dystopian"],
-      "author": "Chiara Romano",
-      "image_url": null,
-      "created_at": "11/06/2024",
-      "story": {
-        "part1": "Dopo la fine del mondo come lo conoscevamo, la civiltà è collassata e il mondo è diventato un luogo desolato e ostile. Tu sei uno dei pochi sopravvissuti, determinato a non arrenderti alla disperazione. Reunisci un gruppo di altri sopravvissuti e insieme vi mettete in viaggio attraverso le terre desolate, cercando un luogo sicuro dove poter iniziare una nuova vita. Qual è la tua mossa?",
-        "part2": {
-          "part2a": "Esplora le città in rovina alla ricerca di risorse e alleati.",
-          "part2b": "Dirigiti verso le regioni rurali in cerca di un rifugio naturale lontano dal caos urbano."
-        },
-        "part3": {
-          "part3a": "Decidi di esplorare le città in rovina, nonostante i pericoli e le minacce che vi si nascondono. Durante la tua ricerca, incontri sia risorse preziose che nuovi alleati disposti a unirsi alla tua causa. Ma il percorso è pericoloso e non tutti riescono a sopravvivere alle minacce del mondo post-apocalittico. Alla fine, riesci a trovare un rifugio sicuro e a iniziare la tua nuova vita.",
-          "part3b": "Mentre esplori le città in rovina, scopri che non sei solo. Altri gruppi di sopravvissuti competono per le stesse risorse e territori. La lotta per la sopravvivenza diventa una battaglia brutale e senza quartiere, mettendo alla prova la tua fede nella bontà umana. Alla fine, ti rendi conto che il vero nemico potrebbe non essere là fuori, ma dentro di te.",
-          "part3c": "Preferisci dirigerti verso le regioni rurali, sperando di trovare un rifugio naturale lontano dal caos urbano. Lungo il cammino, affronti sfide uniche e pericoli nascosti, ma anche scopri la bellezza sopravvissuta della natura. Con impegno e determinazione, crei un insediamento nelle terre desolate e inizi a costruire un futuro migliore per te e i tuoi compagni sopravvissuti.",
-          "part3d": "Dirigendoti verso le regioni rurali, ti rendi conto che la natura stessa è diventata il tuo peggior nemico. La terra è inospitale e le risorse sono scarse. Con il passare del tempo, le tensioni all'interno del gruppo aumentano e il tuo sogno di un futuro migliore si sfuma lentamente. Alla fine, sei costretto a confrontarti con la dura realtà del mondo post-apocalittico."
-        }
-      },
-      "slug": "le-terre-desolate",
-      "id": 7
-    },
-    {
-      "title": "Il Mistero della Foresta Incantata",
-      "plot": "In una foresta incantata, un viaggiatore si imbatte in un antico segreto che cambierà per sempre il suo destino.",
-      "description": "Un'avventura magica e misteriosa che ti porterà in luoghi incredibili e ti farà scoprire segreti nascosti",
-      "genre": ["Adventure", "Fantasy", "Horror"],
-      "author": "Matteo Ricci",
-      "image_url": null,
-      "created_at": "11/06/2024",
-      "story": {
-        "part1": "Sei un viaggiatore solitario che si avventura nella misteriosa Foresta Incantata, una terra piena di magia e creature straordinarie. Durante il tuo viaggio, incontri un bivio: un sentiero oscuro che si inoltra nella foresta e un sentiero illuminato che porta al villaggio più vicino. Cosa farai?",
-        "part2": {
-          "part2a": "Segui il sentiero oscuro e avventurati più a fondo nella foresta.",
-          "part2b": "Prendi il sentiero illuminato e raggiungi il villaggio."
-        },
-        "part3": {
-          "part3a": "Decidi di seguire il sentiero oscuro e inizi una lunga e avventurosa esplorazione della foresta. Lungo il cammino, incontri creature magiche e superi prove difficili. Alla fine, raggiungi una radura segreta al centro della foresta, dove trovi un antico tempio nascosto. Dentro il tempio, scopri un artefatto magico che ti conferisce poteri incredibili e diventi una leggenda vivente della Foresta Incantata.",
-          "part3b": "Seguendo il sentiero oscuro, ti ritrovi presto perso nella densa foresta. Mentre cerchi di orientarti, incontri una misteriosa figura incappucciata che ti offre un patto oscuro. Accetti il patto, ma presto scopri che hai venduto la tua anima in cambio di poteri oscuri. La foresta si trasforma in un luogo di terrore e disperazione, e il tuo destino è segnato per sempre.",
-          "part3c": "Decidi di prendere il sentiero illuminato e raggiungi il villaggio più vicino. Una volta lì, scopri che il villaggio è in preda a una terribile maledizione che solo tu puoi rompere. Con l'aiuto degli abitanti del villaggio, sconfiggi il male e riporti la pace nella regione. Per il tuo coraggio e la tua saggezza, diventi un eroe rispettato e amato in tutto il regno.",
-          "part3d": "Scegliendo la sicurezza del sentiero illuminato, raggiungi il villaggio e scopri che è governato da un tiranno malvagio. Decidi di combattere contro l'ingiustizia e unirti a una ribellione segreta per rovesciare il tiranno. Dopo una lunga e dura battaglia, il tiranno è sconfitto e il villaggio è libero. Grazie al tuo coraggio e alla tua leadership, diventi un simbolo di speranza e libertà per tutti gli abitanti del villaggio."
-        }
-      },
-      "slug": "il-mistero-della-foresta-incantata",
-      "id": 8
-    },
-    {
-      "title": "La Torre dell'Archimago",
-      "plot": "Un giovane apprendista mago si imbarca in un'avventura per svelare i segreti di una misteriosa torre magica.",
-      "description": "Un'avventura interattiva ricca di magia, pericoli e scoperte sorprendenti.",
-      "genre": ["Adventure", "Fantasy", "Mystery"],
-      "author": "Maria Rossi",
-      "image_url": null,
-      "created_at": "11/06/2024",
-      "story": {
-        "part1": "Sei Arlen, un giovane apprendista mago desideroso di dimostrare il tuo valore. Un giorno, mentre esplori una foresta vicina, scopri una torre misteriosa emergere improvvisamente dal suolo. Decidi di esplorare la torre per svelare i suoi segreti. Cosa farai?",
-        "part2": {
-          "part2a": "Entra nella torre e inizia la tua avventura.",
-          "part2b": "Rimani fuori e osserva la torre da lontano."
-        },
-        "part3": {
-          "part3a": "Decidi di entrare nella torre, ma una volta all'interno, ti ritrovi intrappolato in un labirinto magico senza via d'uscita. Dopo giorni di vagare nel labirinto, ti rendi conto di essere stato ingannato da un incantesimo oscuro. Rimani intrappolato nella torre per sempre.",
-          "part3b": "Decidi di entrare nella torre e iniziare la tua avventura. Durante l'esplorazione, incontri una serie di trappole mortali e creature magiche. Tuttavia, la tua determinazione non vacilla e, alla fine, raggiungi il cuore della torre. Lì, trovi un antico archivio di conoscenza segreta, che ti fornisce risposte a domande millenarie e poteri magici inimmaginabili. Diventi il più grande Archimago di tutti i tempi e la tua storia diventa leggenda.",
-          "part3c": "Rimanendo al di fuori della torre, decidi di indagare ulteriormente sul suo mistero. Trovi indizi che ti conducono a una grotta segreta nascosta sotto la torre. Esplorando la grotta, trovi un antico artefatto magico che ti concede poteri straordinari. Con i tuoi nuovi poteri, diventi una leggenda vivente nel regno, anche se la verità sulla torre rimane un mistero",
-          "part3d": "Rimanendo al di fuori della torre, decidi di ritornare al villaggio e riprendere la tua vita quotidiana. Tuttavia, durante il tuo viaggio di ritorno, incontri un gruppo di avventurieri che stanno cercando di svelare il mistero della torre. Decidi di unirti a loro e insieme formate una squadra eccezionale. Attraverso la vostra collaborazione, scoprite i segreti della torre e diventate eroi leggendari nel regno."
-        }
-      },
-      "slug": "la-torre-dell-archimago",
+      "update_by": 2,
       "id": 9
     },
     {
       "title": "Il Mistero della Città Sommersa",
       "plot": "In un mondo devastato dalle acque, un audace esploratore si imbarca in un'avventura per svelare il mistero di una città sommersa.",
       "description": "Un'avventura avvincente e piena di suspense in un mondo sottomarino pieno di segreti.",
-      "genre": ["Adventure", "Mystery", "Sci-Fi"],
+      "genre": [
+        "Adventure",
+        "Mystery",
+        "Sci-Fi"
+      ],
       "author": "Chiara Romano",
       "image_url": null,
       "created_at": "09/06/2024",
@@ -520,13 +473,18 @@
         }
       },
       "slug": "il-mistero-della-citta-sommersa",
+      "update_by": 2,
       "id": 10
     },
     {
       "title": "L'Ultimo Viaggio del Capitano Drake",
       "plot": "Nel secolo 18, il leggendario pirata Capitano Drake parte per un'ultima avventura alla ricerca di un tesoro nascosto in un'isola remota.",
       "description": "Un'avventura mozzafiato nei mari infestati dai pirati del passato.",
-      "genre": ["Adventure", "Historical Fiction", "Action"],
+      "genre": [
+        "Adventure",
+        "Historical Fiction",
+        "Action"
+      ],
       "author": "Marco De Luca",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -554,13 +512,17 @@
         }
       },
       "slug": "l-ultimo-viaggio-del-capitano-drake",
+      "update_by": 3,
       "id": 11
     },
     {
       "title": "Il Segreto della Villa Abbandonata",
       "plot": "In una notte tempestosa, un gruppo di amici decide di esplorare una villa abbandonata, ma presto scoprono che nasconde oscuri segreti.",
       "description": "Un'avventura avvincente piena di misteri e colpi di scena.",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "author": "Giulia Bianchi",
       "image_url": null,
       "created_at": "11/06/2024",
@@ -587,8 +549,163 @@
           "part3D": "Chiamando le autorità, vi rendete conto che la villa è stata abbandonata per anni. Ma cosa nasconde veramente? Gli eventi si precipitano mentre attendete l'arrivo degli agenti."
         }
       },
-      "slug": "cdcdc",
+      "slug": "il-segreto-della-villa-abbandonata",
+      "update_by": 5,
       "id": 12
-    }
+    },
+    {
+      "title": "Il Portale dei Mondi",
+      "plot": "Un giovane scopre un antico portale che conduce a mondi paralleli, ognuno con i propri pericoli e meraviglie.",
+      "description": "Alex, un giovane curioso, trova un misterioso portale che lo conduce in vari mondi fantastici. Deve fare scelte cruciali per sopravvivere e tornare a casa.",
+      "genre": ["Fantasy", "Adventure", "Mystery", "Sci-Fi"],
+      "author": "Giovanni Rossi",
+      "image_url": null,
+      "created_at": "01/06/2024",
+      "story": {
+          "part1": "Alex, mentre esplora un'antica biblioteca, scopre un portale nascosto dietro uno scaffale. Senza pensarci due volte, lo attraversa e si ritrova in un mondo completamente diverso. Davanti a lui ci sono due sentieri: uno porta a una foresta luminosa, l'altro a un castello oscuro.",
+          "firstChoice": {
+              "choice1": "Prendi il sentiero verso la foresta luminosa.",
+              "choice2": "Prendi il sentiero verso il castello oscuro."
+          },
+          "part2": {
+              "part2A": "Alex si addentra nella foresta luminosa. Gli alberi brillano di una luce magica e creature misteriose lo osservano. Incontra un saggio elfo che gli offre due opzioni: esplorare un antico tempio o aiutare una fata in pericolo.",
+              "part2B": "Alex si dirige verso il castello oscuro. Le ombre si allungano e il silenzio è inquietante. Viene avvicinato da uno stregone che gli propone due sfide: affrontare un drago o risolvere un enigma antico."
+          },
+          "secondChoice": {
+              "choice1": "Esplora l'antico tempio.",
+              "choice2": "Aiuta la fata in pericolo.",
+              "choice3": "Affronta il drago.",
+              "choice4": "Risolve l'enigma antico."
+          },
+          "part3": {
+              "part3A": "Nel tempio, Alex trova un artefatto che lo riporta a casa, ma con poteri magici. Questo oggetto, un antico amuleto, gli conferisce la capacità di comunicare con le creature magiche e di proteggere il suo mondo da minacce future. Alex torna nel suo villaggio, diventando un guardiano rispettato e ammirato da tutti.",
+              "part3B": "Salvando la fata, Alex viene ricompensato con un viaggio sicuro di ritorno e un amuleto protettivo. La fata, in segno di gratitudine, dona ad Alex una pietra magica che può esaudire un desiderio. Tornato a casa, Alex usa la pietra per portare prosperità al suo villaggio, diventando un eroe leggendario.",
+              "part3C": "Dopo aver sconfitto il drago, Alex scopre un portale che lo riporta a casa, diventando un eroe leggendario. Il drago, riconoscendo il suo coraggio, gli concede una gemma del potere che lo rende invincibile. Alex ritorna nel suo mondo, usando i suoi nuovi poteri per difendere il suo popolo e mantenere la pace.",
+              "part3D": "Risolto l'enigma, il castello si trasforma e Alex trova una via sicura per tornare a casa, portando con sé un'antica saggezza. Il castello, in realtà, era un'antica scuola di magia e Alex diventa il nuovo custode del sapere perduto. Con le nuove conoscenze, Alex istruisce una nuova generazione di maghi, assicurando un futuro luminoso per il suo mondo."
+          }
+      },
+      "slug": "il-portale-dei-mondi",
+      "updated_by": 5,
+      "id": 13
+  },
+  {
+    "title": "L'Ombra del Futuro",
+    "plot": "In un mondo dominato dalla tecnologia avanzata e segreti oscuri, un individuo si trova a dover fare scelte cruciali per la sua sopravvivenza e per il destino dell'umanità.",
+    "description": "Una storia interattiva che esplora le profonde implicazioni delle nostre scelte in un futuro distopico.",
+    "genre": [
+        "Sci-Fi",
+        "Dystopian",
+        "Thriller",
+        "Adventure"
+    ],
+    "author": "Giovanni Rossi",
+    "image_url": null,
+    "created_at": "06/06/2024",
+    "story": {
+        "part1": "Il cielo sopra la città era un reticolo di luci al neon e droni che pattugliavano le strade. Jonathan camminava tra la folla, sentendo il peso di un segreto che avrebbe potuto cambiare tutto. Doveva prendere una decisione: fidarsi di un vecchio amico hacker o cercare rifugio con un gruppo di ribelli nascosti nelle rovine sotterranee.",
+        "firstChoice": {
+            "choice1": "Andare dall'amico hacker",
+            "choice2": "Rifugiarsi con i ribelli"
+        },
+        "part2": {
+            "part2A": "Alex si diresse verso l'appartamento di Helia, l'hacker. Helia lo accolse con un sorriso teso. 'Ho scoperto qualcosa di enorme, Jonathan. Ma abbiamo poco tempo. Puoi aiutarmi a diffondere queste informazioni o distruggere il server centrale e fermare il sistema.'",
+            "part2B": "Scendendo nelle rovine, Jonathan trovò i ribelli. Erano ben organizzati e pronti a combattere. La loro leader, Mara, gli propose due opzioni: infiltrarsi nella torre del governo per un'operazione segreta o sabotare le linee di rifornimento per indebolire le forze nemiche."
+        },
+        "secondChoice": {
+            "choice1": "Aiutare Helia a diffondere le informazioni",
+            "choice2": "Distruggere il server centrale",
+            "choice3": "Infiltrarsi nella torre del governo",
+            "choice4": "Sabotare le linee di rifornimento"
+        },
+        "part3": {
+            "part3A": "Diffondendo le informazioni, la verità venne a galla. La popolazione si sollevò, portando a una rivoluzione che cambiò il mondo. Jonathan diventò un eroe, ma sapeva che la strada per la vera libertà era ancora lunga.",
+            "part3B": "La missione per distruggere il server centrale ebbe successo, ma a un grande costo. Max perse la vita e Jonathan fu costretto a fuggire. Anche se il sistema crollò, Helia si trovò a riflettere se il sacrificio fosse stato davvero necessario.",
+            "part3C": "L'infiltrazione nella torre del governo fu un successo spettacolare. Jonathan e Mara riuscirono a ottenere informazioni critiche che permisero ai ribelli di pianificare un attacco decisivo. La vittoria sembrava più vicina che mai.",
+            "part3D": "Il sabotaggio delle linee di rifornimento indebolì le forze nemiche, ma provocò anche una reazione violenta del governo. Jonathan e i ribelli dovettero affrontare una serie di battaglie, ma la loro determinazione e coraggio li portarono a una vittoria insperata."
+        }
+    },
+    "slug": "l-ombra-del-futuro",
+    "updated_by": 1,
+    "id": 14
+  },
+  {
+    "title": "Il Segreto del Bosco Dimenticato",
+    "plot": "Una giovane ragazza scopre un misterioso segreto nascosto nel cuore di un Bosco Dimenticato.",
+    "description": "In un piccolo villaggio ai margini di un bosco incantato, una ragazza intraprende un'avventura che cambierà la sua vita per sempre.",
+    "genre": [
+        "Mythology",
+        "Urban Fantasy",
+        "Dark Fantasy",
+        "Fairy Tale"
+    ],
+    "author": "Luca Rossi",
+    "image_url": null,
+    "created_at": "08/06/2024",
+    "story": {
+        "part1": "Nel villaggio di Eldoria, ai margini del Bosco Dimenticato, viveva una giovane ragazza di nome Elara. Un giorno, mentre esplorava i confini del bosco, Elara trovò una vecchia mappa che indicava un luogo misterioso nascosto nelle profondità della foresta. Decise di seguirla, ignara dei pericoli e dei segreti che avrebbe svelato.",
+        "firstChoice": {
+            "choice1": "Segui la mappa e avventurati nel Bosco Dimenticato.",
+            "choice2": "Ignora la mappa e torna al villaggio."
+        },
+        "part2": {
+            "part2A": "Elara seguì la mappa e si addentrò nel Bosco Dimenticato. Dopo ore di cammino, arrivò a una radura dove trovò un antico altare coperto di rune. Sapeva che doveva decifrare le rune per svelare il segreto del bosco.",
+            "part2B": "Elara decise di ignorare la mappa e tornare al villaggio. Ma una volta tornata, non riuscì a smettere di pensare a ciò che avrebbe potuto scoprire. Quella notte, il bosco la chiamò in sogno, spingendola a ritornare e affrontare il suo destino."
+        },
+        "secondChoice": {
+            "choice1": "Decifra le rune e svela il segreto dell'altare.",
+            "choice2": "Ignora le rune e continua ad esplorare il bosco.",
+            "choice3": "Ritorna al bosco seguendo il richiamo del sogno.",
+            "choice4": "Condividi il sogno con gli anziani del villaggio."
+        },
+        "part3": {
+            "part3A": "Decifrando le rune, Elara scoprì un antico incantesimo che risvegliò gli spiriti del bosco. Gli spiriti le rivelarono che era destinata a proteggere il bosco dai pericoli futuri. Elara accettò il suo destino e divenne la guardiana del Bosco Dimenticato.",
+            "part3B": "Ignorando le rune, Elara continuò a esplorare il bosco e trovò un portale che la trasportò in un mondo magico. Lì, scoprì di avere poteri straordinari e decise di rimanere per imparare a usarli, lasciando il suo vecchio mondo alle spalle.",
+            "part3C": "Seguendo il richiamo del sogno, Elara tornò al bosco e trovò un antico spirito che le rivelò la sua vera identità: era l'erede di una linea di potenti streghe. Accettò il suo destino e iniziò il suo addestramento per proteggere il bosco e il villaggio.",
+            "part3D": "Condividendo il sogno con gli anziani, Elara scoprì che anche loro conoscevano il segreto del bosco. Insieme, decisero di proteggere il segreto e il villaggio. Elara divenne una leader rispettata e il villaggio prosperò grazie alla sua guida."
+        }
+    },
+    "slug": "il-segreto-del-bosco-dimenticato",
+    "updated_by": 2,
+    "id": 15
+  },
+  {
+    "title": "L'Inganno del Codice Nero",
+    "plot": "Un agente segreto si trova intrappolato in una rete di inganni e tradimenti mentre cerca di decifrare il misterioso Codice Nero, una sequenza crittografica che potrebbe cambiare le sorti della guerra.",
+    "description": "In un mondo sospeso tra le ombre dell'intrigo e della spionaggio, l'Agente Delta si trova ad affrontare una sfida mortale mentre cerca di proteggere il segreto del Codice Nero.",
+    "genre": [
+        "Crime",
+        "Espionage",
+        "Military"
+    ],
+    "author": "Chiara Romano",
+    "image_url": null,
+    "created_at": "12/06/2024",
+    "story": {
+        "part1": "L'Agente Delta si infiltra nella base nemica per recuperare il Codice Nero. Mentre si avventura nei corridoi bui, deve decidere se entrare nell'ufficio del generale o sabotare le comunicazioni nemiche.",
+        "firstChoice": {
+            "choice1": "L'Agente Delta si dirige verso l'ufficio del generale.",
+            "choice2": "L'Agente Delta sabota le comunicazioni nemiche."
+        },
+        "part2": {
+            "part2A": "Dopo aver decifrato il Codice Nero, l'Agente Delta deve decidere se consegnarlo ai suoi superiori o utilizzarlo per un vantaggio personale.",
+            "part2B": "Dopo aver sabotato le comunicazioni nemiche, l'Agente Delta si trova di fronte a una decisione: fuggire dalla base o cercare ulteriori informazioni nel bunker."
+        },
+        "secondChoice": {
+            "choice1": "L'Agente Delta consegna il Codice Nero ai suoi superiori.",
+            "choice2": "L'Agente Delta utilizza il Codice Nero per un vantaggio personale.",
+            "choice3": "L'Agente Delta fugge dalla base nemica.",
+            "choice4": "L'Agente Delta cerca ulteriori informazioni nel bunker."
+        },
+        "part3": {
+            "part3A": "Il Codice Nero si rivela essere un'arma potentissima contro il nemico. L'Agente Delta viene promosso e celebrato come un eroe nazionale.",
+            "part3B": "Utilizzando il Codice Nero per i suoi scopi, l'Agente Delta viene scoperto e tradito dai suoi stessi superiori. Si ritrova fuggiasco, braccato da entrambi i lati del conflitto.",
+            "part3C": "Fuggendo dalla base nemica, l'Agente Delta scopre un'informazione vitale che potrebbe cambiare il corso della guerra. Tuttavia, prima che possa trasmetterla, viene catturato e torturato.",
+            "part3D": "Nel bunker, l'Agente Delta trova prove schiaccianti di un tradimento all'interno delle proprie linee. Decide di agire di conseguenza, ma viene scoperto prima di poter agire. Deve fuggire per salvarsi la vita."
+        }
+    },
+    "slug": "linganno-del-codice-nero",
+    "updated_by": 3,
+    "id": 16
+  }
   ]
 }
