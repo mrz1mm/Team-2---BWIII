@@ -260,7 +260,11 @@
       "title": "La Città Perduta",
       "plot": "Dopo un cataclisma globale, la società è crollata e le città sono diventate terre desolate. In questo mondo post-apocalittico, una leggenda parla di una città perduta che nasconde antichi segreti.",
       "description": "Un'avventura epica in un mondo post-apocalittico, dove il destino dell'umanità è nelle tue mani.",
-      "genre": ["Post-Apocalittico", "Steampunk", "Politico"],
+      "genre": [
+        "Post-Apocalyptic",
+        "Steampunk",
+        "Political"
+      ],
       "author": "Anonimo",
       "image_url": "https://example.com/immagine.jpg",
       "created_at": "2024-06-12",
@@ -722,159 +726,158 @@
       "updated_by": 3,
       "id": 16
     },
-      {
-        "title": "Il Segreto del Cyborg",
-        "plot": "In un futuro cyberpunk, la guerra tra umani e macchine è imminente. Un soldato cyborg, dopo essere stato riportato in vita con parti meccaniche, scopre un segreto che potrebbe cambiare il corso della guerra.",
-        "description": "In un mondo dilaniato dalla guerra tra umani e macchine, il destino è nelle tue mani. Scopri il segreto del cyborg e decidi il destino dell'umanità.",
-        "genre": [
-          "Military",
-          "Cyberpunk",
-          "Urban Fantasy"
-        ],
-        "author": "Anonimo",
-        "image_url": null,
-        "created_at": "2024-06-12",
-        "story": "Sei un soldato cyborg, riportato in vita con parti meccaniche dopo essere caduto in battaglia. La tua missione è cruciale per il destino dell'umanità. Sulla tua strada, scopri un segreto che potrebbe cambiare tutto. Scegli con saggezza.",
-        "firstChoice": {
-          "choice1": "Investiga il laboratorio segreto",
-          "choice2": "Incontra il leader della resistenza"
-        },
-        "part2": {
-          "part2A": "Esplori il laboratorio e scopri un progetto segreto. Ora devi decidere cosa farne.",
-          "part2B": "Incontri il leader della resistenza, che ti offre un'alleanza. Devi decidere se accettare."
-        },
-        "secondChoice": {
-          "choice1": "Utilizza il segreto per potenziarti",
-          "choice2": "Condividi il segreto con la resistenza",
-          "choice3": "Unisciti alla causa della macchina",
-          "choice4": "Vivi in pace, lontano dal conflitto"
-        },
-        "part3": {
-          "part3A": "Decidi di utilizzare il segreto per potenziare le tue capacità. Ti trasformi in un'arma vivente, ma il potere ti consuma e perdi la tua umanità. Diventi la più grande minaccia per entrambe le fazioni.",
-          "part3B": "Condividi il segreto con la resistenza. Insieme, pianificate un attacco risolutivo contro le macchine. La battaglia è epica e molte vite vengono sacrificate, ma alla fine, l'umanità prevale e la pace è restaurata, almeno per ora.",
-          "part3C": "Abbracci la causa delle macchine, tradendo l'umanità. Ti unisci al loro esercito e diventi uno dei loro leader più temuti. Ma anche se hai ottenuto potere, rimani sempre diviso tra il tuo passato umano e il presente cibernetico.",
-          "part3D": "Decidi di vivere in pace, lontano dal conflitto. Ma il passato torna a tormentarti quando la guerra raggiunge anche il tuo rifugio. Scegli di combattere per la tua libertà e quella dei tuoi compagni, o abbraccia la tua nuova vita e lascia che la guerra scorra intorno a te."
-        },
-        "slug": "Il-Segreto-del-Cyborg",
-        "updated_by": 13,
-        "id": 17
+    {
+      "title": "Il Segreto del Cyborg",
+      "plot": "In un futuro cyberpunk, la guerra tra umani e macchine è imminente. Un soldato cyborg, dopo essere stato riportato in vita con parti meccaniche, scopre un segreto che potrebbe cambiare il corso della guerra.",
+      "description": "In un mondo dilaniato dalla guerra tra umani e macchine, il destino è nelle tue mani. Scopri il segreto del cyborg e decidi il destino dell'umanità.",
+      "genre": [
+        "Military",
+        "Cyberpunk",
+        "Urban Fantasy"
+      ],
+      "author": "Anonimo",
+      "image_url": null,
+      "created_at": "2024-06-12",
+      "story": "Sei un soldato cyborg, riportato in vita con parti meccaniche dopo essere caduto in battaglia. La tua missione è cruciale per il destino dell'umanità. Sulla tua strada, scopri un segreto che potrebbe cambiare tutto. Scegli con saggezza.",
+      "firstChoice": {
+        "choice1": "Investiga il laboratorio segreto",
+        "choice2": "Incontra il leader della resistenza"
+      },
+      "part2": {
+        "part2A": "Esplori il laboratorio e scopri un progetto segreto. Ora devi decidere cosa farne.",
+        "part2B": "Incontri il leader della resistenza, che ti offre un'alleanza. Devi decidere se accettare."
+      },
+      "secondChoice": {
+        "choice1": "Utilizza il segreto per potenziarti",
+        "choice2": "Condividi il segreto con la resistenza",
+        "choice3": "Unisciti alla causa della macchina",
+        "choice4": "Vivi in pace, lontano dal conflitto"
+      },
+      "part3": {
+        "part3A": "Decidi di utilizzare il segreto per potenziare le tue capacità. Ti trasformi in un'arma vivente, ma il potere ti consuma e perdi la tua umanità. Diventi la più grande minaccia per entrambe le fazioni.",
+        "part3B": "Condividi il segreto con la resistenza. Insieme, pianificate un attacco risolutivo contro le macchine. La battaglia è epica e molte vite vengono sacrificate, ma alla fine, l'umanità prevale e la pace è restaurata, almeno per ora.",
+        "part3C": "Abbracci la causa delle macchine, tradendo l'umanità. Ti unisci al loro esercito e diventi uno dei loro leader più temuti. Ma anche se hai ottenuto potere, rimani sempre diviso tra il tuo passato umano e il presente cibernetico.",
+        "part3D": "Decidi di vivere in pace, lontano dal conflitto. Ma il passato torna a tormentarti quando la guerra raggiunge anche il tuo rifugio. Scegli di combattere per la tua libertà e quella dei tuoi compagni, o abbraccia la tua nuova vita e lascia che la guerra scorra intorno a te."
+      },
+      "slug": "Il-Segreto-del-Cyborg",
+      "updated_by": 13,
+      "id": 17
     },
     {
       "title": "Nel Buio della Notte",
       "plot": "Una piccola città è sconvolta da una serie di misteriosi omicidi. Un giovane detective si immerge nell'oscurità per svelare la verità, ma scopre che la linea tra giustizia e peccato è sottile.",
       "description": "In una città avvolta dalle tenebre, il male si nasconde dietro ogni angolo. Sei pronto a scoprire la verità?",
       "genre": [
-          "Thriller",
-          "Mystery",
-          "Dark Fantasy"
+        "Thriller",
+        "Mystery",
+        "Dark Fantasy"
       ],
       "author": "Marco Russo",
       "image_url": null,
       "created_at": "12/06/2024",
       "story": {
-          "part1": "La città di Bruma è avvolta da un'ombra sinistra. Il detective Marco Rossi si trova di fronte a una serie di omicidi inspiegabili. La sua indagine lo porta sempre più vicino al cuore della notte oscura.",
-          "firstChoice": {
-              "choice1": "Continua l'indagine nelle strade buie",
-              "choice2": "Ritorna alla stazione e ricomincia domani"
-          },
-          "part2": {
-              "part2A": "Il detective Rossi prosegue il suo cammino nelle strade oscure, cercando indizi tra i vicoli desolati.",
-              "part2B": "Il detective Rossi ritorna alla stazione, ma il senso di colpa per aver abbandonato l'indagine lo tormenta."
-          },
-          "secondChoice": {
-              "choice1": "Esplora il vicolo stretto",
-              "choice2": "Interroga un sospettato",
-              "choice3": "Analizza le prove",
-              "choice4": "Richiama l'assistenza di un collega"
-          },
-          "part3": {
-              "part3A": "Il detective Rossi, nel buio del vicolo, scorge un riflesso metallico. Si avvicina con cautela e trova un medaglione insanguinato, un indizio cruciale che lo porta alla tana del colpevole. Con coraggio affronta il suo nemico, mettendo fine alla notte oscura e riportando la luce sulla città.",
-              "part3B": "Il sospettato, sotto la pressione dell'interrogatorio, rivela la sua storia di dolore e rabbia. Le sue parole gettano una nuova luce sui crimini, svelando una trama intricata di vendetta e tradimento che ha consumato la città per anni.",
-              "part3C": "Le prove raccolte dal detective Rossi aprono un abisso di segreti nascosti. Dietro le facciate rispettabili della città si nasconde una rete di menzogne e manipolazioni. Il detective si rende conto che il male può celarsi anche dietro il volto più innocente.",
-              "part3D": "Il collega del detective Rossi, giunto in suo soccorso, scopre un orrore indicibile. Trova il corpo di un'altra vittima, segno che il male continua a serpeggiare nella città. Il detective si unisce a lui nella ricerca della verità, consapevole che la notte oscura non è ancora finita."
-          }
+        "part1": "La città di Bruma è avvolta da un'ombra sinistra. Il detective Marco Rossi si trova di fronte a una serie di omicidi inspiegabili. La sua indagine lo porta sempre più vicino al cuore della notte oscura.",
+        "firstChoice": {
+          "choice1": "Continua l'indagine nelle strade buie",
+          "choice2": "Ritorna alla stazione e ricomincia domani"
+        },
+        "part2": {
+          "part2A": "Il detective Rossi prosegue il suo cammino nelle strade oscure, cercando indizi tra i vicoli desolati.",
+          "part2B": "Il detective Rossi ritorna alla stazione, ma il senso di colpa per aver abbandonato l'indagine lo tormenta."
+        },
+        "secondChoice": {
+          "choice1": "Esplora il vicolo stretto",
+          "choice2": "Interroga un sospettato",
+          "choice3": "Analizza le prove",
+          "choice4": "Richiama l'assistenza di un collega"
+        },
+        "part3": {
+          "part3A": "Il detective Rossi, nel buio del vicolo, scorge un riflesso metallico. Si avvicina con cautela e trova un medaglione insanguinato, un indizio cruciale che lo porta alla tana del colpevole. Con coraggio affronta il suo nemico, mettendo fine alla notte oscura e riportando la luce sulla città.",
+          "part3B": "Il sospettato, sotto la pressione dell'interrogatorio, rivela la sua storia di dolore e rabbia. Le sue parole gettano una nuova luce sui crimini, svelando una trama intricata di vendetta e tradimento che ha consumato la città per anni.",
+          "part3C": "Le prove raccolte dal detective Rossi aprono un abisso di segreti nascosti. Dietro le facciate rispettabili della città si nasconde una rete di menzogne e manipolazioni. Il detective si rende conto che il male può celarsi anche dietro il volto più innocente.",
+          "part3D": "Il collega del detective Rossi, giunto in suo soccorso, scopre un orrore indicibile. Trova il corpo di un'altra vittima, segno che il male continua a serpeggiare nella città. Il detective si unisce a lui nella ricerca della verità, consapevole che la notte oscura non è ancora finita."
+        }
       },
       "slug": "Nel-Buio-della-Notte",
-     "updated_by": 4,
+      "updated_by": 4,
       "id": 18
-      },
-      {
-        "title": "Il Segreto della Rosa",
-        "plot": "In un regno lontano, un antico segreto è custodito da una rosa magica. La tua avventura comincia quando scopri di essere l'unico erede della famiglia incaricata di proteggerlo.",
-        "description": "Scopri il destino di un antico segreto e il potere dell'amore in questa storia romantica e fiabesca.",
-        "genre": [
-            "Romance",
-            "Fairy Tale"
-        ],
-        "author": "Giulia Bianchi",
-        "image_url": null,
-        "created_at": "07/06/2024",
-        "story": {
-            "part1": "Un giorno, mentre passeggiate nei giardini del castello, trovi una rosa particolarmente radiosa. Il suo profumo ti attira, e quando la tocchi, una porta segreta si apre ai tuoi piedi, rivelando un passaggio sotterraneo.",
-            "firstChoice": {
-                "choice1": "Esplora il passaggio",
-                "choice2": "Lascia la rosa e torna indietro"
-            },
-            "part2": {
-                "part2A": "Decidi di esplorare il passaggio. Dopo un breve cammino, ti trovi di fronte a due porte: una dorata e una argentata.",
-                "part2B": "Decidi di lasciare la rosa e tornare indietro."
-            },
-            "secondChoice": {
-                "choice1": "Entra nella porta dorata",
-                "choice2": "Entra nella porta argentata",
-                "choice3": "Ripensa alla rosa e ritorna indietro",
-                "choice4": "Continua a esplorare il passaggio"
-            },
-            "part3": {
-                "part3A": "Dietro la porta dorata, trovi una stanza incantata illuminata da una luce dorata. La rosa è al centro di tutto, emanando un'aura magica che ti avvolge delicatamente. Quando la tocchi, senti un calore avvolgerti e una voce gentile ti sussurra all'orecchio. È il segreto della rosa: può concedere desideri sinceri. Con questo nuovo potere, ti impegni a usarlo per il bene di chi ti circonda.",
-                "part3B": "Dietro la porta argentata, incontri un cavaliere misterioso avvolto in un mantello d'argento. I suoi occhi ti scrutano con una curiosità intrigante, e quando vi avvicinate, senti il cuore battere forte nel petto. È come se il destino avesse deciso di unire i vostri cammini. Presto scopri che il segreto della rosa è legato al suo amore: solo l'amore vero può rivelare il suo potere completo. Insieme, decidi di custodire questo segreto e proteggere la rosa, mentre il vostro amore cresce sempre di più.",
-                "part3C": "Ripensando alla rosa, realizzi che l'amore e l'onestà sono i veri tesori della vita. Decidi di condividere la tua scoperta con il mondo intero, portando amore e speranza ovunque tu vada. La tua storia diventa una leggenda che ispira le generazioni future a seguire il cuore e a credere nei miracoli.",
-                "part3D": "Continuando l'esplorazione, ti perdi nei meandri del passaggio sotterraneo. Alla fine, ritrovi la rosa, ma senza aver scoperto il suo segreto. Decidi di custodire il mistero, sperando che un giorno possa essere svelato. Nel frattempo, continui il tuo viaggio con la consapevolezza che ci sono segreti nell'universo che possono rimanere nascosti per sempre."
-            }
+    },
+    {
+      "title": "Il Segreto della Rosa",
+      "plot": "In un regno lontano, un antico segreto è custodito da una rosa magica. La tua avventura comincia quando scopri di essere l'unico erede della famiglia incaricata di proteggerlo.",
+      "description": "Scopri il destino di un antico segreto e il potere dell'amore in questa storia romantica e fiabesca.",
+      "genre": [
+        "Romance",
+        "Fairy Tale"
+      ],
+      "author": "Giulia Bianchi",
+      "image_url": null,
+      "created_at": "07/06/2024",
+      "story": {
+        "part1": "Un giorno, mentre passeggiate nei giardini del castello, trovi una rosa particolarmente radiosa. Il suo profumo ti attira, e quando la tocchi, una porta segreta si apre ai tuoi piedi, rivelando un passaggio sotterraneo.",
+        "firstChoice": {
+          "choice1": "Esplora il passaggio",
+          "choice2": "Lascia la rosa e torna indietro"
         },
-        "slug": "Il-Segreto-della-Rosa",
-        "updated_by": 2,
-        "id": 19
-      },
-      {
-        "title": "Il Tesoro del Faraone",
-        "plot": "Durante un'escursione nel deserto egiziano, scopri un antico tempio nascosto. Decidi di esplorarlo alla ricerca del leggendario tesoro del Faraone. Ma attenzione, ogni scelta potrebbe condurti a una diversa sorte!",
-        "description": "Ti trovi nel deserto dell'antico Egitto, circondato da dune di sabbia e dalle rovine di antichi templi. Mentre esplori le rovine, scopri un passaggio segreto che conduce a un'enorme sala piena di tesori antichi e reliquie misteriose.",
-        "genre": [
-            "Mythology",
-          "Historical Fiction"
-        ],
-        "author": "Marco De Luca",
-        "image_url": null,
-        "created_at": "12/06/2024",
-        "story": {
-            "part1": "Sei all'ingresso della sala del tesoro, con le pareti decorate da geroglifici e le statue dei guardiani antichi che ti osservano.",
-            "firstChoice": {
-                "choice1": "Esamina i geroglifici alla tua destra.",
-                "choice2": "Esplora la stanza alla tua sinistra."
-            },
-            "part2": {
-                "part2A": "Decidi di esaminare i geroglifici, cercando indizi sul tesoro nascosto. Improvvisamente, una luce brillante risalta dal soffitto, facendo tremare il terreno sotto di te.",
-                "part2B": "Scegli di esplorare la stanza a sinistra, cercando di trovare altre vie d'uscita. Trovi un passaggio segreto dietro a un'enorme statua di un dio egizio."
-            },
-            "secondChoice": {
-                "choice1": "Cerca un nascondiglio segreto nella stanza.",
-                "choice2": "Fuggi verso l'uscita.",
-                "choice3": "Entra nel passaggio segreto.",
-                "choice4": "Resta nella stanza e cerca altro."
-            },
-            "part3": {
-                "part3A": "Nascondendoti nel nascondiglio segreto, riesci a sfuggire alla trappola e a scoprire una stanza ancora più antica, dove il tesoro del Faraone brilla alla luce delle torce. Ammira l'antica bellezza e senti l'emozione di essere il primo ad aver scoperto questo tesoro sepolto per millenni.",
-                "part3B": "Fuggendo verso l'uscita, inciampi su una leva nascosta che apre una porta segreta. Trovi te stesso in una stanza buia, con rumori misteriosi provenienti da ogni angolo. Decidi di esplorare ulteriormente e scopri una rete di cunicoli che conducono a una seconda camera segreta, dove trovi antiche scritture che parlano del destino dei fuggiaschi del tempio.",
-                "part3C": "Entrando nel passaggio segreto, ti ritrovi in una stanza piena di trappole mortali, ma con coraggio e astuzia riesci a superarle tutte e a raggiungere il cuore del tempio, dove il tesoro del Faraone giace intatto. Al momento di afferrare il tesoro, però, ti rendi conto che è solo un'illusione magica, e la vera ricchezza è la conoscenza acquisita durante il viaggio.",
-                "part3D": "Decidi di cercare altro nella stanza, ma scopri troppo tardi di essere caduto in una trappola mortale, e il tuo viaggio finisce qui."
-            }
+        "part2": {
+          "part2A": "Decidi di esplorare il passaggio. Dopo un breve cammino, ti trovi di fronte a due porte: una dorata e una argentata.",
+          "part2B": "Decidi di lasciare la rosa e tornare indietro."
         },
-        "slug": "Il-Tesoro-del-Faraone",
-        "updated_by": 1,
-        "id": 20
-      }
+        "secondChoice": {
+          "choice1": "Entra nella porta dorata",
+          "choice2": "Entra nella porta argentata",
+          "choice3": "Ripensa alla rosa e ritorna indietro",
+          "choice4": "Continua a esplorare il passaggio"
+        },
+        "part3": {
+          "part3A": "Dietro la porta dorata, trovi una stanza incantata illuminata da una luce dorata. La rosa è al centro di tutto, emanando un'aura magica che ti avvolge delicatamente. Quando la tocchi, senti un calore avvolgerti e una voce gentile ti sussurra all'orecchio. È il segreto della rosa: può concedere desideri sinceri. Con questo nuovo potere, ti impegni a usarlo per il bene di chi ti circonda.",
+          "part3B": "Dietro la porta argentata, incontri un cavaliere misterioso avvolto in un mantello d'argento. I suoi occhi ti scrutano con una curiosità intrigante, e quando vi avvicinate, senti il cuore battere forte nel petto. È come se il destino avesse deciso di unire i vostri cammini. Presto scopri che il segreto della rosa è legato al suo amore: solo l'amore vero può rivelare il suo potere completo. Insieme, decidi di custodire questo segreto e proteggere la rosa, mentre il vostro amore cresce sempre di più.",
+          "part3C": "Ripensando alla rosa, realizzi che l'amore e l'onestà sono i veri tesori della vita. Decidi di condividere la tua scoperta con il mondo intero, portando amore e speranza ovunque tu vada. La tua storia diventa una leggenda che ispira le generazioni future a seguire il cuore e a credere nei miracoli.",
+          "part3D": "Continuando l'esplorazione, ti perdi nei meandri del passaggio sotterraneo. Alla fine, ritrovi la rosa, ma senza aver scoperto il suo segreto. Decidi di custodire il mistero, sperando che un giorno possa essere svelato. Nel frattempo, continui il tuo viaggio con la consapevolezza che ci sono segreti nell'universo che possono rimanere nascosti per sempre."
+        }
+      },
+      "slug": "Il-Segreto-della-Rosa",
+      "updated_by": 2,
+      "id": 19
+    },
+    {
+      "title": "Il Tesoro del Faraone",
+      "plot": "Durante un'escursione nel deserto egiziano, scopri un antico tempio nascosto. Decidi di esplorarlo alla ricerca del leggendario tesoro del Faraone. Ma attenzione, ogni scelta potrebbe condurti a una diversa sorte!",
+      "description": "Ti trovi nel deserto dell'antico Egitto, circondato da dune di sabbia e dalle rovine di antichi templi. Mentre esplori le rovine, scopri un passaggio segreto che conduce a un'enorme sala piena di tesori antichi e reliquie misteriose.",
+      "genre": [
+        "Mythology",
+        "Historical Fiction"
+      ],
+      "author": "Marco De Luca",
+      "image_url": null,
+      "created_at": "12/06/2024",
+      "story": {
+        "part1": "Sei all'ingresso della sala del tesoro, con le pareti decorate da geroglifici e le statue dei guardiani antichi che ti osservano.",
+        "firstChoice": {
+          "choice1": "Esamina i geroglifici alla tua destra.",
+          "choice2": "Esplora la stanza alla tua sinistra."
+        },
+        "part2": {
+          "part2A": "Decidi di esaminare i geroglifici, cercando indizi sul tesoro nascosto. Improvvisamente, una luce brillante risalta dal soffitto, facendo tremare il terreno sotto di te.",
+          "part2B": "Scegli di esplorare la stanza a sinistra, cercando di trovare altre vie d'uscita. Trovi un passaggio segreto dietro a un'enorme statua di un dio egizio."
+        },
+        "secondChoice": {
+          "choice1": "Cerca un nascondiglio segreto nella stanza.",
+          "choice2": "Fuggi verso l'uscita.",
+          "choice3": "Entra nel passaggio segreto.",
+          "choice4": "Resta nella stanza e cerca altro."
+        },
+        "part3": {
+          "part3A": "Nascondendoti nel nascondiglio segreto, riesci a sfuggire alla trappola e a scoprire una stanza ancora più antica, dove il tesoro del Faraone brilla alla luce delle torce. Ammira l'antica bellezza e senti l'emozione di essere il primo ad aver scoperto questo tesoro sepolto per millenni.",
+          "part3B": "Fuggendo verso l'uscita, inciampi su una leva nascosta che apre una porta segreta. Trovi te stesso in una stanza buia, con rumori misteriosi provenienti da ogni angolo. Decidi di esplorare ulteriormente e scopri una rete di cunicoli che conducono a una seconda camera segreta, dove trovi antiche scritture che parlano del destino dei fuggiaschi del tempio.",
+          "part3C": "Entrando nel passaggio segreto, ti ritrovi in una stanza piena di trappole mortali, ma con coraggio e astuzia riesci a superarle tutte e a raggiungere il cuore del tempio, dove il tesoro del Faraone giace intatto. Al momento di afferrare il tesoro, però, ti rendi conto che è solo un'illusione magica, e la vera ricchezza è la conoscenza acquisita durante il viaggio.",
+          "part3D": "Decidi di cercare altro nella stanza, ma scopri troppo tardi di essere caduto in una trappola mortale, e il tuo viaggio finisce qui."
+        }
+      },
+      "slug": "Il-Tesoro-del-Faraone",
+      "updated_by": 1,
+      "id": 20
+    }
   ],
   "favouriteLightNovels": []
-
 }

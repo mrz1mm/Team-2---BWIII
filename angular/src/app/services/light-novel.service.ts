@@ -103,7 +103,11 @@ export class LightNovelService {
   }
 
   // metodo per aggiornare una lightnovel
-  updateLightNovel() {}
+  updateLightNovel(lightNovel: iLightNovel): Observable<iLightNovel> {
+    console.log('oggetto modificato:', lightNovel)
+    console.log('URL:', `${this.lightNovelsUrl}/${lightNovel.id}`);
+    return this.httpSvc.put<iLightNovel>(`${this.lightNovelsUrl}/${lightNovel.id}`, lightNovel)
+  }
 
   // metodo per eliminare una lightnovel
   deleteLightNovel() {}

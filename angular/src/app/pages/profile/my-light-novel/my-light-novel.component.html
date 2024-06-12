@@ -30,6 +30,12 @@
           <div>
             <small class="card-text">{{ novel.created_at }}</small>
             <p class="card-text">{{ novel.description }}</p>
+            <button
+              (click)="redirectCreate(novel)"
+              class="btn btn-primary mt-4"
+            >
+              Modifica
+            </button>
           </div>
         </div>
       </div>

@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
 import { LightNovelService } from '../../services/light-novel.service';
 import { Router } from '@angular/router';
 import { AuthService } from '../../auth/auth.service';
 import { iUser } from '../../auth/interfaces/i-user';
+import { iLightNovel } from '../../interfaces/i-light-novel';
 
 @Component({
   selector: 'app-light-novel-form',
@@ -12,8 +13,8 @@ import { iUser } from '../../auth/interfaces/i-user';
 })
 export class LightNovelFormComponent implements OnInit {
   [x: string]: any;
+  @Input() novel:iLightNovel | undefined
   createLightNovelForm!: FormGroup;
-
   user: iUser | null = this.autSVC.getCurrentUser();
 
   alertMessage: string | null = null;
@@ -97,6 +98,8 @@ export class LightNovelFormComponent implements OnInit {
         console.log(this.user);
       }
     });
+
+    this.ripopulateForm()
   }
 
   get genreControls() {
@@ -202,7 +205,8 @@ export class LightNovelFormComponent implements OnInit {
       genre: selectedGenres,
       created_at: this.getTodaysDate(),
       slug: this.slugify(formValue.title),
-      update_by: this.user?.id,
+      updated_by: this.user?.id,
+      id: this.novel?.id,
     };
 
     this.lightNovelSvc.addLightNovel(newLightNovel).subscribe((data) => {
@@ -212,6 +216,7 @@ export class LightNovelFormComponent implements OnInit {
     this.cleanForum();
     this.redirectToHome();
   }
+
 
   cleanForum() {
     this.createLightNovelForm = this.fb.group({
@@ -251,4 +256,60 @@ export class LightNovelFormComponent implements OnInit {
   redirectToHome(): void {
     this.router.navigate(['/home']);
   }
+
+
+  ripopulateForm(): void {
+    this.createLightNovelForm = this.fb.group({
+      title: [this.novel?.title],
+      plot: [this.novel?.plot],
+      description: [this.novel?.description],
+      genre: this.fb.array(this.genreArr.map(genre => this.novel?.genre.includes(genre))),
+      author: [this.novel?.author],
+      image_url: [this.novel?.image_url],
+      created_at: [this.novel?.created_at],
+      story: this.fb.group({
+        part1: [this.novel?.story.part1],
+        firstChoice: this.fb.group({
+          choice1: [this.novel?.story.firstChoice.choice1],
+          choice2: [this.novel?.story.firstChoice.choice2],
+        }),
+        part2: this.fb.group({
+          part2a: [this.novel?.story.part2.part2A],
+          part2b: [this.novel?.story.part2.part2B],
+        }),
+        secondChoice: this.fb.group({
+          secondChoice1: [this.novel?.story.secondChoice.choice1],
+          secondChoice2: [this.novel?.story.secondChoice.choice2],
+          secondChoice3: [this.novel?.story.secondChoice.choice3],
+          secondChoice4: [this.novel?.story.secondChoice.choice4],
+        }),
+        part3: this.fb.group({
+          part3a: [this.novel?.story.part3.part3A],
+          part3b: [this.novel?.story.part3.part3B],
+          part3c: [this.novel?.story.part3.part3C],
+          part3d: [this.novel?.story.part3.part3D],
+        }),
+      }),
+    });
+  }
+  updateLightNovel() {
+    const formValue = this.createLightNovelForm.value;
+    const selectedGenres = this.genreArr.filter((_, i) => formValue.genre[i]);
+
+    const LightNovel = {
+      ...formValue,
+      genre: selectedGenres,
+      created_at: this.getTodaysDate(),
+      slug: this.slugify(formValue.title),
+      updated_by: this.user?.id,
+    };
+
+    this.lightNovelSvc.updateLightNovel(LightNovel).subscribe(() => {
+      console.log('Il valore degli input aggiornati dopo:',formValue);
+      alert('Light Novel aggiornata');
+      this.cleanForum();
+      this.redirectToHome();
+    })
+  }
 }
+
