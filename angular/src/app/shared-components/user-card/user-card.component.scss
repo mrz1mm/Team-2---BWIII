@@ -4,10 +4,20 @@ td{
   background-color: rgba(255, 255, 255, 0);
   overflow: hidden;
   color: white;
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 th{
   background-color: #3b435e9f;
   color: white;
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 table {
   backdrop-filter: blur(20px);
@@ -16,15 +26,38 @@ table {
   margin-top: 3vh;
   border: 1px solid rgba(255, 255, 255, 0.205);
 }
-img{
-  box-shadow: 1px 8px 20px gray !important;
-}
-.my-pagination{
+
+.img_wrapper{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  color: white;
+  align-items: center;
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 8px 20px gray !important;
+  }
 }
+
+#actions_btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  #delete_btn{
+    background-color: rgba(255, 0, 0, 0.726);
+    color: white;
+  }
+  #upgrade_btn{
+    background-color:rgba(0, 128, 0, 0.692);
+    color: white;
+  }
+  #downgrade_btn{
+    background-color: yellow;
+    color: black;
+  }
+}
+
 
 
 

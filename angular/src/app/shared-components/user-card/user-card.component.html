@@ -8,65 +8,64 @@
 <table class="table table-bordered table-hover">
   <thead class="thead-light">
     <tr>
-      <th scope="col">Avatar</th>
-      <th scope="col">Nome</th>
-      <th scope="col">Genere</th>
-      <th scope="col">Username</th>
-      <th scope="col">Email</th>
-      <th scope="col">Actions</th>
+      <th scope="col"><p>Avatar</p></th>
+      <th scope="col"><p>Name</p></th>
+      <th scope="col"><p>Role</p></th>
+      <th scope="col"><p>Gender</p></th>
+      <th scope="col"><p>Username</p></th>
+      <th scope="col"><p>Email</p></th>
+      <th scope="col"><p>Actions</p></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let user of users">
-      <td>
-        <img
-          [src]="user.userImage"
-          alt="icon"
-          class="rounded-circle"
-          style="width: 50px; height: auto"
-        />
+      <td class="img_wrapper">
+        <img [src]="user.userImage" alt="icon" />
       </td>
       <td>
         <h5 class="card-title">{{ user.name }} {{ user.surname }}</h5>
       </td>
       <td>
-        <p class="card-text"><strong>Gender:</strong> {{ user.gender }}</p>
+        <p class="card-text">{{ user.role === "auth" ? "user" : user.role }}</p>
       </td>
       <td>
-        <p class="card-text"><strong>Username:</strong> {{ user.username }}</p>
+        <p class="card-text">{{ user.gender }}</p>
       </td>
       <td>
-        <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
+        <p class="card-text">{{ user.username }}</p>
+      </td>
+      <td>
+        <p class="card-text">{{ user.email }}</p>
       </td>
       <td
         class="d-flex justify-content-center align-items-center flex-grow-1 w-100"
       >
-        <button
-          class="btn btn-danger mx-1"
-          (click)="openDeleteModal(user, deleteModal)"
-          ngbTooltip="Delete User"
-          placement="top"
-        >
-          <i class="bi bi-trash"></i>
-        </button>
-        <button
-          class="btn btn-success mx-1"
-          *ngIf="user.role === 'auth'"
-          (click)="upgradeUser(user.id)"
-          ngbTooltip="Upgrade User"
-          placement="top"
-        >
-          <i class="bi bi-arrow-up"></i>
-        </button>
-        <button
-          class="btn btn-warning mx-1"
-          *ngIf="user.role === 'sub-admin'"
-          (click)="downgradeUser(user.id)"
-          ngbTooltip="Downgrade User"
-          placement="top"
-        >
-          <i class="bi bi-arrow-down"></i>
-        </button>
+        <div id="actions_btns">
+          <button
+            id="delete_btn"
+            class="btn mx-1"
+            (click)="openDeleteModal(user, deleteModal)"
+            *ngIf="user.role !== 'admin'"
+          >
+            <i class="bi bi-trash"></i>
+          </button>
+          <button
+            id="upgrade_btn"
+            class="btn mx-1"
+            *ngIf="user.role === 'auth'"
+            (click)="upgradeUser(user.id)"
+          >
+            <i class="bi bi-arrow-up"></i>
+          </button>
+          <button
+            id="downgrade_btn"
+            class="btn mx-1"
+            *ngIf="user.role === 'sub-admin'"
+            (click)="downgradeUser(user.id)"
+          >
+            <i class="bi bi-arrow-down"></i>
+          </button>
+        </div>
       </td>
     </tr>
   </tbody>
