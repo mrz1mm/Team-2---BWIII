@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../../services/users.service';
+import { EMPTY, Observable, Subject } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-users',
@@ -7,40 +9,39 @@ import { UsersService } from '../../services/users.service';
   styleUrls: ['./users.component.scss'],
 })
 export class UsersComponent implements OnInit {
-  users: any[] = [];
+  users$: Observable<any[]>= EMPTY
+  private refreshUsers = new Subject<void>();
 
   constructor(private usersService: UsersService) {}
 
   ngOnInit(): void {
-    this.getUsers();
+    this.users$ = this.refreshUsers.pipe(
+      switchMap(() => this.usersService.getAllUsers())
+    );
+    this.refreshUsers.next();
   }
 
-  getUsers(): void {
-    this.usersService.getUsers().subscribe((users) => {
-      this.users = users;
-    });
-  }
   updateUser(id: number, user: any): void {
     this.usersService.updateUser(id, user).subscribe(() => {
-      this.getUsers();
+      this.refreshUsers.next();
     });
   }
 
   deleteUser(id: number): void {
     this.usersService.deleteUser(id).subscribe(() => {
-      this.getUsers();
+      this.refreshUsers.next();
     });
   }
 
   upgradeUser(id: number): void {
     this.usersService.upgradeUser(id).subscribe(() => {
-      this.getUsers();
+      this.refreshUsers.next();
     });
   }
 
   downgradeUser(id: number): void {
     this.usersService.downgradeUser(id).subscribe(() => {
-      this.getUsers();
+      this.refreshUsers.next();
     });
   }
 }
