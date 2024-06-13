@@ -3,6 +3,7 @@ a {
 }
 .card {
   border: none;
+  position: relative;
 
   img {
     height: 150px;
@@ -18,5 +19,16 @@ a {
 
   .bi {
     color: black;
+  }
+
+  app-tooltip-card {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover app-tooltip-card {
+    display: block;
   }
 }

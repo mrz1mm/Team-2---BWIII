@@ -23,7 +23,8 @@
     </div>
     <div>
       <p class="card-text">{{ lightNovelCard.created_at }}</p>
-      <p class="card-text">{{ lightNovelCard.description }}</p>
+      <p class="card-text">{{ lightNovelCard.author }}</p>
     </div>
   </div>
+  <app-tooltip-card [lightNovelCard]="lightNovelCard"></app-tooltip-card>
 </div>
