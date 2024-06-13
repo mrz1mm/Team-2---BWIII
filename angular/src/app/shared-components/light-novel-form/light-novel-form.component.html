@@ -78,8 +78,9 @@
             class="form-control"
             id="file"
           />
-
+          <h4 class="text-center mt-2">Costruisci la tua storia</h4>
           <div formGroupName="story">
+            <h5 class="text-uppercase">prima parte</h5>
             <!-- racconto storia iniziale-->
             <label for="part1"
               >Inserisci la prima parte della sezione interattiva</label
@@ -96,192 +97,222 @@
               Inserisci correttamente la parte interattiva
             </p>
 
-            <div formGroupName="firstChoice">
-              <label for="firstChoice1"
-                >Inserisci la scelta n°1 interattiva</label
-              >
-              <!--scelta 1 prima parte-->
-              <input
-                type="text"
-                formControlName="choice1"
-                class="form-control"
-                placeholder="Write the choice interactive..."
-                id="firstChoice1"
-              />
-              <p *ngIf="isTouchedInvalid('story.firstChoice.choice1')">
-                Inserisci correttamente la parte interattiva
-              </p>
+            <div
+              formGroupName="firstChoice"
+              class="d-flex justify-content-evenly"
+            >
+              <div>
+                <label for="firstChoice1"
+                  >Inserisci la scelta n°1 interattiva</label
+                >
 
-              <label for="firstChoice2"
-                >Inserisci la scelta n°2 interattiva</label
-              >
-              <!--scelta 2 prima parte-->
-              <input
-                type="text"
-                formControlName="choice2"
-                class="form-control"
-                placeholder="Write the choice interactive..."
-                id="firstChoice2"
-              />
-              <p *ngIf="isTouchedInvalid('story.firstChoice.choice2')">
-                Inserisci correttamente la parte interattiva
-              </p>
+                <!--scelta 1 prima parte-->
+                <input
+                  type="text"
+                  formControlName="choice1"
+                  class="form-control"
+                  placeholder="Write the choice interactive..."
+                  id="firstChoice1"
+                />
+                <p *ngIf="isTouchedInvalid('story.firstChoice.choice1')">
+                  Inserisci correttamente la parte interattiva
+                </p>
+              </div>
+              <div>
+                <label for="firstChoice2"
+                  >Inserisci la scelta n°2 interattiva</label
+                >
+                <!--scelta 2 prima parte-->
+                <input
+                  type="text"
+                  formControlName="choice2"
+                  class="form-control"
+                  placeholder="Write the choice interactive..."
+                  id="firstChoice2"
+                />
+                <p *ngIf="isTouchedInvalid('story.firstChoice.choice2')">
+                  Inserisci correttamente la parte interattiva
+                </p>
+              </div>
             </div>
 
-            <div formGroupName="part2">
-              <label for="part2A"
-                >Inserisci la seconda parte interattiva (che è influenzata dalla
-                scelta n°1)</label
-              >
-              <!-- storia 2a-->
-              <input
-                type="text"
-                formControlName="part2A"
-                class="form-control"
-                placeholder="Write the section interactive..."
-                id="part2A"
-              />
-              <p *ngIf="isTouchedInvalid('story.part2.part2A')">
-                Inserisci correttamente la parte interattiva
-              </p>
-
-              <label for="part2B"
-                >Inserisci la seconda parte interattiva (che è influenzata dalla
-                scelta n°2)</label
-              >
-              <!-- storia 2b-->
-              <input
-                type="text"
-                formControlName="part2B"
-                class="form-control"
-                placeholder="Write the section interactive..."
-                id="part2B"
-              />
-              <p *ngIf="isTouchedInvalid('story.part2.part2B')">
-                Inserisci correttamente la parte interattiva
-              </p>
+            <div formGroupName="part2" class="d-flex justify-content-evenly">
+              <div>
+                <label for="part2A"
+                  >Inserisci la seconda parte interattiva (che è influenzata
+                  dalla scelta n°1)</label
+                >
+                <!-- storia 2a-->
+                <input
+                  type="text"
+                  formControlName="part2A"
+                  class="form-control"
+                  placeholder="Write the section interactive..."
+                  id="part2A"
+                />
+                <p *ngIf="isTouchedInvalid('story.part2.part2A')">
+                  Inserisci correttamente la parte interattiva
+                </p>
+              </div>
+              <div>
+                <label for="part2B"
+                  >Inserisci la seconda parte interattiva (che è influenzata
+                  dalla scelta n°2)</label
+                >
+                <!-- storia 2b-->
+                <input
+                  type="text"
+                  formControlName="part2B"
+                  class="form-control"
+                  placeholder="Write the section interactive..."
+                  id="part2B"
+                />
+                <p *ngIf="isTouchedInvalid('story.part2.part2B')">
+                  Inserisci correttamente la parte interattiva
+                </p>
+              </div>
             </div>
 
             <div formGroupName="secondChoice">
               <!-- scelste seconda parte-->
+              <div class="d-flex justify-content-evenly">
+                <div>
+                  <label for="choice1"
+                    >Inserisci la seconda sezione (C2A) interattiva</label
+                  >
+                  <!--scelta 1 seconda parte-->
+                  <input
+                    type="text"
+                    formControlName="choice1"
+                    class="form-control"
+                    placeholder="Write the choice interactive..."
+                    id="choice1"
+                  />
+                  <p *ngIf="isTouchedInvalid('story.secondChoice.choice1')">
+                    Inserisci correttamente la parte interattiva
+                  </p>
+                </div>
+                <div>
+                  <label for="choice2"
+                    >Inserisci la seconda sezione (C2b) interattiva</label
+                  >
+                  <!-- scelta 2 seconda parte-->
 
-              <label for="choice1"
-                >Inserisci la seoncda scelta interattiva</label
-              >
-              <!--scelta 1 seconda parte-->
-              <input
-                type="text"
-                formControlName="choice1"
-                class="form-control"
-                placeholder="Write the choice interactive..."
-                id="choice1"
-              />
-              <p *ngIf="isTouchedInvalid('story.secondChoice.choice1')">
-                Inserisci correttamente la parte interattiva
-              </p>
-
-              <label for="choice2"
-                >Inserisci la seconda sezione (C2b) interattiva</label
-              >
-              <!-- scelta 2 seconda parte-->
-              <input
-                type="text"
-                formControlName="choice2"
-                class="form-control"
-                placeholder="Write the choice interactive..."
-                id="choice2"
-              />
-              <p *ngIf="isTouchedInvalid('story.secondChoice.choice2')">
-                Inserisci correttamente la parte interattiva
-              </p>
-
-              <label for="choice3"
-                >Inserisci la seconda sezione (C2c) interattiva</label
-              >
-              <!--scelta 3 seconda parte-->
-              <input
-                type="text"
-                formControlName="choice3"
-                class="form-control"
-                placeholder="Write the choice interactive..."
-                id="choice3"
-              />
-              <p *ngIf="isTouchedInvalid('story.secondChoice.choice3')">
-                Inserisci correttamente la parte interattiva
-              </p>
-
-              <label for="choice4"
-                >Inserisci la seconda sezione (C2d) interattiva</label
-              >
-              <!--scelta 4 seconda parte-->
-              <input
-                type="text"
-                formControlName="choice4"
-                class="form-control"
-                placeholder="Write the choice interactive..."
-                id="choice4"
-              />
-              <p *ngIf="isTouchedInvalid('story.secondChoice.choice4')">
-                Inserisci correttamente la parte interattiva
-              </p>
+                  <input
+                    type="text"
+                    formControlName="choice2"
+                    class="form-control"
+                    placeholder="Write the choice interactive..."
+                    id="choice2"
+                  />
+                  <p *ngIf="isTouchedInvalid('story.secondChoice.choice2')">
+                    Inserisci correttamente la parte interattiva
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <div>
+                  <label for="choice3"
+                    >Inserisci la seconda sezione (C2c) interattiva</label
+                  >
+                  <!--scelta 3 seconda parte-->
+                  <input
+                    type="text"
+                    formControlName="choice3"
+                    class="form-control"
+                    placeholder="Write the choice interactive..."
+                    id="choice3"
+                  />
+                  <p *ngIf="isTouchedInvalid('story.secondChoice.choice3')">
+                    Inserisci correttamente la parte interattiva
+                  </p>
+                </div>
+                <div>
+                  <label for="choice4"
+                    >Inserisci la seconda sezione (C2d) interattiva</label
+                  >
+                  <!--scelta 4 seconda parte-->
+                  <input
+                    type="text"
+                    formControlName="choice4"
+                    class="form-control"
+                    placeholder="Write the choice interactive..."
+                    id="choice4"
+                  />
+                  <p *ngIf="isTouchedInvalid('story.secondChoice.choice4')">
+                    Inserisci correttamente la parte interattiva
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div formGroupName="part3">
-              <label for="part3A"
-                >Inserisci la terza sezione (3A) interattiva</label
-              >
-              <input
-                type="text"
-                formControlName="part3A"
-                class="form-control"
-                placeholder="Write the section interactive..."
-                id="part3A"
-              />
-              <p *ngIf="isTouchedInvalid('story.part3.part3A')">
-                Inserisci correttamente la parte interattiva
-              </p>
-              <label for="part3B"
-                >Inserisci la terza sezione (3B) interattiva</label
-              >
-              <input
-                type="text"
-                formControlName="part3B"
-                class="form-control"
-                placeholder="Write the section interactive..."
-                id="part3B"
-              />
-              <p *ngIf="isTouchedInvalid('story.part3.part3B')">
-                Inserisci correttamente la parte interattiva
-              </p>
-              <label for="part3C"
-                >Inserisci la terza sezione (3C) interattiva</label
-              >
-              <input
-                type="text"
-                formControlName="part3C"
-                class="form-control"
-                placeholder="Write the section interactive..."
-                id="part3C"
-              />
-              <p *ngIf="isTouchedInvalid('story.part3.part3C')">
-                Inserisci correttamente la parte interattiva
-              </p>
-              <label for="part3D"
-                >Inserisci la terza sezione (3D) interattiva</label
-              >
-              <input
-                type="text"
-                formControlName="part3D"
-                class="form-control"
-                placeholder="Write the section interactive..."
-                id="part3D"
-              />
-              <p *ngIf="isTouchedInvalid('story.part3.part3D')">
-                Inserisci correttamente la parte interattiva
-              </p>
+              <div class="d-flex justify-content-evenly">
+                <div>
+                  <label for="part3A"
+                    >Inserisci la terza sezione (3A) interattiva</label
+                  >
+                  <input
+                    type="text"
+                    formControlName="part3A"
+                    class="form-control"
+                    placeholder="Write the section interactive..."
+                    id="part3A"
+                  />
+                  <p *ngIf="isTouchedInvalid('story.part3.part3A')">
+                    Inserisci correttamente la parte interattiva
+                  </p>
+                </div>
+                <div>
+                  <label for="part3B"
+                    >Inserisci la terza sezione (3B) interattiva</label
+                  >
+                  <input
+                    type="text"
+                    formControlName="part3B"
+                    class="form-control"
+                    placeholder="Write the section interactive..."
+                    id="part3B"
+                  />
+                  <p *ngIf="isTouchedInvalid('story.part3.part3B')">
+                    Inserisci correttamente la parte interattiva
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-evenly">
+                <div>
+                  <label for="part3C"
+                    >Inserisci la terza sezione (3C) interattiva</label
+                  >
+                  <input
+                    type="text"
+                    formControlName="part3C"
+                    class="form-control"
+                    placeholder="Write the section interactive..."
+                    id="part3C"
+                  />
+                  <p *ngIf="isTouchedInvalid('story.part3.part3C')">
+                    Inserisci correttamente la parte interattiva
+                  </p>
+                </div>
+                <div>
+                  <label for="part3D"
+                    >Inserisci la terza sezione (3D) interattiva</label
+                  >
+                  <input
+                    type="text"
+                    formControlName="part3D"
+                    class="form-control"
+                    placeholder="Write the section interactive..."
+                    id="part3D"
+                  />
+                  <p *ngIf="isTouchedInvalid('story.part3.part3D')">
+                    Inserisci correttamente la parte interattiva
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
           <button
             *ngIf="!novel"
             (click)="addLightNovel()"
