@@ -144,13 +144,13 @@
       "plot": "In un mondo post-apocalittico, un eroe si imbarca in una missione per trovare l'antica Spada Perduta e salvare ciò che resta della civiltà. ",
       "description": "Un'avventura epica di sopravvivenza, coraggio e speranza.",
       "genre": [
-        "Post-Apocalyptic",
+        "Fantasy",
         "Adventure",
-        "Fantasy"
+        "Post-Apocalyptic"
       ],
       "author": "Giovanni Bianchi",
       "image_url": null,
-      "created_at": "11/06/2024",
+      "created_at": "12/06/2024",
       "story": {
         "part1": "Nel mondo devastato da cataclismi e guerre, sei un eroe solitario con una missione epica: trovare l'antica Spada Perduta, leggendaria arma di potere, e usarla per fermare la distruzione e portare la speranza alla tua gente. Il tuo viaggio inizia in una città in rovina, dove sei determinato a trovare indizi sulla posizione della spada. Cosa farai?",
         "firstChoice": {
@@ -266,11 +266,11 @@
         "Political"
       ],
       "author": "Anonimo",
-      "image_url": "https://example.com/immagine.jpg",
+      "image_url": null,
       "created_at": "2024-06-12",
       "story": {
         "part1": "Ti ritrovi a vagare nel deserto, alla ricerca di risposte tra le rovine della vecchia civiltà."
-      },
+      ,
       "firstChoice": {
         "choice1": "Esplora le rovine di una città abbandonata.",
         "choice2": "Unisciti a una carovana di sopravvissuti."
@@ -290,6 +290,7 @@
         "part3B": "Nonostante i tuoi sforzi, la carovana viene distrutta dai predoni. Ti ritrovi da solo nel deserto, con la speranza di trovare un nuovo scopo.",
         "part3C": "Le tue negoziazioni con i predoni hanno successo e eviti lo scontro. Continui il tuo viaggio con la carovana, cercando un luogo sicuro dove stabilirti.",
         "part3D": "Decidi di abbandonare la carovana e ti avventuri da solo nel deserto. Le tue scorte si esauriscono rapidamente, ma la tua determinazione non vacilla. Chi sa cosa troverai nel deserto senza fine..."
+        }
       },
       "slug": "La-Citta-Perduta",
       "updated_by": 2,
@@ -877,86 +878,6 @@
       "slug": "Il-Tesoro-del-Faraone",
       "updated_by": 1,
       "id": 20
-    },
-    {
-      "title": "ererter",
-      "plot": null,
-      "description": null,
-      "genre": [],
-      "author": null,
-      "image_url": null,
-      "created_at": "12/06/2024",
-      "story": {
-        "part1": null,
-        "firstChoice": {
-          "choice1": null,
-          "choice2": null
-        },
-        "part2": {
-          "part2A": null,
-          "part2B": null
-        },
-        "secondChoice": {
-          "choice1": null,
-          "choice2": null,
-          "choice3": null,
-          "choice4": null
-        },
-        "part3": {
-          "part3A": null,
-          "part3B": null,
-          "part3C": null,
-          "part3D": null
-        }
-      },
-      "slug": "ererter",
-      "updated_by": 1,
-      "id": 21
-    },
-    {
-      "title": "AAAAAAAAAAAAAA",
-      "plot": "Odio expedita nulla ",
-      "description": "Cupiditate maxime ma",
-      "genre": [
-        "Thriller",
-        "Supernatural",
-        "Dystopian",
-        "Post-Apocalyptic",
-        "Steampunk",
-        "Cyberpunk",
-        "Detective",
-        "Western",
-        "Fairy Tale"
-      ],
-      "author": "Assumenda qui autem ",
-      "image_url": null,
-      "created_at": "12/06/2024",
-      "story": {
-        "part1": "Eos iusto unde non ",
-        "firstChoice": {
-          "choice1": "Dolorum cumque dolor",
-          "choice2": "Reprehenderit et hic"
-        },
-        "part2": {
-          "part2A": "Dolore dolorem maior",
-          "part2B": "Eum in omnis in dolo"
-        },
-        "secondChoice": {
-          "choice1": "Aliquip ipsum facer",
-          "choice2": "Quis dolorum dolores",
-          "choice3": "Rerum sint pariatur",
-          "choice4": "Unde mollitia minima"
-        },
-        "part3": {
-          "part3A": "Dolorem sapiente in ",
-          "part3B": "Placeat eos omnis ",
-          "part3C": "Rerum consequat Qui",
-          "part3D": "Ullamco est placeat"
-        }
-      },
-      "slug": "aaaaaaaaaaaaaa",
-      "updated_by": 1,
-      "id": 22
     }
   ],
   "favouriteLightNovels": [

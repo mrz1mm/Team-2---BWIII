@@ -1,3 +1,4 @@
+import { LocalStorageService } from './../../services/local-storage.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
 import { LightNovelService } from '../../services/light-novel.service';
@@ -28,10 +29,11 @@ export class LightNovelFormComponent implements OnInit {
 
     this.formValidator();
     this.ripopulateForm();
-    this.formCompiledVerify();
-
+    console.log(this.formCompiled)
     console.log('Novel', this.novel);
+
   }
+
 
   [x: string]: any;
   @Input() novel: iLightNovel | undefined;
@@ -106,6 +108,7 @@ export class LightNovelFormComponent implements OnInit {
         }),
       }),
     });
+
   }
 
   // Modificato per verificare se il campo è 'touched' e 'invalid'
@@ -311,9 +314,11 @@ export class LightNovelFormComponent implements OnInit {
           part3C: [this.novel?.story.part3.part3C, [Validators.required]],
           part3D: [this.novel?.story.part3.part3D, [Validators.required]],
         }),
-      }),
-    });
+        }),
+        });
+
   }
+
 
   updateLightNovel() {
     const formValue = this.createLightNovelForm.value;
@@ -335,9 +340,7 @@ export class LightNovelFormComponent implements OnInit {
     });
   }
 
-  formCompiledVerify() {
-    if (this.createLightNovelForm.dirty) {
-      this.formCompiled = true;
-    }
-  }
+
+
 }
+

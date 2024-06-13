@@ -52,10 +52,22 @@
             Inserisci correttamente il nome dell'autore
           </p>
 
+          <p class="mt-2 mb-0">Scegli il genere:</p>
           <div formArrayName="genre">
-            <div *ngFor="let genre of genreArr; let i = index">
-              <label for="{{ genre }}">{{ genre }}</label>
-              <input type="checkbox" [formControlName]="i" id="{{ genre }}" />
+            <div class="row">
+              <div *ngFor="let genre of genreArr; let i = index" class="col">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  [formControlName]="i"
+                  id="{{ genre }}"
+                />
+                <label
+                  class="btn btn-outline-primary genre-btn"
+                  for="{{ genre }}"
+                  >{{ genre }}</label
+                >
+              </div>
             </div>
           </div>
 
@@ -266,10 +278,18 @@
             </div>
           </div>
 
-          <button (click)="addLightNovel()" class="btn btn-primary">
+          <button
+            *ngIf="!novel"
+            (click)="addLightNovel()"
+            class="btn btn-primary"
+          >
             Crea
           </button>
-          <button (click)="updateLightNovel()" class="btn btn-primary">
+          <button
+            *ngIf="novel"
+            (click)="updateLightNovel()"
+            class="btn btn-primary"
+          >
             Modifica
           </button>
           <button (click)="cleanForum()" class="btn btn-primary">Svuota</button>
