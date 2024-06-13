@@ -1,0 +1,9 @@
+.container {
+  min-height: 80vh;
+}
+.container input.ng-invalid.ng-touched {
+  border-color: red;
+}
+.container textarea.ng-invalid.ng-touched {
+  border-color: red;
+}/*# sourceMappingURL=light-novel-form.component.css.map */

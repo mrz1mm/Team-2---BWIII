@@ -1,24 +1,25 @@
 <div
   class="container-fluid"
   [ngStyle]="{
-    backgroundImage: 'url(../../../assets/img/pages/home.webp)',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundImage: 'url()'
   }"
 >
   <div class="row">
     <div class="col-12">
       <h2>AREA CAROSELLO</h2>
-      <splide>
+      <splide class="d-none d-lg-block">
         <splide-slide *ngFor="let lightNovel of lightNovelsArray">
           <a routerLink="/lightNovelDetails/{{ lightNovel.id }}">
             <img
+              class="imgCarousel"
               [src]="
                 '../../../assets/img/lightNovelImg/' + lightNovel.slug + '.png'
               "
               alt="{{ lightNovel.title }}"
             />
-            <p class="bg-dark text-white">{{ lightNovel.title }}</p>
+            <div class="carousel-caption d-none d-md-block p-0">
+              <p class="text-white mb-0">{{ lightNovel.title }}</p>
+            </div>
           </a>
         </splide-slide>
       </splide>

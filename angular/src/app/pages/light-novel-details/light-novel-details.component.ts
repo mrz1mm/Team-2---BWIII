@@ -25,9 +25,6 @@ export class LightNovelDetailsComponent implements OnInit {
     this.lightNovelService.getLightNovelById(id).subscribe((lightNovel) => {
       this.lightNovel = lightNovel;
       this.imagePath = `../../../assets/img/lightNovelImg/${this.lightNovel?.title}.png`;
-
-      console.log('Light novel loaded:', this.lightNovel);
-      console.log('Image path:', this.imagePath);
     });
   }
 

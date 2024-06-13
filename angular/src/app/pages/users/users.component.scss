@@ -1,3 +1,20 @@
-.container {
+#container {
+  width: 100%;
   min-height: 80vh;
+  overflow: hidden;
+  padding: 0 3vw 0 3vw;
+}
+
+#container::after {
+  content: "";
+  background-image: url("../../../assets/img/pages/users.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }

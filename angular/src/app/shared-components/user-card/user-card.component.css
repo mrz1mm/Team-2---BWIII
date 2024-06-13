@@ -1,0 +1,30 @@
+td {
+  background-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
+  color: white;
+}
+
+th {
+  background-color: rgba(59, 67, 94, 0.6235294118);
+  color: white;
+}
+
+table {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 20px 1px 100px black !important;
+  margin-top: 3vh;
+  border: 1px solid rgba(255, 255, 255, 0.205);
+}
+
+img {
+  box-shadow: 1px 8px 20px gray !important;
+}
+
+.my-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}/*# sourceMappingURL=user-card.component.css.map */

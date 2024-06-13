@@ -1,8 +1,6 @@
 .container {
   min-height: 80vh;
-  backdrop-filter: blur(100px);
-  background-color: rgba(255, 255, 255, 0);
-  color: white;
+
   input.ng-invalid.ng-touched {
     border-color: red;
   }
@@ -13,9 +11,6 @@
     margin: 0 0.3em;
   }
 }
-
-
-
 
 .genre-btn {
   display: flex;

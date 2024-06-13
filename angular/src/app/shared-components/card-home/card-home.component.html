@@ -1,4 +1,4 @@
-<div class="card d-flex align-items-center my-3 flex-row bg-transparent">
+<div class="card d-flex align-items-center my-3 flex-row">
   <a routerLink="/lightNovelDetails/{{ lightNovelCard.id }}">
     <img
       [src]="
@@ -21,9 +21,10 @@
         (click)="toggleFavourite($event)"
       ></i>
     </div>
-    <div class="text-light">
+    <div>
       <p class="card-text">{{ lightNovelCard.created_at }}</p>
-      <p class="card-text fst-italic">{{ lightNovelCard.description }}</p>
+      <p class="card-text">{{ lightNovelCard.author }}</p>
     </div>
   </div>
+  <app-tooltip-card [lightNovelCard]="lightNovelCard"></app-tooltip-card>
 </div>
