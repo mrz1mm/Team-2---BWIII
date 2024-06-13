@@ -1,3 +1,22 @@
-.container {
+#container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   min-height: 80vh;
+  overflow: hidden;
+}
+
+#container::after {
+  content: "";
+  background-image: url("../../../assets/img/pages/users.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
