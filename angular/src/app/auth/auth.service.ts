@@ -5,7 +5,7 @@ import { iAuthData } from './interfaces/i-auth-data';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { BehaviorSubject, Observable, map, tap } from 'rxjs';
+import { BehaviorSubject, Observable, map, of, tap } from 'rxjs';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -39,6 +39,7 @@ export class AuthService {
 
         this.autoLogout();
         this.router.navigate(['/home']); // Redirezione dopo il login
+        this.getCurrentUserImage().subscribe();
       })
     );
   }
@@ -116,4 +117,8 @@ export class AuthService {
     const currentUser = this.getCurrentUser();
     return currentUser ? currentUser.name : null;
   }
+
+getCurrentUserImage(): Observable<string | null> {
+  return of(this.getCurrentUser()?.userImage || null);
+}
 }

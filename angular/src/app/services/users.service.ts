@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { iUser } from '../auth/interfaces/i-user';
 
@@ -19,16 +19,14 @@ export class UsersService {
   private usersArray: iUser[] = [];
   usersUrl: string = `${environment.apiUrl}/users`;
 
-  getAllUsers(): void {
-    this.http.get<iUser[]>(this.usersUrl).subscribe((users) => {
+getAllUsers(): Observable<iUser[]> {
+  return this.http.get<iUser[]>(this.usersUrl).pipe(
+    tap((users) => {
       this.usersArray = users;
       this.usersSubject.next(users);
-    });
-  }
-
-  getUsers(): Observable<any> {
-    return this.http.get(this.apiUrl);
-  }
+    })
+  );
+}
 
   getUser(id: number): Observable<any> {
     return this.http.get(`${this.apiUrl}/${id}`);
