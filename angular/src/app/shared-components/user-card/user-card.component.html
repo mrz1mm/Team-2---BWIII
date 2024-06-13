@@ -1,76 +1,84 @@
-<div class="container justify-content-center d-flex text-white">
-  <div class="row">
-    <div class="col-12">
-      <h1>Pagina Utenti</h1>
-    </div>
+<div class="container mt-4">
+  <table class="table table-bordered table-hover shadow-sm">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Info</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="
+          let user of users | paginate : { itemsPerPage: 5, currentPage: p }
+        "
+      >
+        <td>
+          <div class="row g-0">
+            <div
+              class="col-md-4 align-items-center d-flex justify-content-center"
+            >
+              <img
+                [src]="user.userImage"
+                alt="icon"
+                class="rounded-circle"
+                style="width: 100px; height: auto"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{ user.name }} {{ user.surname }}</h5>
+                <p class="card-text">
+                  <strong>Gender:</strong> {{ user.gender }}
+                </p>
+                <p class="card-text">
+                  <strong>Username:</strong> {{ user.username }}
+                </p>
+                <p class="card-text">
+                  <strong>Email:</strong> {{ user.email }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div
+            class="text-center d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn btn-danger mx-1"
+              (click)="openDeleteModal(user, deleteModal)"
+              ngbTooltip="Delete User"
+              placement="top"
+            >
+              <i class="bi bi-trash"></i>
+            </button>
+            <button
+              class="btn btn-success mx-1"
+              *ngIf="user.role === 'auth'"
+              (click)="upgradeUser(user.id)"
+              ngbTooltip="Upgrade User"
+              placement="top"
+            >
+              <i class="bi bi-arrow-up"></i>
+            </button>
+            <button
+              class="btn btn-warning mx-1"
+              *ngIf="user.role === 'sub-admin'"
+              (click)="downgradeUser(user.id)"
+              ngbTooltip="Downgrade User"
+              placement="top"
+            >
+              <i class="bi bi-arrow-down"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="d-flex justify-content-center border-3">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
   </div>
 </div>
-<table class="table table-bordered table-hover">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">Avatar</th>
-      <th scope="col">Nome</th>
-      <th scope="col">Genere</th>
-      <th scope="col">Username</th>
-      <th scope="col">Email</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let user of users">
-      <td>
-        <img
-          [src]="user.userImage"
-          alt="icon"
-          class="rounded-circle"
-          style="width: 50px; height: auto"
-        />
-      </td>
-      <td>
-        <h5 class="card-title">{{ user.name }} {{ user.surname }}</h5>
-      </td>
-      <td>
-        <p class="card-text"><strong>Gender:</strong> {{ user.gender }}</p>
-      </td>
-      <td>
-        <p class="card-text"><strong>Username:</strong> {{ user.username }}</p>
-      </td>
-      <td>
-        <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
-      </td>
-      <td
-        class="d-flex justify-content-center align-items-center flex-grow-1 w-100"
-      >
-        <button
-          class="btn btn-danger mx-1"
-          (click)="openDeleteModal(user, deleteModal)"
-          ngbTooltip="Delete User"
-          placement="top"
-        >
-          <i class="bi bi-trash"></i>
-        </button>
-        <button
-          class="btn btn-success mx-1"
-          *ngIf="user.role === 'auth'"
-          (click)="upgradeUser(user.id)"
-          ngbTooltip="Upgrade User"
-          placement="top"
-        >
-          <i class="bi bi-arrow-up"></i>
-        </button>
-        <button
-          class="btn btn-warning mx-1"
-          *ngIf="user.role === 'sub-admin'"
-          (click)="downgradeUser(user.id)"
-          ngbTooltip="Downgrade User"
-          placement="top"
-        >
-          <i class="bi bi-arrow-down"></i>
-        </button>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
 <ng-template #deleteModal let-modal>
   <div class="modal-header">

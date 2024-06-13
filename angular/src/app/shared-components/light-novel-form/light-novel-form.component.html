@@ -10,7 +10,7 @@
             type="text"
             formControlName="title"
             class="form-control"
-            placeholder="Write your title..."
+            placeholder="Write your title... "
             name="title"
             id="title"
           />
@@ -54,9 +54,20 @@
 
           <p class="mt-2 mb-0">Scegli il genere:</p>
           <div formArrayName="genre">
-            <div *ngFor="let genre of genreArr; let i = index">
-              <label for="{{ genre }}">{{ genre }}</label>
-              <input type="checkbox" [formControlName]="i" id="{{ genre }}" />
+            <div class="row">
+              <div *ngFor="let genre of genreArr; let i = index" class="col">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  [formControlName]="i"
+                  id="{{ genre }}"
+                />
+                <label
+                  class="btn btn-outline-primary genre-btn"
+                  for="{{ genre }}"
+                  >{{ genre }}</label
+                >
+              </div>
             </div>
           </div>
 

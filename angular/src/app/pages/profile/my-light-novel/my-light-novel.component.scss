@@ -2,16 +2,3 @@
   width: 20rem;
   object-fit: cover;
 }
-
-#immagine {
-  background-image: url(../../../../assets/img/pages/myLightNovels.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  .card {
-    backdrop-filter: blur(14px);
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  #no_line {
-    text-decoration: none;
-  }
-}

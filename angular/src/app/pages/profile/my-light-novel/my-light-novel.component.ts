@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { iLightNovel } from '../../../interfaces/i-light-novel';
 import { LightNovelService } from '../../../services/light-novel.service';
 import { AuthService } from '../../../auth/auth.service';
+import { LocalStorageService } from '../../../services/local-storage.service';
 
 @Component({
   selector: 'app-my-light-novel',
