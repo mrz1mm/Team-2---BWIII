@@ -269,27 +269,26 @@
       "image_url": null,
       "created_at": "2024-06-12",
       "story": {
-        "part1": "Ti ritrovi a vagare nel deserto, alla ricerca di risposte tra le rovine della vecchia civiltà."
-      ,
-      "firstChoice": {
-        "choice1": "Esplora le rovine di una città abbandonata.",
-        "choice2": "Unisciti a una carovana di sopravvissuti."
-      },
-      "part2": {
-        "part2A": "Scopri un'antica mappa che indica la posizione della Città Perduta.",
-        "part2B": "Ti imbatti in una banda di predoni che minaccia di attaccare la tua carovana."
-      },
-      "secondChoice": {
-        "choice1": "Segui la mappa e dirigi verso la Città Perduta.",
-        "choice2": "Difendi la carovana dagli attacchi dei predoni.",
-        "choice3": "Cerca di negoziare con i predoni per evitare lo scontro.",
-        "choice4": "Abbandona la carovana e cerca rifugio altrove."
-      },
-      "part3": {
-        "part3A": "Finalmente raggiungi la leggendaria Città Perduta, scoprendo i suoi segreti e diventando un eroe nella storia dell'umanità.",
-        "part3B": "Nonostante i tuoi sforzi, la carovana viene distrutta dai predoni. Ti ritrovi da solo nel deserto, con la speranza di trovare un nuovo scopo.",
-        "part3C": "Le tue negoziazioni con i predoni hanno successo e eviti lo scontro. Continui il tuo viaggio con la carovana, cercando un luogo sicuro dove stabilirti.",
-        "part3D": "Decidi di abbandonare la carovana e ti avventuri da solo nel deserto. Le tue scorte si esauriscono rapidamente, ma la tua determinazione non vacilla. Chi sa cosa troverai nel deserto senza fine..."
+        "part1": "Ti ritrovi a vagare nel deserto, alla ricerca di risposte tra le rovine della vecchia civiltà.",
+        "firstChoice": {
+          "choice1": "Esplora le rovine di una città abbandonata.",
+          "choice2": "Unisciti a una carovana di sopravvissuti."
+        },
+        "part2": {
+          "part2A": "Scopri un'antica mappa che indica la posizione della Città Perduta.",
+          "part2B": "Ti imbatti in una banda di predoni che minaccia di attaccare la tua carovana."
+        },
+        "secondChoice": {
+          "choice1": "Segui la mappa e dirigi verso la Città Perduta.",
+          "choice2": "Difendi la carovana dagli attacchi dei predoni.",
+          "choice3": "Cerca di negoziare con i predoni per evitare lo scontro.",
+          "choice4": "Abbandona la carovana e cerca rifugio altrove."
+        },
+        "part3": {
+          "part3A": "Finalmente raggiungi la leggendaria Città Perduta, scoprendo i suoi segreti e diventando un eroe nella storia dell'umanità.",
+          "part3B": "Nonostante i tuoi sforzi, la carovana viene distrutta dai predoni. Ti ritrovi da solo nel deserto, con la speranza di trovare un nuovo scopo.",
+          "part3C": "Le tue negoziazioni con i predoni hanno successo e eviti lo scontro. Continui il tuo viaggio con la carovana, cercando un luogo sicuro dove stabilirti.",
+          "part3D": "Decidi di abbandonare la carovana e ti avventuri da solo nel deserto. Le tue scorte si esauriscono rapidamente, ma la tua determinazione non vacilla. Chi sa cosa troverai nel deserto senza fine..."
         }
       },
       "slug": "La-Citta-Perduta",
@@ -882,9 +881,104 @@
   ],
   "favouriteLightNovels": [
     {
+      "lightNovelId": 2,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "lightNovelId": 3,
+      "userId": 1,
+      "id": 3
+    },
+    {
       "lightNovelId": 1,
       "userId": 1,
-      "id": 1
+      "id": 4
+    },
+    {
+      "lightNovelId": 4,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "lightNovelId": 5,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "lightNovelId": 6,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "lightNovelId": 7,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "lightNovelId": 8,
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "lightNovelId": 9,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "lightNovelId": 10,
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "lightNovelId": 15,
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "lightNovelId": 14,
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "lightNovelId": 13,
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "lightNovelId": 12,
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "lightNovelId": 11,
+      "userId": 1,
+      "id": 16
+    },
+    {
+      "lightNovelId": 16,
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "lightNovelId": 17,
+      "userId": 1,
+      "id": 18
+    },
+    {
+      "lightNovelId": 18,
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "lightNovelId": 19,
+      "userId": 1,
+      "id": 20
+    },
+    {
+      "lightNovelId": 20,
+      "userId": 1,
+      "id": 21
     }
   ]
 }
