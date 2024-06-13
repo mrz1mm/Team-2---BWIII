@@ -16,4 +16,18 @@
     background-color: red;
     color: white;
   }
+
+  .imgCarousel {
+    width: 100%;
+  }
+
+  .carousel-caption {
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }

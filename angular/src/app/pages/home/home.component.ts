@@ -46,11 +46,35 @@ export class HomeComponent {
       type: 'loop',
       drag: 'free',
       focus: 'center',
-      perPage: 3,
+      pagination: false,
+      height: 230,
+      perPage: 8,
       autoScroll: {
         speed: 1,
       },
       extensions: { AutoScroll },
+      breakpoints: {
+        1800: {
+          perPage: 7,
+          height: 230,
+        },
+        1600: {
+          perPage: 6,
+          height: 230,
+        },
+        1400: {
+          perPage: 5,
+          height: 230,
+        },
+        1200: {
+          perPage: 4,
+          height: 230,
+        },
+        992: {
+          perPage: 3,
+          height: 230,
+        },
+      },
     }).mount({ AutoScroll });
   }
 
