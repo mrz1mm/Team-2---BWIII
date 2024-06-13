@@ -1,0 +1,9 @@
+.container {
+  min-height: 80vh;
+}
+
+#img_profile {
+  background-image: url(../../../assets/img/pages/profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=profile.component.css.map */

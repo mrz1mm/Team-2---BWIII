@@ -249,27 +249,27 @@
       "image_url": "https://example.com/immagine.jpg",
       "created_at": "2024-06-12",
       "story": {
-        "part1": "Ti ritrovi a vagare nel deserto, alla ricerca di risposte tra le rovine della vecchia civiltà."
-      },
-      "firstChoice": {
-        "choice1": "Esplora le rovine di una città abbandonata.",
-        "choice2": "Unisciti a una carovana di sopravvissuti."
-      },
-      "part2": {
-        "part2A": "Scopri un'antica mappa che indica la posizione della Città Perduta.",
-        "part2B": "Ti imbatti in una banda di predoni che minaccia di attaccare la tua carovana."
-      },
-      "secondChoice": {
-        "choice1": "Segui la mappa e dirigi verso la Città Perduta.",
-        "choice2": "Difendi la carovana dagli attacchi dei predoni.",
-        "choice3": "Cerca di negoziare con i predoni per evitare lo scontro.",
-        "choice4": "Abbandona la carovana e cerca rifugio altrove."
-      },
-      "part3": {
-        "part3A": "Finalmente raggiungi la leggendaria Città Perduta, scoprendo i suoi segreti e diventando un eroe nella storia dell'umanità.",
-        "part3B": "Nonostante i tuoi sforzi, la carovana viene distrutta dai predoni. Ti ritrovi da solo nel deserto, con la speranza di trovare un nuovo scopo.",
-        "part3C": "Le tue negoziazioni con i predoni hanno successo e eviti lo scontro. Continui il tuo viaggio con la carovana, cercando un luogo sicuro dove stabilirti.",
-        "part3D": "Decidi di abbandonare la carovana e ti avventuri da solo nel deserto. Le tue scorte si esauriscono rapidamente, ma la tua determinazione non vacilla. Chi sa cosa troverai nel deserto senza fine..."
+        "part1": "Ti ritrovi a vagare nel deserto, alla ricerca di risposte tra le rovine della vecchia civiltà.",
+        "firstChoice": {
+          "choice1": "Esplora le rovine di una città abbandonata.",
+          "choice2": "Unisciti a una carovana di sopravvissuti."
+        },
+        "part2": {
+          "part2A": "Scopri un'antica mappa che indica la posizione della Città Perduta.",
+          "part2B": "Ti imbatti in una banda di predoni che minaccia di attaccare la tua carovana."
+        },
+        "secondChoice": {
+          "choice1": "Segui la mappa e dirigi verso la Città Perduta.",
+          "choice2": "Difendi la carovana dagli attacchi dei predoni.",
+          "choice3": "Cerca di negoziare con i predoni per evitare lo scontro.",
+          "choice4": "Abbandona la carovana e cerca rifugio altrove."
+        },
+        "part3": {
+          "part3A": "Finalmente raggiungi la leggendaria Città Perduta, scoprendo i suoi segreti e diventando un eroe nella storia dell'umanità.",
+          "part3B": "Nonostante i tuoi sforzi, la carovana viene distrutta dai predoni. Ti ritrovi da solo nel deserto, con la speranza di trovare un nuovo scopo.",
+          "part3C": "Le tue negoziazioni con i predoni hanno successo e eviti lo scontro. Continui il tuo viaggio con la carovana, cercando un luogo sicuro dove stabilirti.",
+          "part3D": "Decidi di abbandonare la carovana e ti avventuri da solo nel deserto. Le tue scorte si esauriscono rapidamente, ma la tua determinazione non vacilla. Chi sa cosa troverai nel deserto senza fine..."
+        }
       },
       "slug": "La-Citta-Perduta",
       "updated_by": 2,

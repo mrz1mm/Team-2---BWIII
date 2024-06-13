@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { iLightNovel } from '../../../interfaces/i-light-novel';
+import { iLightNovel } from '../../interfaces/i-light-novel';
 
 @Component({
   selector: 'app-tooltip-card',
@@ -8,4 +8,8 @@ import { iLightNovel } from '../../../interfaces/i-light-novel';
 })
 export class TooltipCardComponent {
   @Input() lightNovelCard!: iLightNovel;
+
+  formatGenre(genres: string[]): string {
+    return genres.join(', ');
+  }
 }
