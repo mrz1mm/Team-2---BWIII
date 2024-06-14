@@ -1,11 +1,11 @@
-<div class="container bg-white text-black">
+<div class="container bg-white text-black border border-dark">
   <div class="row">
     <div class="col">
-      <h2 class="card-title">{{ lightNovelCard.title }}</h2>
+      <h2 class="card-title fs-5 mt-1">{{ lightNovelCard.title }}</h2>
     </div>
   </div>
-  <div class="row mb-1">
-    <div class="col-6">
+  <div class="row mb-1 mx-1">
+    <div class="col-5">
       <a routerLink="/lightNovelDetails/{{ lightNovelCard.id }}">
         <img
           [src]="
@@ -16,19 +16,19 @@
         />
       </a>
     </div>
-    <div class="col-6">
-      <p>
+    <div class="col-7">
+      <p class="pColorato">
         Author: <span>{{ lightNovelCard.author }}</span>
       </p>
-      <p>
+      <p class="pColorato">
         Genere: <span>{{ formatGenre(lightNovelCard.genre) }}</span>
       </p>
-      <p>
+      <p class="pColorato">
         Created: <span>{{ lightNovelCard.created_at }}</span>
       </p>
     </div>
   </div>
-  <div class="row description pt-2">
+  <div class="row description pt-2 mx-2 mb-1">
     <div class="col">
       <a routerLink="/lightNovelDetails/{{ lightNovelCard.id }}"> </a>
       <p class="card-text">{{ lightNovelCard.description }}</p>

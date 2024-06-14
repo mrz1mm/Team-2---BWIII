@@ -4,8 +4,9 @@
   }
 
   img {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
+    padding-bottom: 5px;
   }
 
   span {
@@ -21,4 +22,17 @@
   .description {
     border-top: solid 2px green;
   }
+}
+
+.pColorato {
+  margin: 0;
+  color: green;
+}
+
+span {
+  color: black;
+}
+
+.container:hover {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
 }
