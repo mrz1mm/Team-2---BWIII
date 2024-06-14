@@ -72,19 +72,25 @@
               </div>
             </div>
           </div>
-
-          <label for="file" class="mt-3"
-            >Inserisce la copertina della Light-novel</label
+          <label for="file" class="mt-3 d-flex justify-content-center"
+            >Inserisci la copertina della Light-novel</label
           >
+          <label for="file" class="mt-3" id="file-btn">Carica File</label>
           <input
             type="file"
             formControlName="image_url"
             class="form-control"
             id="file"
           />
-          <h4 class="text-center mt-2">Costruisci la tua storia</h4>
+          <h4
+            class="text-center mt-3 text-uppercase d-flex justify-content-center"
+          >
+            Costruisci la tua storia
+          </h4>
           <div formGroupName="story">
-            <h5 class="text-uppercase">INIZIO DELLA STORIA</h5>
+            <h5 class="text-uppercase d-flex justify-content-center">
+              INIZIO DELLA STORIA
+            </h5>
 
             <!-- First Section -->
             <div class="border border-3 border-secondary rounded-4 p-3 mb-3">
@@ -140,7 +146,9 @@
             </div>
 
             <!-- Second Section -->
-            <h5 class="text-uppercase">CONTINUO DELLA STORIA</h5>
+            <h5 class="text-uppercase d-flex justify-content-center">
+              CONTINUO DELLA STORIA
+            </h5>
             <div class="border border-3 border-secondary rounded-4 p-3 mb-3">
               <div formGroupName="part2" class="d-flex justify-content-evenly">
                 <div>
@@ -246,7 +254,7 @@
             </div>
 
             <!-- Third Section -->
-            <h5 class="text-uppercase">FINALE</h5>
+            <h5 class="text-uppercase d-flex justify-content-center">FINALE</h5>
             <div class="border border-3 border-secondary rounded-4 p-3 mb-3">
               <div formGroupName="part3">
                 <div class="d-flex justify-content-evenly">
@@ -320,18 +328,18 @@
             <button
               *ngIf="!novel"
               (click)="addLightNovel()"
-              class="btn btn-primary mx-2"
+              class="btn btn-outline-warning mx-2"
             >
               Crea
             </button>
             <button
               *ngIf="novel"
               (click)="updateLightNovel()"
-              class="btn btn-primary mx-2"
+              class="btn btn-outline-warning mx-2"
             >
               Modifica
             </button>
-            <button (click)="cleanForum()" class="btn btn-primary mx-2">
+            <button (click)="cleanForum()" class="btn btn-outline-warning mx-2">
               Svuota
             </button>
           </div>
