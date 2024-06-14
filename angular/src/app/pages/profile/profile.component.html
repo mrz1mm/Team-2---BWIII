@@ -1,17 +1,25 @@
-<div class="card my-3 vh-100" id="img_profile">
-  <div class="row g-0">
-    <div class="col-md-4 d-flex justify-content-center align-items-center">
-      <img *ngIf="!user.userImage" src="https://as1.ftcdn.net/v2/jpg/02/71/59/92/1000_F_271599217_f9pIx8B1GiJZunOokVAeP2BF1BiXM2Ms.jpg" class="img-fluid rounded-start img_avatar" alt="...">
-      <img *ngIf="user.userImage" [src]="user.userImage" class="img-fluid w-50 rounded-circle img_avatar " alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body my-5 text-white">
-        <h5 class="card-title">Email: {{user.email}}</h5>
-        <p class="card-text">Nome: {{user.name}}</p>
-        <p class="card-text">Cognome: {{user.surname}}</p>
-        <p class="card-text">Username: {{user.username}}</p>
-        <p class="card-text">Gender: {{user.gender}}</p>
-        <p class="card-text">Parlo un po' di me: {{user.biography}}</p>
+<div class="container-fluid" id="img_profile">
+  <div class="my-3 vh-100">
+    <div class="container testo">
+      <h3 class="d-none d-sm-block text-center text-white p-3 testo">Ciao <i> {{user.username}}</i></h3>
+      <div class="row g-0">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <img *ngIf="!user.userImage"
+            src="https://as1.ftcdn.net/v2/jpg/02/71/59/92/1000_F_271599217_f9pIx8B1GiJZunOokVAeP2BF1BiXM2Ms.jpg"
+            class="rounded-start img_avatar" alt="...">
+          <img *ngIf="user.userImage" [src]="user.userImage" class="rounded-circle img_avatar " alt="...">
+          <h3 class="d-sm-none text-center text-white my-5 ms-2 testo">Ciao <i> {{user.username}}</i></h3>
+        </div>
+        <div class="col-md-6 mx-md-5 text-center text-md-start">
+          <div class="card-body m-md-5 text-white sfondo">
+            <p class="card-text fs-4"><i class="fw-medium">Email:</i> {{user.email}}</p>
+            <p class="card-text fs-4"><i class="fw-medium">Nome:</i> {{user.name}}</p>
+            <p class="card-text fs-4"><i class="fw-medium">Cognome:</i> {{user.surname}}</p>
+            <p class="card-text fs-4"><i class="fw-medium">Username:</i> {{user.username}}</p>
+            <p class="card-text fs-4"><i class="fw-medium">Genere:</i> {{user.gender}}</p>
+            <p class="card-text fs-4"><i class="fw-medium">Parlo un po' di me:</i> {{user.biography}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
