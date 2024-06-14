@@ -20,7 +20,7 @@
   >
     <div class="d-flex align-items-center">
       <a routerLink="/lightNovelDetails/{{ lightNovelCard.id }}">
-        <h5 class="card-title">{{ lightNovelCard.title }}</h5>
+        <h5 class="card-title mb-0">{{ lightNovelCard.title }}</h5>
       </a>
       <i
         class="ms-2 bi"
@@ -29,8 +29,10 @@
       ></i>
     </div>
     <div>
-      <p class="card-text">{{ lightNovelCard.created_at }}</p>
-      <p class="card-text">{{ lightNovelCard.author }}</p>
+      <p class="card-text mt-1">{{ lightNovelCard.created_at }}</p>
+      <p class="card-text">
+        <i>{{ lightNovelCard.author }}</i>
+      </p>
     </div>
   </div>
 </div>

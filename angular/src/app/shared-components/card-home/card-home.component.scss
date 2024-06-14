@@ -39,7 +39,9 @@ a {
     z-index: 1000;
   }
 
-  & .img-link:hover + app-tooltip-card {
-    display: block;
+  @media (min-width: 992px) {
+    & .img-link:hover + app-tooltip-card {
+      display: block;
+    }
   }
 }

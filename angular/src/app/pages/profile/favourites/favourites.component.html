@@ -8,8 +8,17 @@
     <div class="col-12 fst-italic">
       <h5>Qui ci sono tutte le tue lightNovel preferiti:</h5>
     </div>
-    <div class="col" *ngFor="let lightNovel of favouriteLightNovelArray">
-      <app-card-home [lightNovelCard]="lightNovel"></app-card-home>
+    <div
+      class="col"
+      *ngFor="let lightNovel of favouriteLightNovelArray; let i = index"
+    >
+      <app-card-home
+        [lightNovelCard]="lightNovel"
+        [ngStyle]="{
+          position: 'relative',
+          'z-index': favouriteLightNovelArray.length - i
+        }"
+      ></app-card-home>
     </div>
   </div>
 </div>

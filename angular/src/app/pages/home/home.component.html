@@ -27,13 +27,13 @@
     <div class="col"></div>
   </div>
   <section class="row mt-4">
-    <div class="col d-flex align-items-center">
+    <div class="col d-flex align-items-center m-2">
       <div class="me-2">
-        <h6>FILTER BY:</h6>
+        <h6 class="mb-0">FILTER BY:</h6>
       </div>
-      <div>
+      <div class="d-none d-md-block">
         <button
-          class="btn btn-secondary btn-sm me-2 buttonTags"
+          class="btn btn-warning btn-sm me-2 my-1 buttonTags"
           [ngClass]="{ active: activeIndex === i }"
           (click)="handleButtonClick(i, genre)"
           *ngFor="let genre of genres; let i = index"
@@ -41,15 +41,11 @@
           {{ genre }}
         </button>
       </div>
-    </div>
-  </section>
-  <div class="row">
-    <div class="col-12">
-      <div>
+      <div class="d-md-none">
         <div ngbDropdown class="d-inline-block">
           <button
             type="button"
-            class="btn btn-outline-primary"
+            class="btn btn-outline-warning"
             id="dropdownBasic1"
             ngbDropdownToggle
           >
@@ -59,8 +55,10 @@
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button
               ngbDropdownItem
-              (click)="selectedGenre(genre)"
-              *ngFor="let genre of genres"
+              class="buttonTags"
+              [ngClass]="{ active: activeIndex === i }"
+              (click)="handleButtonClick(i, genre)"
+              *ngFor="let genre of genres; let i = index"
             >
               {{ genre }}
             </button>
@@ -68,13 +66,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
   <div class="row">
-    <div class="col-12">
-      <h2>LIGHT NOVEL DI STO CA..</h2>
-    </div>
     <div
-      class="col"
+      class="col-12 col-md-6 col-xl-4"
       *ngFor="let lightNovel of filteredLightNovelsArray; let i = index"
     >
       <app-card-home
