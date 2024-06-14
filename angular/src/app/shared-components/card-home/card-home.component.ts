@@ -83,8 +83,8 @@ export class CardHomeComponent {
 
   updateTooltipPosition($event: MouseEvent) {
     const imgPosition = this.img.nativeElement.getBoundingClientRect();
-    const offsetX = 100;
-    const offsetY = 100;
+    const offsetX = 50;
+    const offsetY = 50;
     this.tooltipX = $event.clientX + offsetX - imgPosition.left;
     this.tooltipY = $event.clientY + offsetY - imgPosition.top;
     console.log(imgPosition);
