@@ -57,17 +57,12 @@
             My lightNovels
           </a>
         </li>
-        <li class="nav-item">
-          <a
-            *ngIf="isLoggedIn$ | async"
-            class="nav-link"
-            routerLink="/profile/viewed"
-            routerLinkActive="active"
-          >
-            Viewed
-          </a>
-        </li>
-        <li class="nav-item" *ngIf="isLoggedIn$ | async">
+        <li
+          class="nav-item"
+          *ngIf="
+            (isLoggedIn$ | async) && (role === 'admin' || role === 'sub-admin')
+          "
+        >
           <a class="nav-link" routerLink="/users" routerLinkActive="active">
             Users
           </a>

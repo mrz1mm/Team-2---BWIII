@@ -13,9 +13,11 @@ import { environment } from '../../environments/environment';
 })
 export class AuthService {
   jwtHelper: JwtHelperService = new JwtHelperService();
+  roleSubject = new BehaviorSubject<string | null>(null);
 
   authSubject = new BehaviorSubject<null | iUser>(null);
   user$ = this.authSubject.asObservable();
+  role$ = this.roleSubject.asObservable();
 
   constructor(private http: HttpClient, private router: Router) {
     this.autoLogin();
@@ -40,6 +42,7 @@ export class AuthService {
         this.autoLogout();
         this.router.navigate(['/home']); // Redirezione dopo il login
         this.getCurrentUserImage().subscribe();
+        this.roleSubject.next(data.user.role);
       })
     );
   }
@@ -120,5 +123,8 @@ export class AuthService {
 
 getCurrentUserImage(): Observable<string | null> {
   return of(this.getCurrentUser()?.userImage || null);
+}
+getCurrentUserRole() {
+  return this.role$;
 }
 }
