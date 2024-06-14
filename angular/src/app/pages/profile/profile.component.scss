@@ -6,5 +6,15 @@
   background-image: url(../../../assets/img/pages/profile.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+.img_avatar {
+  width: 300px;
+}
+@media (max-width: 576px) {
+
+  .img_avatar {
+    width: 65px; /* Dimensione dell'iconcina */
+    height: 65px; /* Imposta anche l'altezza se necessario */
+  }
 }
