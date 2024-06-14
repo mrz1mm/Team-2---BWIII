@@ -9,6 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { TooltipCardComponent } from './tooltip-card/tooltip-card.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { TooltipCardComponent } from './tooltip-card/tooltip-card.component';
     CardHomeComponent,
     UserCardComponent,
     TooltipCardComponent,
+    ConfirmDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -24,7 +27,13 @@ import { TooltipCardComponent } from './tooltip-card/tooltip-card.component';
     NgbModule,
     FormsModule,
     NgxPaginationModule,
+    MatDialogModule,
   ],
-  exports: [CardHomeComponent, LightNovelFormComponent, UserCardComponent],
+  exports: [
+    CardHomeComponent,
+    LightNovelFormComponent,
+    UserCardComponent,
+    ConfirmDialogComponent,
+  ],
 })
 export class SharedModule {}

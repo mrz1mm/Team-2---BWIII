@@ -12,11 +12,12 @@ import { AuthGuard } from './auth/guards/auth.guard';
 import { AdminGuard } from './auth/guards/admin.guard';
 import { GuestGuard } from './auth/guards/guest.guard';
 import { SubAdminGuard } from './auth/guards/sub-admin.guard';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
-  providers: [AuthService, AuthGuard, AdminGuard, GuestGuard, SubAdminGuard],
+  providers: [AuthService, AuthGuard, AdminGuard, GuestGuard, SubAdminGuard, provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { iLightNovel } from '../../../interfaces/i-light-novel';
 import { LightNovelService } from '../../../services/light-novel.service';
 import { AuthService } from '../../../auth/auth.service';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ConfirmDialogComponent } from '../../../shared-components/confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-my-light-novel',
@@ -15,7 +17,8 @@ export class MyLightNovelComponent implements OnInit {
   constructor(
     private lightNovelService: LightNovelService,
     private authSvc: AuthService,
-    private router: Router
+    private router: Router,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit() {
@@ -34,5 +37,24 @@ export class MyLightNovelComponent implements OnInit {
   redirectCreate(novel: iLightNovel) {
     console.log(novel);
     this.router.navigate([`/profile/createLightNovel/${novel.id}`]);
+  }
+
+  deleteLightNovel(novel: iLightNovel) {
+    const dialogConfig = new MatDialogConfig();
+
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = '400px';
+    dialogConfig.position = { top: '', bottom: '', left: '', right: '' };
+
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result) {
+        this.lightNovelService.deleteLightNovel(novel.id).subscribe(() => {
+          this.novels = this.novels.filter((n) => n.id !== novel.id);
+        });
+      }
+    });
   }
 }

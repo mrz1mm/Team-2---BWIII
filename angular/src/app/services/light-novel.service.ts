@@ -145,7 +145,24 @@ export class LightNovelService {
   }
 
   // metodo per eliminare una lightnovel
-  deleteLightNovel() {}
+  deleteLightNovel(id: number): Observable<void> {
+    return this.httpSvc.delete<void>(`${this.lightNovelsUrl}/${id}`).pipe(
+      tap(() => {
+        // Filtra l'array per rimuovere la light novel eliminata
+        this.lightNovelsArray = this.lightNovelsArray.filter(
+          (lightNovel) => lightNovel.id !== id
+        );
+        // Aggiorna il BehaviorSubject con il nuovo array
+        this.lightNovelsSubject.next([...this.lightNovelsArray]);
+      }),
+      catchError((error) => {
+        console.error('Error deleting light novel:', error.message);
+        return throwError(
+          () => new Error('Error deleting light novel: ' + error.message)
+        );
+      })
+    );
+  }
 
   // metodo per ottenere tutte le lightnovel preferite
   getAllFavouriteLightNovels(): Observable<iFavouriteLightNovel[]> {

@@ -877,45 +877,6 @@
       "slug": "Il-Tesoro-del-Faraone",
       "updated_by": 1,
       "id": 20
-    },
-    {
-      "title": "L'Ombra dei Ricordi",
-      "plot": "In una città avvolta nel mistero, Elisa scopre di avere la capacità di vedere e interagire con le ombre dei ricordi delle persone. Questa abilità la porta a indagare su un'antica leggenda che potrebbe cambiare il destino del mondo.",
-      "description": "Elisa è una giovane donna che vive in una città piena di segreti. La sua vita prende una svolta straordinaria quando scopre di poter vedere le ombre dei ricordi delle persone. Attraverso queste ombre, Elisa inizia un'avventura che la porterà a scoprire verità nascoste e a confrontarsi con il suo passato.",
-      "genre": [
-        "Fantasy",
-        "Mystery",
-        "Adventure"
-      ],
-      "author": "Giulia Bianchi",
-      "image_url": "C:\\fakepath\\DALL·E 2024-06-13 14.55.07 - An ethereal, shadowy figure of a young woman stands against a dark, moonlit cityscape. Her eyes glow faintly, reflecting the memories she can see. The.webp",
-      "created_at": "13/06/2024",
-      "story": {
-        "part1": "Elisa camminava per le strade di una città che sembrava non dormire mai. Le luci dei lampioni gettavano ombre lunghe e distorte sui muri degli edifici, creando figure spettrali che danzavano al ritmo del vento. Da quando aveva scoperto il suo dono, ogni passeggiata notturna era diventata un viaggio attraverso i ricordi degli altri.",
-        "firstChoice": {
-          "choice1": "Segui l'ombra che porta a un antico edificio abbandonato.",
-          "choice2": "Segui l'ombra che conduce verso il centro della città affollata."
-        },
-        "part2": {
-          "part2A": "Elisa si avvicinò all'edificio abbandonato. Le pareti erano coperte di edera, e una pesante porta di legno sembrava resistere al passare del tempo. Spingendola con forza, entrò in un luogo dove il tempo sembrava essersi fermato.",
-          "part2B": "Il centro della città era un vortice di luci e suoni. L'ombra si muoveva agilmente tra la folla, come se sapesse esattamente dove andare. Elisa la seguì fino a un piccolo vicolo, dove una porta segreta si aprì davanti a lei."
-        },
-        "secondChoice": {
-          "choice1": "Esplora il piano terra alla ricerca di indizi.",
-          "choice2": "Entra nella porta segreta per scoprire un mondo nascosto.",
-          "choice3": "Sali le scale per vedere cosa si nasconde ai piani superiori.",
-          "choice4": "Interroga le persone nel vicolo per ottenere informazioni."
-        },
-        "part3": {
-          "part3A": "Elisa scopre un antico manoscritto che rivela la verità sul suo dono. Decidendo di usare il suo potere per il bene dell'umanità, diventa una guardiana dei ricordi, aiutando le persone a trovare pace.",
-          "part3B": "Nei piani superiori, Elisa trova una stanza segreta con un portale verso un'altra dimensione. Decide di attraversarlo e scopre un mondo parallelo dove i suoi poteri sono ancora più forti. Qui, inizia una nuova vita come protettrice di entrambi i mondi.",
-          "part3C": "Dietro la porta segreta, Elisa scopre una società sotterranea di persone con poteri simili ai suoi. Insieme, formano un'alleanza per proteggere la città dalle ombre maligne che minacciano di distruggerla.",
-          "part3D": "Interrogando le persone nel vicolo, Elisa scopre che le ombre dei ricordi sono parte di una cospirazione più grande. Con queste informazioni, smaschera un complotto che minaccia l'intera città, diventando un'eroina locale."
-        }
-      },
-      "slug": "lombra-dei-ricordi",
-      "updated_by": 1,
-      "id": 21
     }
   ],
   "favouriteLightNovels": [

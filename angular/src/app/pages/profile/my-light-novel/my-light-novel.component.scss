@@ -3,7 +3,8 @@
   object-fit: cover;
 }
 
-#immagine {
+.container-fluid {
+  min-height: 80vh;
   background-image: url(../../../../assets/img/pages/myLightNovels.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,4 +15,9 @@
   #no_line {
     text-decoration: none;
   }
+}
+
+i {
+  cursor: pointer;
+  font-size: 1.5rem;
 }

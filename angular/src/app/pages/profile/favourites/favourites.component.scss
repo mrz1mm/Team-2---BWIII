@@ -1,6 +1,8 @@
-
+.container-fluid {
+  min-height: 80vh;
+}
 .imgBG {
-  background-image: url('../../../../assets/img/pages/favorites.png');
+  background-image: url("../../../../assets/img/pages/favorites.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
