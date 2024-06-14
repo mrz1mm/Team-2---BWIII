@@ -900,11 +900,6 @@
       "id": 3
     },
     {
-      "lightNovelId": 2,
-      "userId": 1,
-      "id": 4
-    },
-    {
       "lightNovelId": 9,
       "userId": 1,
       "id": 5
@@ -933,6 +928,11 @@
       "lightNovelId": 5,
       "userId": 8,
       "id": 10
+    },
+    {
+      "lightNovelId": 2,
+      "userId": 1,
+      "id": 11
     }
   ]
 }
