@@ -1,6 +1,6 @@
 <div class="container justify-content-center d-flex text-white">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 my-3">
       <h1>Pagina Utenti</h1>
     </div>
   </div>
@@ -26,7 +26,9 @@
         <h5 class="card-title">{{ user.name }} {{ user.surname }}</h5>
       </td>
       <td>
-        <p class="card-text">{{ user.role === "auth" ? "user" : user.role }}</p>
+        <p class="card-text">
+          {{ user.role === "auth" ? "user" : user.role }}
+        </p>
       </td>
       <td>
         <p class="card-text">{{ user.gender }}</p>
