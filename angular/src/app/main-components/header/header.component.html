@@ -1,16 +1,76 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/">Navbar</a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <button
+      (click)="show = !show"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="bi bi-list"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      [ngClass]="{ show: show }"
+    >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item" *ngFor="let link of links">
+        <li>
           <a
             class="nav-link"
-            [routerLink]="link.url"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLink="/home"
             routerLinkActive="active"
-            >{{ link.name }}</a
           >
+            Home
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn$ | async">
+          <a
+            class="nav-link"
+            routerLink="/profile/createLightNovel"
+            routerLinkActive="active"
+          >
+            Create Light Novel
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn$ | async">
+          <a
+            class="nav-link"
+            routerLink="/profile/favourites"
+            routerLinkActive="active"
+          >
+            Favorites LightNovels
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            *ngIf="isLoggedIn$ | async"
+            class="nav-link"
+            routerLink="/profile/myLightNovels"
+            routerLinkActive="active"
+          >
+            My lightNovels
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            *ngIf="isLoggedIn$ | async"
+            class="nav-link"
+            routerLink="/profile/viewed"
+            routerLinkActive="active"
+          >
+            Viewed
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn$ | async">
+          <a class="nav-link" routerLink="/users" routerLinkActive="active">
+            Users
+          </a>
         </li>
       </ul>
       <div
@@ -19,7 +79,7 @@
       >
         <form class="d-flex" role="search">
           <input
-            class="form-control me-2"
+            class="form-control me-2 colorInput"
             type="search"
             placeholder="Search"
             aria-label="Search"

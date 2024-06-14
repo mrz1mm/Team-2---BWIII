@@ -26,7 +26,7 @@ export class HeaderComponent {
     { name: 'Viewed', url: '/profile/viewed' },
     { name: 'Users', url: '/users' },
   ];
-
+  show:boolean = false;
   isLoggedIn$ = this.authSvc.isLoggedIn$;
   user: iUser | null = this.authSvc.getCurrentUser();
 
