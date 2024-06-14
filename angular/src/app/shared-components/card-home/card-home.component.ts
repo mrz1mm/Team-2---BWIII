@@ -1,4 +1,10 @@
-import { Component, Input } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Input,
+  ViewChild,
+  viewChild,
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { LightNovelService } from '../../services/light-novel.service';
 import { AuthService } from '../../auth/auth.service';
@@ -19,9 +25,13 @@ export class CardHomeComponent {
   }
 
   @Input() lightNovelCard!: iLightNovel;
+  @ViewChild('img') img!: ElementRef<HTMLImageElement>;
 
   isFavourite: boolean = false;
   userId: number | null;
+
+  tooltipX = 0;
+  tooltipY = 0;
 
   ngOnInit() {
     this.checkIfFavourite();
@@ -69,5 +79,14 @@ export class CardHomeComponent {
           },
         });
     }
+  }
+
+  updateTooltipPosition($event: MouseEvent) {
+    const imgPosition = this.img.nativeElement.getBoundingClientRect();
+    const offsetX = 100;
+    const offsetY = 100;
+    this.tooltipX = $event.clientX + offsetX - imgPosition.left;
+    this.tooltipY = $event.clientY + offsetY - imgPosition.top;
+    console.log(imgPosition);
   }
 }

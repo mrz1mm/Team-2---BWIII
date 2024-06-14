@@ -6,6 +6,7 @@ a {
   position: relative;
   backdrop-filter: blur(16px);
   background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
 
   img {
     height: 150px;
@@ -26,14 +27,19 @@ a {
     color: black;
   }
 
+  a.img-link {
+    display: block;
+  }
+
   app-tooltip-card {
     display: none;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
 
-  &:hover app-tooltip-card {
+  & .img-link:hover + app-tooltip-card {
     display: block;
   }
 }
