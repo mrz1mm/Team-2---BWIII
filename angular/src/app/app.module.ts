@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './main-components/header/header.component';
 import { FooterComponent } from './main-components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -17,7 +17,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
-  providers: [AuthService, AuthGuard, AdminGuard, GuestGuard, SubAdminGuard, provideAnimationsAsync()],
+  providers: [
+    AuthService,
+    AuthGuard,
+    AdminGuard,
+    GuestGuard,
+    SubAdminGuard,
+    provideAnimationsAsync(),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
