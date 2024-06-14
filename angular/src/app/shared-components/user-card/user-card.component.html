@@ -1,77 +1,82 @@
-<div class="container justify-content-center d-flex text-white">
+<div class="container text-white">
   <div class="row">
-    <div class="col-12 my-3">
+    <div class="col-12 my-3 text-center">
       <h1>Pagina Utenti</h1>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" class="d-none d-sm-table-cell">Avatar</th>
+            <th scope="col">Name</th>
+            <th scope="col" class="d-none d-md-table-cell">Role</th>
+            <th scope="col" class="d-none d-lg-table-cell">Gender</th>
+            <th scope="col">Username</th>
+            <th scope="col" class="d-none d-xl-table-cell">Email</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td class="img_wrapper d-none d-sm-table-cell">
+              <img [src]="user.userImage" alt="icon" class="img-fluid" />
+            </td>
+            <td>
+              <h5 class="card-title">{{ user.name }} {{ user.surname }}</h5>
+            </td>
+            <td class="d-none d-md-table-cell">
+              <p class="card-text">
+                {{ user.role === "auth" ? "user" : user.role }}
+              </p>
+            </td>
+            <td class="d-none d-lg-table-cell">
+              <p class="card-text">{{ user.gender }}</p>
+            </td>
+            <td>
+              <p class="card-text">{{ user.username }}</p>
+            </td>
+            <td class="d-none d-xl-table-cell">
+              <p class="card-text">{{ user.email }}</p>
+            </td>
+            <td
+              class="d-flex justify-content-center align-items-center flex-grow-1 w-100"
+            >
+              <div id="actions_btns">
+                <button
+                  id="delete_btn"
+                  class="btn btn-danger mx-1"
+                  (click)="openDeleteModal(user, deleteModal)"
+                  *ngIf="user.role !== 'admin'"
+                >
+                  <i class="bi bi-trash"></i>
+                </button>
+                <button
+                  id="upgrade_btn"
+                  class="btn btn-success mx-1"
+                  *ngIf="user.role === 'auth'"
+                  (click)="upgradeUser(user.id)"
+                >
+                  <i class="bi bi-arrow-up"></i>
+                </button>
+                <button
+                  id="downgrade_btn"
+                  class="btn btn-warning mx-1"
+                  *ngIf="user.role === 'sub-admin'"
+                  (click)="downgradeUser(user.id)"
+                >
+                  <i class="bi bi-arrow-down"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
-<table class="table table-bordered table-hover">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col"><p>Avatar</p></th>
-      <th scope="col"><p>Name</p></th>
-      <th scope="col"><p>Role</p></th>
-      <th scope="col"><p>Gender</p></th>
-      <th scope="col"><p>Username</p></th>
-      <th scope="col"><p>Email</p></th>
-      <th scope="col"><p>Actions</p></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let user of users">
-      <td class="img_wrapper">
-        <img [src]="user.userImage" alt="icon" />
-      </td>
-      <td>
-        <h5 class="card-title">{{ user.name }} {{ user.surname }}</h5>
-      </td>
-      <td>
-        <p class="card-text">
-          {{ user.role === "auth" ? "user" : user.role }}
-        </p>
-      </td>
-      <td>
-        <p class="card-text">{{ user.gender }}</p>
-      </td>
-      <td>
-        <p class="card-text">{{ user.username }}</p>
-      </td>
-      <td>
-        <p class="card-text">{{ user.email }}</p>
-      </td>
-      <td
-        class="d-flex justify-content-center align-items-center flex-grow-1 w-100"
-      >
-        <div id="actions_btns">
-          <button
-            id="delete_btn"
-            class="btn mx-1"
-            (click)="openDeleteModal(user, deleteModal)"
-            *ngIf="user.role !== 'admin'"
-          >
-            <i class="bi bi-trash"></i>
-          </button>
-          <button
-            id="upgrade_btn"
-            class="btn mx-1"
-            *ngIf="user.role === 'auth'"
-            (click)="upgradeUser(user.id)"
-          >
-            <i class="bi bi-arrow-up"></i>
-          </button>
-          <button
-            id="downgrade_btn"
-            class="btn mx-1"
-            *ngIf="user.role === 'sub-admin'"
-            (click)="downgradeUser(user.id)"
-          >
-            <i class="bi bi-arrow-down"></i>
-          </button>
-        </div>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
 <ng-template #deleteModal let-modal>
   <div class="modal-header">
