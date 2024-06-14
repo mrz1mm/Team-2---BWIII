@@ -12,9 +12,39 @@
   p {
     margin: 0 0.3em;
   }
+  padding-bottom: 2vh;
 }
 
 
+input,textarea{
+  background-color: rgba(128, 128, 128, 0.486);
+  border: 1px solid black;
+  color: white;
+  &:focus{
+    background-color: rgba(128, 128, 128, 0);
+    color: white;
+
+  }
+  &::placeholder{
+    color: white;
+  }
+}
+input[type="file"] {
+  display: none;
+}
+
+#file-btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(75, 75, 75, 0.432);
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(75, 75, 75, 0.8);
+    transform: scale(1.01);
+  }
+}
 
 
 .genre-btn {
@@ -27,12 +57,25 @@
   box-sizing: border-box;
   text-align: center;
   margin: 5px 0;
+  @media screen and (min-width: 769px) {
+    font-size: .6em;
+    padding: .3em;
+    .genre-btn{
+      width: 10em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 1em;
+    .genre-btn{
+      width: 120%;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
   .col {
     flex: 1 0 25%; /* Occupare 25% dello spazio per avere 4 per riga */
-    max-width: 25%;
+    max-width: 35%;
   }
 }
 
