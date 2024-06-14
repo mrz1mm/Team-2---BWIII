@@ -46,6 +46,7 @@ export class HomeComponent {
       type: 'loop',
       drag: 'free',
       focus: 'center',
+      arrows: false,
       pagination: false,
       height: 230,
       perPage: 8,
