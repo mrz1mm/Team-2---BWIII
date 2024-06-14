@@ -97,6 +97,20 @@
       "confirmPassword": "CiaoCiao.88$",
       "role": "auth",
       "id": 7
+    },
+    {
+      "email": "francescavescio12@gmail.com",
+      "password": "$2a$10$lwvftcLOYBvktF4t8OWsfe2wsggkxomxpChkJFIXHqAItzS0xRnY6",
+      "name": "Pia Francesca",
+      "surname": "Vescio",
+      "gender": "female",
+      "dateBirth": "2001-01-18",
+      "biography": "Sono una persona molto simpatica e piacciono i gattini",
+      "userImage": "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+      "username": "shauniif",
+      "confirmPassword": "Ciao.1234!",
+      "role": "auth",
+      "id": 8
     }
   ],
   "lightNovels": [
@@ -881,9 +895,44 @@
   ],
   "favouriteLightNovels": [
     {
-      "lightNovelId": 1,
+      "lightNovelId": 3,
       "userId": 1,
-      "id": 1
+      "id": 3
+    },
+    {
+      "lightNovelId": 2,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "lightNovelId": 9,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "lightNovelId": 1,
+      "userId": 8,
+      "id": 6
+    },
+    {
+      "lightNovelId": 2,
+      "userId": 8,
+      "id": 7
+    },
+    {
+      "lightNovelId": 3,
+      "userId": 8,
+      "id": 8
+    },
+    {
+      "lightNovelId": 4,
+      "userId": 8,
+      "id": 9
+    },
+    {
+      "lightNovelId": 5,
+      "userId": 8,
+      "id": 10
     }
   ]
 }
