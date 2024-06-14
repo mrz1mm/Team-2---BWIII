@@ -1,10 +1,9 @@
-
 .navbar {
-  // height: 6vh;
+  min-height: 6vh;
   background-color: #242726;
   padding: 0 1.3em;
   a {
-    color: #f2c506
+    color: #f2c506;
   }
   .bi.bi-list {
     color: #f2c506;
@@ -24,12 +23,11 @@ input {
   background-color: rgba(128, 128, 128, 0.486);
   border: 1px solid black;
   color: white;
-  &:focus{
+  &:focus {
     background-color: rgba(128, 128, 128, 0);
     color: white;
-
   }
-  &::placeholder{
+  &::placeholder {
     color: white;
   }
 }

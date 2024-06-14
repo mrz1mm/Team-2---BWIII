@@ -191,10 +191,10 @@ export class LightNovelFormComponent implements OnInit {
     // Conversione in minuscolo
     str = str.toLowerCase(); // convert string to lowercase
 
-    // Sostituzione dei caratteri non alfanumerici, spazi e trattini multipli
+    // Sostituzione dei caratteri non alfanumerici, spazi, apostrofi e trattini multipli
     str = str
-      .replace(/[^a-z0-9 -]/g, '') // remove any non-alphanumeric characters
-      .replace(/\s+/g, '-') // replace spaces with hyphens
+      .replace(/[^a-z0-9 '-]/g, '') // remove any non-alphanumeric characters except spaces, apostrophes, and hyphens
+      .replace(/['\s]+/g, '-') // replace spaces and apostrophes with hyphens
       .replace(/-+/g, '-'); // remove consecutive hyphens
 
     return str;

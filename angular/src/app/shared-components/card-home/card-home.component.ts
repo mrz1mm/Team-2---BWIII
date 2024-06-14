@@ -87,6 +87,5 @@ export class CardHomeComponent {
     const offsetY = 50;
     this.tooltipX = $event.clientX + offsetX - imgPosition.left;
     this.tooltipY = $event.clientY + offsetY - imgPosition.top;
-    console.log(imgPosition);
   }
 }
