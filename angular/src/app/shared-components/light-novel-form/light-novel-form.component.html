@@ -3,9 +3,15 @@
     <div class="col col-md-10 col-lg-8">
       <section class="form-signin m-auto mt-5">
         <form [formGroup]="createLightNovelForm">
-          <h1 class="h3 text-center mb-3 fw-normal">Crea la tua Light Novel</h1>
+          <h1 class="h3 text-center mb-3 fw-normal">
+            {{
+              novel ? "Modifica la tua Light Novel" : "Crea la tua Light Novel"
+            }}
+          </h1>
 
-          <label for="title" class="mt-3">Inserisci il titolo</label>
+          <label for="title" class="mt-3">
+            {{ novel ? "Modifica il titolo" : "Inserisci il titolo" }}
+          </label>
           <input
             type="text"
             formControlName="title"
@@ -18,7 +24,9 @@
             Inserisci correttamente il titolo
           </p>
 
-          <label for="plot" class="mt-3">Inserisci una breve trama</label>
+          <label for="plot" class="mt-3">
+            {{ novel ? "Modifica la trama" : "Inserisci una breve trama" }}
+          </label>
           <textarea
             name="plot"
             formControlName="plot"
@@ -28,9 +36,13 @@
           <p *ngIf="isTouchedInvalid('plot')">
             Inserisci correttamente la trama
           </p>
-          <label for="description" class="mt-3"
-            >Inserisci una breve descrizione</label
-          >
+          <label for="description" class="mt-3">
+            {{
+              novel
+                ? "Modifica la descrizione"
+                : "Inserisci una breve descrizione"
+            }}
+          </label>
           <textarea
             name="description"
             formControlName="description"
@@ -41,7 +53,9 @@
             Inserisci correttamente la descrizione
           </p>
 
-          <label for="author" class="mt-3">Inserisci l'autore</label>
+          <label for="author" class="mt-3">
+            {{ novel ? "Modifica l'autore" : "Inserisci l'autore" }}
+          </label>
           <input
             type="text"
             formControlName="author"
@@ -54,7 +68,9 @@
             Inserisci correttamente il nome dell'autore
           </p>
 
-          <p class="mt-2 mb-0">Scegli il genere:</p>
+          <p class="mt-2 mb-0">
+            {{ novel ? "Cambia il genere:" : "Scegli il genere:" }}
+          </p>
           <div formArrayName="genre" class="mt-3">
             <div class="row">
               <div *ngFor="let genre of genreArr; let i = index" class="col">
@@ -72,9 +88,13 @@
               </div>
             </div>
           </div>
-          <label for="file" class="mt-3 d-flex justify-content-center"
-            >Inserisci la copertina della Light-novel</label
-          >
+          <label for="file" class="mt-3 d-flex justify-content-center">
+            {{
+              novel
+                ? "Modifica la copertina della tua Light Novel"
+                : "Inserisci la copertina della tua Light Novel"
+            }}
+          </label>
           <label for="file" class="mt-3" id="file-btn">Carica File</label>
           <input
             type="file"
@@ -85,7 +105,7 @@
           <h4
             class="text-center mt-3 text-uppercase d-flex justify-content-center"
           >
-            Costruisci la tua storia
+            {{ novel ? "Modifica la tua storia" : "Crea la tua storia" }}
           </h4>
           <div formGroupName="story">
             <h5 class="text-uppercase d-flex justify-content-center">
@@ -94,9 +114,13 @@
 
             <!-- First Section -->
             <div class="border border-3 border-secondary rounded-4 p-3 mb-3">
-              <label for="part1"
-                >Inserisci la prima parte della sezione interattiva</label
-              >
+              <label for="part1">
+                {{
+                  novel
+                    ? "Modifica la prima parte della sezione interattiva"
+                    : "Inserisci la prima parte della sezione interattiva"
+                }}
+              </label>
               <input
                 type="text"
                 formControlName="part1"
@@ -113,9 +137,11 @@
                 class="d-flex justify-content-evenly"
               >
                 <div>
-                  <label for="firstChoice1"
-                    >Inserisci la scelta n°1 interattiva</label
-                  >
+                  <label for="firstChoice1">{{
+                    novel
+                      ? "Modifica la scelta n°1 interattiva"
+                      : "Inserisci la scelta n°1 interattiva"
+                  }}</label>
                   <input
                     type="text"
                     formControlName="choice1"
@@ -128,9 +154,11 @@
                   </p>
                 </div>
                 <div>
-                  <label for="firstChoice2"
-                    >Inserisci la scelta n°2 interattiva</label
-                  >
+                  <label for="firstChoice2">{{
+                    novel
+                      ? "Modifica la scelta n°2 interattiva"
+                      : "Inserisci la scelta n°2 interattiva"
+                  }}</label>
                   <input
                     type="text"
                     formControlName="choice2"
@@ -152,10 +180,13 @@
             <div class="border border-3 border-secondary rounded-4 p-3 mb-3">
               <div formGroupName="part2" class="d-flex justify-content-evenly">
                 <div>
-                  <label for="part2A"
-                    >Inserisci la seconda parte interattiva (che è influenzata
-                    dalla scelta n°1)</label
-                  >
+                  <label for="part2A">
+                    {{
+                      novel
+                        ? "Modifica la seconda parte interattiva (che è influenzata dalla scelta n°1)"
+                        : "Inserisci la seconda parte interattiva (che è influenzata dalla scelta n°1)"
+                    }}
+                  </label>
                   <input
                     type="text"
                     formControlName="part2A"
@@ -168,10 +199,13 @@
                   </p>
                 </div>
                 <div>
-                  <label for="part2B"
-                    >Inserisci la seconda parte interattiva (che è influenzata
-                    dalla scelta n°2)</label
-                  >
+                  <label for="part2B">
+                    {{
+                      novel
+                        ? "Modifica la seconda parte interattiva (che è influenzata dalla scelta n°2)"
+                        : "Inserisci la seconda parte interattiva (che è influenzata dalla scelta n°2)"
+                    }}
+                  </label>
                   <input
                     type="text"
                     formControlName="part2B"
@@ -188,8 +222,12 @@
               <div formGroupName="secondChoice">
                 <div class="d-flex justify-content-evenly">
                   <div>
-                    <label for="choice1"
-                      >Inserisci la seconda sezione (C2A) interattiva</label
+                    <label for="choice1">
+                      {{
+                        novel
+                          ? "Modifica la seconda sezione (C2A) interattiva"
+                          : "Inserisci la seconda sezione (C2A) interattiva"
+                      }}</label
                     >
                     <input
                       type="text"
@@ -203,9 +241,13 @@
                     </p>
                   </div>
                   <div>
-                    <label for="choice2"
-                      >Inserisci la seconda sezione (C2b) interattiva</label
-                    >
+                    <label for="choice2">
+                      {{
+                        novel
+                          ? "Modifica la seconda sezione (C2B) interattiva"
+                          : "Inserisci la seconda sezione (C2B) interattiva"
+                      }}
+                    </label>
                     <input
                       type="text"
                       formControlName="choice2"
@@ -220,9 +262,13 @@
                 </div>
                 <div class="d-flex justify-content-evenly">
                   <div>
-                    <label for="choice3"
-                      >Inserisci la seconda sezione (C2c) interattiva</label
-                    >
+                    <label for="choice3">
+                      {{
+                        novel
+                          ? "Modifica la seconda sezione (C2C) interattiva"
+                          : "Inserisci la seconda sezione (C2C) interattiva"
+                      }}
+                    </label>
                     <input
                       type="text"
                       formControlName="choice3"
@@ -235,9 +281,13 @@
                     </p>
                   </div>
                   <div>
-                    <label for="choice4"
-                      >Inserisci la seconda sezione (C2d) interattiva</label
-                    >
+                    <label for="choice4">
+                      {{
+                        novel
+                          ? "Modifica la seconda sezione (C2D) interattiva"
+                          : "Inserisci la seconda sezione (C2D) interattiva"
+                      }}
+                    </label>
                     <input
                       type="text"
                       formControlName="choice4"
@@ -259,9 +309,13 @@
               <div formGroupName="part3">
                 <div class="d-flex justify-content-evenly">
                   <div>
-                    <label for="part3A"
-                      >Inserisci la terza sezione (3A) interattiva</label
-                    >
+                    <label for="part3A">
+                      {{
+                        novel
+                          ? "Modifica la terza sezione (3A) interattiva"
+                          : "Inserisci la terza sezione (3A) interattiva"
+                      }}
+                    </label>
                     <input
                       type="text"
                       formControlName="part3A"
@@ -274,9 +328,13 @@
                     </p>
                   </div>
                   <div>
-                    <label for="part3B"
-                      >Inserisci la terza sezione (3B) interattiva</label
-                    >
+                    <label for="part3B">
+                      {{
+                        novel
+                          ? "Modifica la terza sezione (3B) interattiva"
+                          : "Inserisci la terza sezione (3B) interattiva"
+                      }}
+                    </label>
                     <input
                       type="text"
                       formControlName="part3B"
@@ -291,9 +349,13 @@
                 </div>
                 <div class="d-flex justify-content-evenly">
                   <div>
-                    <label for="part3C"
-                      >Inserisci la terza sezione (3C) interattiva</label
-                    >
+                    <label for="part3C">
+                      {{
+                        novel
+                          ? "Modifica la terza sezione (3C) interattiva"
+                          : "Inserisci la terza sezione (3C) interattiva"
+                      }}
+                    </label>
                     <input
                       type="text"
                       formControlName="part3C"
@@ -306,9 +368,13 @@
                     </p>
                   </div>
                   <div>
-                    <label for="part3D"
-                      >Inserisci la terza sezione (3D) interattiva</label
-                    >
+                    <label for="part3D">
+                      {{
+                        novel
+                          ? "Modifica la terza sezione (3D) interattiva"
+                          : "Inserisci la terza sezione (3D) interattiva"
+                      }}
+                    </label>
                     <input
                       type="text"
                       formControlName="part3D"
