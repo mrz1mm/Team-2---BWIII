@@ -2,6 +2,7 @@ import { AdminGuard } from '../app/auth/guards/admin.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SubAdminGuard } from './auth/guards/sub-admin.guard';
+import { AuthGuard } from './auth/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/light-novel-details/light-novel-details.module').then(
         (m) => m.LightNovelDetailsModule
-      ),
+      ),canActivate:[AuthGuard],
   },
   {
     path: 'auth',
@@ -28,7 +29,7 @@ const routes: Routes = [
   {
     path: 'profile',
     loadChildren: () =>
-      import('./pages/profile/profile.module').then((m) => m.ProfileModule),
+      import('./pages/profile/profile.module').then((m) => m.ProfileModule),canActivate:[AuthGuard],
   },
   {
     path: 'users',
