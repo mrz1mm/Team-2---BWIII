@@ -11,6 +11,7 @@
     />
   </a>
   <app-tooltip-card
+    class="bgCustom"
     [lightNovelCard]="lightNovelCard"
     [ngStyle]="{ top: tooltipY + 'px', left: tooltipX + 'px' }"
   ></app-tooltip-card>
@@ -20,7 +21,7 @@
   >
     <div class="d-flex align-items-center">
       <a routerLink="/lightNovelDetails/{{ lightNovelCard.id }}">
-        <h5 class="card-title mb-0">{{ lightNovelCard.title }}</h5>
+        <h5 class="card-title text-warning mb-0">{{ lightNovelCard.title }}</h5>
       </a>
       <i
         class="ms-2 bi"
